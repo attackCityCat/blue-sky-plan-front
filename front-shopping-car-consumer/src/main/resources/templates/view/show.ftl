@@ -4,7 +4,7 @@
 <head>
 
     <title>首页</title>
-    <script src="/static/js/jquery.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
 </head>
 <h1>欢迎来购物</h1><br>
 <a href="javascript:login()">登陆</a><br>
@@ -18,8 +18,9 @@
     function login() {
         alert("this is login");
     }
+    /*商品详情，点击后去展示商品页面*/
     function particulars(){
-        alert("this is 商品详情");
+        location.href="/page/particulars";
     }
 
 </script>
