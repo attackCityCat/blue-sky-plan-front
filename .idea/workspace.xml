@@ -1,71 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="244dfc02-3e59-402f-a26e-38e9cb29f6aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blue-sky-plan-front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/user/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/src/test/java/org/bs/front/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/src/main/java/org/bs/front/FrontEurekaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-eureka/src/test/java/org/bs/front/FrontEurekaApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/FrontShoppingCarConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/test/java/org/bs/front/FrontShoppingCarConsumerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/FrontShoppingCarProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/test/java/org/bs/front/FrontShoppingCarProviderApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/src/main/java/org/bs/front/FrontUserConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/src/test/java/org/bs/front/FrontUserConsumerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/src/main/java/org/bs/front/frontuserprovider/FrontUserProviderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/src/main/java/org/bs/front/frontuserprovider/mapper/user/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-user-provider/src/test/java/org/bs/front/frontuserprovider/FrontUserProviderApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="244dfc02-3e59-402f-a26e-38e9cb29f6aa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/front-eureka/target/" />
@@ -96,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mr.xin" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -169,7 +110,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,12 +171,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557908892180</updated>
-      <workItem from="1557908898326" duration="4225000" />
+      <workItem from="1557908898326" duration="4489000" />
     </task>
+    <task id="LOCAL-00001" summary="蓝天计划电商平台前端网站框架版本1.1.0">
+      <created>1557913307044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557913307044</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4225000" />
+    <option name="totallyTimeSpent" value="4489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
@@ -311,6 +260,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="蓝天计划电商平台前端网站框架版本1.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台前端网站框架版本1.1.0" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/front-eureka/src/main/resources/application.yml">
@@ -446,9 +401,78 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>front-shopping-car-provider</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
