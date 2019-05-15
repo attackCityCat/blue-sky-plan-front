@@ -46,10 +46,10 @@
             <version>1.2.33</version>
         </dependency>
 
-        <!-- thymeleaf 模板依赖 -->
+        <!--freemarker 模板依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
 
 
