@@ -1,0 +1,20 @@
+server:
+  port: 8099
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+spring:
+  application:
+    name: front-zuul
+zuul:
+  routes:
+    api-a:
+      path: /car/**
+      serviceId: front-shopping-car-consumer
+    api-b:
+      path: /product/**
+      serviceId: front-product-consumer
+    api-c:
+      path: /pay/**
+      serviceId: front-pay-consumer

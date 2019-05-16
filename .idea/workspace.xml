@@ -1,37 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="244dfc02-3e59-402f-a26e-38e9cb29f6aa" name="Default Changelist" comment="蓝天计划电商平台前端网站框架版本1.1.0">
-      <change afterPath="$PROJECT_DIR$/.idea/blue-sky-plan-front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/calculator/CommodityAndSettlement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/requestError/requestError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/service/ShopCarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/ShopCar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/html5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/swiper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/login/login.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show1.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/mapper/ShopCarMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="244dfc02-3e59-402f-a26e-38e9cb29f6aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/FrontPayConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/test/java/org/bs/front/FrontPayConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/FrontPayProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/test/java/org/bs/front/FrontPayProviderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/src/main/java/org/bs/front/FrontProductConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-consumer/src/test/java/org/bs/front/FrontProductConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/src/main/java/org/bs/front/FrontProductProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-product-provider/src/test/java/org/bs/front/FrontProductProviderApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/src/main/java/org/bs/front/FrontZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-zuul/src/test/java/org/bs/front/FrontZuulApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/FrontShoppingCarConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/FrontShoppingCarConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/page/Page.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/shiroconfig/ShiroConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/shiroconfig/UserRealm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/particulars.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/FrontShoppingCarProviderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/FrontShoppingCarProviderApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,103 +74,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="295" column="34" selection-start-line="295" selection-start-column="24" selection-end-line="295" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#a#0;n#td#1;n#tr#1;n#table#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/calculator/CommodityAndSettlement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="20" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-provider/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/mapper/ShopCarMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="27" column="62" selection-start-line="27" selection-start-column="62" selection-end-line="27" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="448">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1473#1474#0" expanded="true" />
+                <element signature="e#1521#1522#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,6 +116,9 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a7747f36-37cb-4edc-812f-0b46e4157a62" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
@@ -284,59 +223,6 @@
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -468,13 +354,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49186000" />
+    <option name="totallyTimeSpent" value="50797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25426438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -484,7 +369,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38752785" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38752785" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27505568" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -492,11 +377,11 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32962137" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32962137" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" sideWeight="0.49946696" visible="true" weight="0.32962137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -511,6 +396,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -583,9 +494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/jquery.min.js" />
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/mycss.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,38 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/target/classes/templates/view/particulars.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/particulars.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/shiroconfig/UserRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/target/classes/templates/view/particulars.ftl" />
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/particulars.ftl" />
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/login/LoginController.java" />
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/shiroconfig/UserRealm.java" />
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/login/login.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -642,13 +523,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/shiroconfig/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/shiroconfig/ShiroConfig.java" />
     <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/user/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -744,26 +619,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/service/CarService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="54" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/page/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/service/CarService.java" />
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/page/Page.java" />
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/service/ShopCarService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -771,9 +628,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/站位">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/站位" />
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -808,9 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/area.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/area.js" />
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/static/js/ShopCar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="686">
@@ -821,19 +674,6 @@
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/target/classes/templates/view/show.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7539" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
-          <folding>
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl">
@@ -916,6 +756,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#1383#1384#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
