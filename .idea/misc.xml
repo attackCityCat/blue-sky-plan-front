@@ -4,6 +4,9 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -17,6 +20,7 @@
         <option value="$PROJECT_DIR$/front-product-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/front-pay-provider/pom.xml" />
         <option value="$PROJECT_DIR$/front-pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/front-zuul/pom.xml" />
       </list>
     </option>
   </component>
