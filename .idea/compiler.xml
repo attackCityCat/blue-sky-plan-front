@@ -9,7 +9,9 @@
         <module name="front-product-provider" />
         <module name="front-api" />
         <module name="front-user-consumer" />
+        <module name="front-pay-consumer" />
         <module name="front-shopping-car-consumer" />
+        <module name="front-pay-provider" />
         <module name="front-product-consumer" />
         <module name="front-user-provider" />
         <module name="front-shopping-car-provider" />
@@ -20,6 +22,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="front-eureka" options="-parameters" />
+      <module name="front-pay-consumer" options="-parameters" />
+      <module name="front-pay-provider" options="-parameters" />
       <module name="front-product-consumer" options="-parameters" />
       <module name="front-product-provider" options="-parameters" />
       <module name="front-shopping-car-consumer" options="-parameters" />
