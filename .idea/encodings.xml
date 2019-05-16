@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/front-product-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/front-product-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front-shopping-car-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front-shopping-car-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/front-user-consumer" charset="UTF-8" />
