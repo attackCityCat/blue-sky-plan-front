@@ -3,6 +3,7 @@ package org.bs.front.controller;
 import org.bs.front.mapper.ShopCarMapper;
 import org.bs.front.pojo.product.ProductBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,7 +13,6 @@ public class ShopCarController {
 
     @Autowired
     ShopCarMapper shopCarMapper;
-
 
     /**
      * 查询购物车商品
