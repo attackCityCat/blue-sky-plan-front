@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="front-product-provider" />
         <module name="front-api" />
+        <module name="front-zuul" />
         <module name="front-user-consumer" />
         <module name="front-pay-consumer" />
         <module name="front-shopping-car-consumer" />
@@ -30,6 +31,7 @@
       <module name="front-shopping-car-provider" options="-parameters" />
       <module name="front-user-consumer" options="-parameters" />
       <module name="front-user-provider" options="-parameters" />
+      <module name="front-zuul" options="-parameters" />
     </option>
   </component>
 </project>

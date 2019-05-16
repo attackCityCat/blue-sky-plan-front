@@ -19,6 +19,7 @@
     <ignored path="$PROJECT_DIR$/front-product-consumer/target/" />
     <ignored path="$PROJECT_DIR$/front-pay-provider/target/" />
     <ignored path="$PROJECT_DIR$/front-pay-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/front-zuul/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +32,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front-pay-consumer/pom.xml">
+        <entry file="file://$PROJECT_DIR$/front-zuul/src/main/java/org/bs/front/FrontZuulApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="189">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-zuul/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -92,6 +102,8 @@
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/FrontPayConsumerApplication.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/front-zuul/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/front-zuul/src/main/java/org/bs/front/FrontZuulApplication.java" />
       </list>
     </option>
   </component>
@@ -129,7 +141,45 @@
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="front-zuul" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,6 +285,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FrontZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="front-zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.bs.front.FrontZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -247,7 +304,7 @@
       <option name="presentableId" value="Default" />
       <updated>1557908892180</updated>
       <workItem from="1557908898326" duration="4915000" />
-      <workItem from="1557989795609" duration="4878000" />
+      <workItem from="1557989795609" duration="6418000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台前端网站框架版本1.1.0">
       <created>1557913307044</created>
@@ -263,11 +320,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557993535310</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="蓝天计划电商平台前端网站框架版本1.1.2&#10;增加支付模块">
+      <created>1557998204125</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557998204125</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9793000" />
+    <option name="totallyTimeSpent" value="11333000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
@@ -293,7 +357,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32942432" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32942432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -350,7 +414,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="蓝天计划电商平台前端网站框架版本1.1.0" />
     <MESSAGE value="蓝天计划电商平台前端网站框架版本1.1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台前端网站框架版本1.1.1" />
+    <MESSAGE value="蓝天计划电商平台前端网站框架版本1.1.2&#10;增加支付模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="蓝天计划电商平台前端网站框架版本1.1.2&#10;增加支付模块" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/front-eureka/src/main/resources/application.yml">
@@ -561,6 +626,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-zuul/src/main/java/org/bs/front/FrontZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>

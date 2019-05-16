@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/front-product-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/front-pay-provider/pom.xml" />
         <option value="$PROJECT_DIR$/front-pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/front-zuul/pom.xml" />
       </list>
     </option>
   </component>
