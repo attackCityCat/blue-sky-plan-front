@@ -19,4 +19,7 @@ public interface ShopCarServiceApi {
 
     @RequestMapping(value = "delShopCar")
     void delShopCar(@RequestParam(value = "id") Integer id);
+
+    @RequestMapping(value = "test1")
+    String test(@RequestParam(value = "name") String name);
 }
