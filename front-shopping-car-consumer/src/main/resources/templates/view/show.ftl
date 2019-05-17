@@ -239,7 +239,7 @@
     //删除购物车的商品
     function delShopCar(id) {
         $.ajax({
-            url: '/calc/delShopCar',
+            url: '/car/calc/delShopCar',
             data: {
                 id: id
             },

@@ -18,6 +18,9 @@ zuul:
     api-c:
       path: /pay/**
       serviceId: front-pay-consumer
+    static:
+      path: /static/**
+      url: http://localhost:8084/static/
     api-d:
       path: /user/**
       serviceId: front-user-consumer
