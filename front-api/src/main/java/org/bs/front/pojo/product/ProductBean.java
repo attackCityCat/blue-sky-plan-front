@@ -2,10 +2,12 @@ package org.bs.front.pojo.product;
 
 import java.io.Serializable;
 
+
 public class ProductBean implements Serializable {
+
     private static final long serialVersionUID = 6297828463540143099L;
 
-       private Integer productId;      //商品id
+    private Integer productId;      //商品id
 
     private String productName;      //商品名
 
@@ -17,7 +19,7 @@ public class ProductBean implements Serializable {
 
     private Float productPrice;   //商品价格
 
-    private Double productCount;   //商品数量
+    private Integer productCount;   //商品数量
 
     public Integer getProductId() {
         return productId;
@@ -67,11 +69,11 @@ public class ProductBean implements Serializable {
         this.productPrice = productPrice;
     }
 
-    public Double getProductCount() {
+    public Integer getProductCount() {
         return productCount;
     }
 
-    public void setProductCount(Double productCount) {
+    public void setProductCount(Integer productCount) {
         this.productCount = productCount;
     }
 
