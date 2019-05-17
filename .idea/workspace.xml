@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="244dfc02-3e59-402f-a26e-38e9cb29f6aa" name="Default Changelist" comment="05/16提交代码 liang">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="244dfc02-3e59-402f-a26e-38e9cb29f6aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/AlipayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/AlipayDemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/CorsMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/product/ProductBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/product/ProductBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+            <state relative-caret-position="180">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,6 +110,9 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="a7747f36-37cb-4edc-812f-0b46e4157a62" />
@@ -413,7 +421,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65075000" />
+    <option name="totallyTimeSpent" value="66076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -520,13 +528,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/2.1.6.RELEASE/spring-data-redis-2.1.6.RELEASE.jar!/org/springframework/data/redis/serializer/JdkSerializationRedisSerializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/5.1.6.RELEASE/spring-core-5.1.6.RELEASE.jar!/org/springframework/core/serializer/support/SerializingConverter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -926,22 +927,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-user-consumer/src/main/java/org/bs/front/controller/PageController.java">
+    <entry file="file://$PROJECT_DIR$/front-user-consumer/src/main/java/org/bs/front/controller/PageController.java" />
+    <entry file="file://$PROJECT_DIR$/front-user-provider/src/main/java/org/bs/front/frontuserprovider/mapper/user/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="81">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="180">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

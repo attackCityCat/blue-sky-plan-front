@@ -20,6 +20,9 @@
     </properties>
 
     <dependencies>
+
+
+
         <dependency>
             <groupId>org.bs.front</groupId>
             <artifactId>front-api</artifactId>
