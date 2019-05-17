@@ -4,9 +4,11 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.bs.front.pojo.product.ProductBean;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public interface ShopCarMapper {
 
     /***

@@ -293,13 +293,13 @@
     //删除购物车的商品
     function delShopCar(id){
         $.ajax({
-            url: '/calc/delShopCar',
+            url: '/car/calc/delShopCar',
             data: {
                 id: id
             },
             success: function (data) {
                 if (data) {
-                    location.href="/page/test";
+                    location.href="/car/page/test";
                 }
             }
         })
@@ -334,13 +334,13 @@
     /*点击加号的操作*/
     function puls(id) {
         $.ajax({
-            url: '/calc/updateCountPuls',
+            url: '/car/calc/updateCountPuls',
             data: {
                 id: id
             },
             success: function (data) {
                 if (data) {
-                    location.href="/page/test";
+                    location.href="/car/page/test";
                 }
             }
         })
@@ -357,13 +357,13 @@
             return;
         }
         $.ajax({
-            url: '/calc/updateCountReduce',
+            url: '/car/calc/updateCountReduce',
             data: {
                 id: id
             },
             success: function (data) {
                 if (data) {
-                    location.href="/page/test";
+                    location.href="/car/page/test";
                 }
             }
         })
