@@ -28,11 +28,12 @@ public class CarController {
     @RequestMapping(value = "test")
     private String queryShopCar(Model model, HttpSession session, HttpServletResponse response) throws IOException {
 
+        //暂时的关闭此功能 等上线时开通
        /* UserBean user = (UserBean)session.getAttribute(session.getId());
-        user.setUserId(1);*/
+        user.setUserId(1);
         //System.out.println("我是session"+user);
         //判断是否登陆 未登录就将请求转发到登陆   页否则就继续
-     /*   if(user==null){
+       if(user==null){
             response.sendRedirect("http://localhost:8099/user/page/toLogin");
             return null;
         }*/
@@ -43,8 +44,40 @@ public class CarController {
         //上数据库查询这个用户的商品
         List<ProductBean> list = shopCarService.queryShopCar(key);
 
+
+        model.addAttribute("count",list.size());
+
         model.addAttribute("list", list);
         return "view/show";
+    }
+
+    /**
+     * 这里删除时需要2个参数 也就是两个Key
+     * 第一个为用户购物车的Key
+     * 第二个为商品的key  m目前为测试状态
+     * String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId"; 这个里的userId是要在session中获取的
+     * @param id    此ID为商品id
+     * @return
+     */
+    @RequestMapping("delShopCar")
+    public String delShopCar(Integer id){
+        try {
+            String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId";
+            String ShopKey = ConstantClass.SHOP_KEY+id;
+           boolean bol = shopCarService.delShopCar(UserKey,ShopKey);
+           if (bol){
+               return "redirect:test";
+           }
+           return "程序错误";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "程序错误";
+        }
+    }
+
+    @RequestMapping("addShopCar")
+    public void addShopCar(){
+        shopCarService.addShopCar();
     }
 
 

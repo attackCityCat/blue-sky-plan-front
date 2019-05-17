@@ -27,11 +27,8 @@
             <artifactId>alipay-sdk-java</artifactId>
         </dependency>
         <!--这个才是支付宝配置的jar包-->
-        <dependency>
-            <groupId>net.guerlab</groupId>
-            <artifactId>sdk-alipay-core</artifactId>
-            <version>1.0.3</version>
-        </dependency>
+
+
         <dependency>
             <groupId>org.bs.front</groupId>
             <artifactId>front-api</artifactId>

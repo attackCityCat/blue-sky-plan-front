@@ -40,7 +40,7 @@
             <!--topRightNav-->
             <ul class="topRtNav">
                 <li><a href="user.html">个人中心</a></li>
-                <li><a href="cart.html" class="cartIcon">购物车<i>0</i></a></li>
+                <li><a href="cart.html" class="cartIcon">购物车<i>${count}</i></a></li>
                 <li><a href="favorite.html" class="favorIcon">收藏夹</a></li>
                 <li><a href="user.html">商家中心</a></li>
                 <li><a href="article_read.html" class="srvIcon">客户服务</a></li>
@@ -239,7 +239,7 @@
     //删除购物车的商品
     function delShopCar(id) {
         $.ajax({
-            url: '/car/calc/delShopCar',
+            url: '/page/delShopCar',
             data: {
                 id: id
             },

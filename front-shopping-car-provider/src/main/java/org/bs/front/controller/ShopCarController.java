@@ -1,6 +1,6 @@
 package org.bs.front.controller;
 
-import org.bs.front.mapper.ShopCarMapper;
+import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.product.ProductBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,54 +17,54 @@ import java.util.stream.Collectors;
 @RestController
 public class ShopCarController {
 
-    @Autowired
-    ShopCarMapper shopCarMapper;
-
     @Resource
-    private RedisTemplate<String,Object> redisTemplate;
-
-/*    @RequestMapping(value = "test1")
-    public String test(@RequestParam(value = "name") String name){
-
-        Boolean hasKey = redisTemplate.hasKey("hashValue");
-        //存入一个map
-        //第一个值为购物车的K 第二个为物品的K 第三个为商品信息
-    *//*    redisTemplate.opsForHash().put("hashValue","map1",name);
-        redisTemplate.opsForHash().put("hashValue","map2",name);
-        redisTemplate.opsForHash().put("hashValue","map3",name);
-        redisTemplate.opsForHash().put("hashValue","map4",name);
-        redisTemplate.opsForHash().put("hashValue","map5",name);*//*
-        //如果想要删除或者是用户已购买时，移除购物车 根据购物的K和物品的K 删除，多个时可以一个购物车K多个商品K
-        //redisTemplate.opsForHash().delete("hashValue","map1","map2");
-        UserBean bean = new UserBean();
-
-        bean.setUserId(1);
-        bean.setName("案说法");
-        redisTemplate.opsForHash().put("hashValue","map4",bean);
-        //取指定key的值
-        Object o = redisTemplate.opsForHash().get("hashValue", "map4");
-        UserBean bean1 = (UserBean)o;
-        System.out.println(bean1);
+    private RedisTemplate<String, Object> redisTemplate;
 
 
-
-        System.out.println(o);
-        if(hasKey){
-
-            return "黑蛋收到";
-        }else {
-            return "redis里好像没有啊";
-        }
-
-    }*/
     /**
      * 查询购物车商品
+     *
      * @return
      */
     @GetMapping(value = "queryShopCar")
-   public List<ProductBean> queryShopCar(@RequestParam(value = "key") String key){
+    public List<ProductBean> queryShopCar(@RequestParam(value = "key") String key) {
 
+//        查看对应Key中的所有数据展示
+        Map<Object, Object> map = redisTemplate.opsForHash().entries(key);
 
+        //将 缓存中的map转换成list数据 返回展示  强转
+        List<ProductBean> list = (List) map.values().stream().collect(Collectors.toList());
+        System.out.println(list);
+
+        return list;
+    }
+
+    /**
+     * 删除指定 商品
+     *
+     * @param userKey //当前登陆人的购物车
+     * @param shopKey //当前登陆人的购物车里对应商品的key
+     * @return
+     */
+    @RequestMapping(value = "delShopCar")
+    public boolean delShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "shopKey") String shopKey) {
+
+        try {
+            redisTemplate.opsForHash().delete(userKey, shopKey);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    /**
+     * 模拟用户添加商品到购物车
+     * 正式启动时需要传递商品参数的实体过来
+     * 
+     */
+    @RequestMapping("addShopCar")
+    public void addShopCar() {
         ProductBean bean = new ProductBean();
         bean.setProductId(11);
         bean.setProductColor("蓝色");
@@ -81,31 +81,11 @@ public class ShopCarController {
         bean1.setProductCount(1);
         bean1.setProductPrice(5.1f);
         bean1.setProductSpec("xxxxx");
+        String key = ConstantClass.FIND_USER_SHOP_CAR+"userId";
+        redisTemplate.opsForHash().put(key, ConstantClass.SHOP_KEY + bean.getProductId(), bean);
+        redisTemplate.opsForHash().put(key, ConstantClass.SHOP_KEY + bean1.getProductId(), bean1);
 
-        redisTemplate.opsForHash().put(key,"map1",bean);
-        redisTemplate.opsForHash().put(key,"map2",bean1);
-        //查看对应Key中的所有数据展示
-        Map<Object, Object> map = redisTemplate.opsForHash().entries(key);
-
-        System.out.println(map);
-        //将 缓存中的map转换成list数据 返回展示  强转
-        List<ProductBean>  list = (List) map.values().stream().collect(Collectors.toList());
-        System.out.println(list);
-
-        return list;
     }
 
-    @RequestMapping(value = "updateCountPuls")
-    public void updateCountPuls(@RequestParam(value = "id") Integer id){
-        shopCarMapper.updateCountPuls(id);
-    }
-    @RequestMapping(value = "updateCountReduce")
-    public void updateCountReduce(@RequestParam(value = "id") Integer id){
-        shopCarMapper.updateCountReduce(id);
-    }
-    @RequestMapping(value = "delShopCar")
-    public void delShopCar(@RequestParam(value = "id") Integer id){
-        shopCarMapper.delShopCar(id);
-    }
 
 }
