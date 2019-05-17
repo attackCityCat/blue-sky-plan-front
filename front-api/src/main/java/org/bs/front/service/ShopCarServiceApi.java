@@ -10,7 +10,6 @@ public interface ShopCarServiceApi {
     @GetMapping(value = "queryShopCar")
     List<ProductBean> queryShopCar();
 
-
     @RequestMapping(value = "updateCountPuls")
     void updateCountPuls(@RequestParam(value = "id") Integer id);
 
