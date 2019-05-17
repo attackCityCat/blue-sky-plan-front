@@ -33,6 +33,18 @@
             <artifactId>spring-web</artifactId>
             <version>5.0.10.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.19</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.guerlab</groupId>
+            <artifactId>sdk-alipay-core</artifactId>
+            <version>1.0.3</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>

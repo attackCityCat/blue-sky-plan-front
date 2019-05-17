@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.bs.front.mapper.OrderMapper">
+    <insert id="addOrder" parameterType="org.bs.front.pojo.order.OrderBean">
+        insert into cms_order(order_no,order_shop,order_name,order_type,order_createTime,order_onePrice,
+            order_countPrice,order_num,order_city,order_status) values
+            (#{order_no},#{order_shop},#{order_name},#{order_type},#{order_createTime},
+            #{order_onePrice},#{order_countPrice},#{order_num},#{order_city},0)
+    </insert>
+</mapper>
