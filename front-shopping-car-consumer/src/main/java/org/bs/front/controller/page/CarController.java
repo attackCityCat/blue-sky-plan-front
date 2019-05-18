@@ -60,18 +60,16 @@ public class CarController {
      * @return
      */
     @RequestMapping("delShopCar")
-    public String delShopCar(Integer id){
+    @ResponseBody
+    public boolean delShopCar(Integer id){
         try {
             String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId";
             String ShopKey = ConstantClass.SHOP_KEY+id;
            boolean bol = shopCarService.delShopCar(UserKey,ShopKey);
-           if (bol){
-               return "redirect:test";
-           }
-           return "程序错误";
+            return true;
         } catch (Exception e) {
             e.printStackTrace();
-            return "程序错误";
+            return false;
         }
     }
 

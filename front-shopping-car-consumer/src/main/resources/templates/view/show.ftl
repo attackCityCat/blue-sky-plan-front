@@ -219,7 +219,7 @@
     </table>
 
     <div class="order_btm_btn">
-        <#--href="index.html"-->
+        <#--href="index.html 写上自己的首页地址即可"-->
         <a class="link_btn_01 buy_btn" id="continueShopping"/>继续购买</a>
         <#-- href="order_confirm.html"-->
         <a href="javascript:CheckoutCart()" class="link_btn_02 add_btn"/>共计金额<strong class="rmb_icon"><span
@@ -244,15 +244,34 @@
                 id: id
             },
             success: function (data) {
-                if (data) {
-                    location.href = "/page/test";
+                if (data){
+                    location.href="/page/test";
                 }
             }
         })
     }
 
-    function CheckoutCart(){
-        alert("来了老弟")
+    //点击结算按钮的操作
+    function CheckoutCart() {
+
+        //判断是否有商品
+        var check = false;
+        //先定义一个价格
+        var totalPrice = 0;
+        //先判断有没有选中商品
+        $("input[name='ck']:checked").each(function (i) {
+            check = $(this).is(":checked")
+            var val = Number($(this).val());
+            totalPrice = Number(accAdd(totalPrice, val));
+        })
+        if (!check) {
+            alert("请选中你要购买的物品")
+            return;
+        }
+        //如果有选中的商品 那么拿到商品的总价
+        alert("您选中物品总价是："+totalPrice)
+
+
     }
 
     //点击全选时复选框的操作
