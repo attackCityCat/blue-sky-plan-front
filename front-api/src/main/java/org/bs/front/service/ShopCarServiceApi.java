@@ -14,9 +14,17 @@ public interface ShopCarServiceApi {
 
     //删除指定用户的指定购物车商品  基本完善 不用在改动了
     @RequestMapping(value = "delShopCar")
-    boolean delShopCar(@RequestParam(value = "userKey") String userKey,@RequestParam(value = "shopKey") String shopKey);
+    boolean delShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "shopKey") String shopKey);
 
     //模拟新增  还要完善
     @RequestMapping("addShopCar")
     void addShopCar();
+
+    //修改购物车商品数量
+    @RequestMapping(value = "pulsCount")
+    void pulsCount(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "shopKey") String shopKey);
+
+    //修改购物车商品的数量
+    @RequestMapping(value = "reduceCount")
+    void reduceCount(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "shopKey") String shopKey);
 }
