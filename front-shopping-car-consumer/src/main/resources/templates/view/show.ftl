@@ -128,7 +128,7 @@
             alert("请选中你要购买的物品")
             return;
         }
-        //发送请求到收银台
+        //发送请求到收银台啊
         location.href="/order/cashier?totalPrice="+totalPrice+"&ids="+ids;
     }
 
