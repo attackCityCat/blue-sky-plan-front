@@ -43,7 +43,7 @@
 
             <#list list as i>
                 <tr>
-                    <td class="center"><input type="checkbox" id="check${i.productId}" name="ck"
+                    <td class="center"><input type="checkbox" id="check${i.productId}" data="${i.productId}" name="ck"
                                               value="${i.productPrice*i.productCount}" onclick="radiock()"/></td>
                     <td class="center"><a href="product.html">
                             <img src="upload/goods.jpg" style="width:50px;height:50px;"/></a></td>
@@ -108,21 +108,20 @@
     function CheckoutCart() {
         //判断是否有商品
         var check = false;
+        var n = 0;
         //先定义一个价格
         var totalPrice = 0;
         //获取到选中商品的id；
         var ids = "";
         ///所有复选框
-        var arr = $("input[name='ck']")
-        //遍历复选框
-        for (var i = 0; i < arr.length; i++) {
-            //判断是否有商品选中
-            if (arr[i].checked) {
-                check = true;
-                var price = Number(arr[i].value);
-                totalPrice = Number(accAdd(totalPrice, price));
-                ids += arr[i].id;
-            }
+        $("input[name='ck']:checked").each(function(i){
+            n++;
+            var price = Number($(this).val());
+            totalPrice = Number(accAdd(totalPrice, price));
+            ids+= ids == "" ? $(this).attr("data") : ","+$(this).attr("data");
+        })
+        if (n > 0){
+            check = true;
         }
         //判断有没有选中商品
         if (!check) {
