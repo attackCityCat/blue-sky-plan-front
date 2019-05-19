@@ -1,9 +1,7 @@
 package org.bs.front.controller.page;
 
 import com.netflix.client.http.HttpResponse;
-import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.product.ProductBean;
-import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.ShopCarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

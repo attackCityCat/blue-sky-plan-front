@@ -58,7 +58,6 @@ public class OrderController {
         alipayRequest.setNotifyUrl(AlipayConfig.notify_url);
 
 
-
         //商户订单号，商户网站订单系统中唯一订单号，必填
         String out_trade_no = UUID.randomUUID().toString();
         //付款金额，必填
