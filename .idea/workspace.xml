@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="244dfc02-3e59-402f-a26e-38e9cb29f6aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/util/ResultUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/util/ResultUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/ShopCarServiceApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/ShopCarServiceApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448">
-              <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+            <state relative-caret-position="254">
+              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -399,7 +390,7 @@
       <workItem from="1558054969928" duration="9734000" />
       <workItem from="1558075482820" duration="13878000" />
       <workItem from="1558140473892" duration="4214000" />
-      <workItem from="1558229912483" duration="8302000" />
+      <workItem from="1558229912483" duration="10116000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台前端网站框架版本1.1.0">
       <created>1557913307044</created>
@@ -485,11 +476,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558144031360</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="PM 2019年5月19日 13:12:05  liang 修复商品数量为数据库改动 完善结算 购物车内容基本完成">
+      <created>1558242793175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558242793176</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103718000" />
+    <option name="totallyTimeSpent" value="105532000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -512,7 +510,7 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.31959912" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.31959912" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32962137" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -585,7 +583,8 @@
     <MESSAGE value="Merge branch 'llp' of https://github.com/attackCityCat/blue-sky-plan-front&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;front-api/target/classes/org/bs/front/pojo/product/ProductBean.class&#10;#&#9;front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" />
     <MESSAGE value="PM 2019年5月17日 22:05:59 liang 提交删除购物车商品 新增购物车商品" />
     <MESSAGE value="AM 2019年5月18日 09:45:39  liang 修复点击结算按钮 完善删除商品" />
-    <option name="LAST_COMMIT_MESSAGE" value="AM 2019年5月18日 09:45:39  liang 修复点击结算按钮 完善删除商品" />
+    <MESSAGE value="PM 2019年5月19日 13:12:05  liang 修复商品数量为数据库改动 完善结算 购物车内容基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="PM 2019年5月19日 13:12:05  liang 修复商品数量为数据库改动 完善结算 购物车内容基本完成" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-webmvc/5.1.6.RELEASE/spring-webmvc-5.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/HttpHeadersReturnValueHandler.class">
@@ -965,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="40" column="63" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+        <state relative-caret-position="254">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
