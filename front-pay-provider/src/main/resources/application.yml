@@ -15,7 +15,15 @@ eureka:
 spring:
   application:
     name: front-pay-provider #应用名称  保证唯一   一般采用项目名
-
-
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.1.156:3306/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false
+    enabled: true
 mybatis:
-  type-aliases-package: org.bs.front.pojo
+  mapper-locations: classpath:mybatis/*Mapper.xml
+  config-locations: classpath:mybatis/confg.xml
