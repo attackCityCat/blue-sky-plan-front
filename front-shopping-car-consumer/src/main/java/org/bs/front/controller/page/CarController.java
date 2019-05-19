@@ -1,7 +1,9 @@
 package org.bs.front.controller.page;
 
 import com.netflix.client.http.HttpResponse;
+import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.product.ProductBean;
+import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.ShopCarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,13 +30,15 @@ public class CarController {
 
         //暂时的关闭此功能 等上线时开通
        /* UserBean user = (UserBean)session.getAttribute(session.getId());
-        user.setUserId(1);
+
+        Integer  userId = userBean.getUserId()
         //System.out.println("我是session"+user);
         //判断是否登陆 未登录就将请求转发到登陆   页否则就继续
        if(user==null){
             response.sendRedirect("http://localhost:8099/user/page/toLogin");
             return null;
         }*/
+
         //根据用户的key取redis中查询对应的值
         String key = ConstantClass.FIND_USER_SHOP_CAR+"userId";
 
