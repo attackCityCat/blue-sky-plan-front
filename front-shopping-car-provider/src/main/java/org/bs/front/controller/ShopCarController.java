@@ -59,9 +59,41 @@ public class ShopCarController {
     }
 
     /**
+     * 修改用户购物车的商品数量
+     * @param userKey
+     * @param shopKey
+     */
+    @RequestMapping(value = "pulsCount")
+    public void pulsCount(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "shopKey") String shopKey) {
+        ProductBean pro = (ProductBean) redisTemplate.opsForHash().get(userKey,shopKey);
+      //  System.out.println("//修改购物车商品数量"+pro);
+       pro.setProductCount(pro.getProductCount()+1);
+       // System.out.println("修改后的数量是---》"+pro.getProductCount());
+        redisTemplate.opsForHash().put(userKey,shopKey,pro);
+        ProductBean pro1 = (ProductBean) redisTemplate.opsForHash().get(userKey,shopKey);
+     //   System.out.println("//修改后的数据"+pro1);
+    }
+
+    /**
+     * 修改用户购物车的商品数量
+     * @param userKey
+     * @param shopKey
+     */
+    @RequestMapping(value = "reduceCount")
+    public void reduceCount(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "shopKey") String shopKey) {
+        ProductBean pro = (ProductBean) redisTemplate.opsForHash().get(userKey,shopKey);
+      //  System.out.println("//修改购物车商品数量"+pro);
+       pro.setProductCount(pro.getProductCount()-1);
+       // System.out.println("修改后的数量是---》"+pro.getProductCount());
+        redisTemplate.opsForHash().put(userKey,shopKey,pro);
+        ProductBean pro1 = (ProductBean) redisTemplate.opsForHash().get(userKey,shopKey);
+     //   System.out.println("//修改后的数据"+pro1);
+    }
+
+
+    /**
      * 模拟用户添加商品到购物车
      * 正式启动时需要传递商品参数的实体过来
-     * 
      */
     @RequestMapping("addShopCar")
     public void addShopCar() {
@@ -81,7 +113,7 @@ public class ShopCarController {
         bean1.setProductCount(1);
         bean1.setProductPrice(5.1f);
         bean1.setProductSpec("xxxxx");
-        String key = ConstantClass.FIND_USER_SHOP_CAR+"userId";
+        String key = ConstantClass.FIND_USER_SHOP_CAR + "userId";
         redisTemplate.opsForHash().put(key, ConstantClass.SHOP_KEY + bean.getProductId(), bean);
         redisTemplate.opsForHash().put(key, ConstantClass.SHOP_KEY + bean1.getProductId(), bean1);
 

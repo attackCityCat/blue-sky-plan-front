@@ -78,5 +78,28 @@ public class CarController {
         shopCarService.addShopCar();
     }
 
+    /**
+     * 修改商品数量  商品数量+
+     * @param id
+     */
+    @RequestMapping("pulsCount")
+    @ResponseBody
+    public void pulsCount(String id){
+        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId";
+        String ShopKey = ConstantClass.SHOP_KEY+id;
+        shopCarService.pulsCount(UserKey,ShopKey);
+    }
+    /**
+     * 修改商品数量  商品数量-
+     * @param id
+     */
+    @RequestMapping("reduceCount")
+    @ResponseBody
+    public void reduceCount(String id){
+        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId";
+        String ShopKey = ConstantClass.SHOP_KEY+id;
+        shopCarService.reduceCount(UserKey,ShopKey);
+    }
+
 
 }

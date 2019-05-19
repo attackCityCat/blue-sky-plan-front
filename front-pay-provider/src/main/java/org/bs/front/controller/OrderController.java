@@ -5,9 +5,12 @@ import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import org.bs.front.conf.AlipayConfig;
+import org.bs.front.constant.ConstantClass;
 import org.bs.front.mapper.OrderMapper;
 import org.bs.front.pojo.order.OrderBean;
+import org.bs.front.pojo.product.ProductBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,8 +20,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 /**
  * @author Lenovo
@@ -32,6 +37,11 @@ public class OrderController {
 
     @Resource
     OrderMapper orderMapper;
+
+    @Resource
+    RedisTemplate<String,Object> redisTemplate;
+
+
 
     @RequestMapping(value = "/addOrder")
     @ResponseBody
@@ -86,5 +96,37 @@ public class OrderController {
         }
         System.out.println("返回页面"+ result);
         return result;
+    }
+
+
+    /**
+     * 查询 用户要结算的商品
+     * @param userKey  当前登陆的用户Key
+     * @param ids       商品的id，可能会是多个多一用数值接收
+     * @return
+     */
+    @RequestMapping(value = "cashier")
+    @ResponseBody
+    public List<ProductBean> queryShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "ids") int[] ids){
+
+        //定义一个商品的K
+        String ShopKey = ConstantClass.SHOP_KEY;
+
+        //new 一个list
+        ArrayList<ProductBean> list = new ArrayList<>();
+
+        //遍历数组
+        for(int i = 0;i<ids.length;i++){
+
+            String key = ShopKey + ids[i];
+
+            //挨个查询并存入list
+            ProductBean pro = (ProductBean) redisTemplate.opsForHash().get(userKey,key);
+
+            list.add(pro);
+        }
+
+        System.out.println(list);
+        return list;
     }
 }

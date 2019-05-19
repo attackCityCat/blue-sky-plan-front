@@ -37,7 +37,7 @@
             <groupId>com.alipay</groupId>
             <artifactId>alipay-sdk-java</artifactId>
         </dependency>
-<<<<<<< HEAD
+
         <!--支付宝配置的jar包-->
         <dependency>
             <groupId>net.guerlab</groupId>
@@ -46,15 +46,19 @@
         </dependency>
 
         <!-- POI -->
-=======
+
         <!--这个才是支付宝配置的jar包-->
 
-
->>>>>>> f6b45ea575ab912aa845f30eafab20e167c3ba11
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>3.17</version>
+        </dependency>
+
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
         <!-- json解析依赖 -->

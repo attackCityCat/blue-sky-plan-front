@@ -11,5 +11,5 @@ import org.springframework.cloud.openfeign.FeignClient;
  * @date 2019/5/1716:41
  */
 @FeignClient(value = "front-pay-provider")
-public interface OrderService extends OrderServiceApi {
+public interface OrderService extends OrderServiceApi  {
 }

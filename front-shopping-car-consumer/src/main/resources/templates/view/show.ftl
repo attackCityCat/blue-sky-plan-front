@@ -52,7 +52,7 @@
     <div class="wrap logoSearch">
         <!--logo-->
         <div class="logo">
-            <h1><img src="images/logo.png"/></h1>
+            <h1><img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/lantianLog.png"/></h1>
         </div>
         <!--search-->
         <div class="search">
@@ -177,46 +177,49 @@
 </script>
 
 <section class="wrap" style="margin-top:20px;overflow:hidden;">
-    <table class="order_table">
-        <tr>
-            <th><input type="checkbox" id="checkAll"/></th>
-            <th>产品</th>
-            <th>名称</th>
-            <th>属性</th>
-            <th>单价</th>
-            <th>数量</th>
-            <th>小计</th>
-            <th>操作</th>
-        </tr>
-
-        <#list list as i>
+    <form id="ShopCarFormId">
+        <table class="order_table">
             <tr>
-                <td class="center"><input type="checkbox" id="check${i.productId}" name="ck"
-                                          value="${i.productPrice*i.productCount}" onclick="radiock()"/></td>
-                <td class="center"><a href="product.html">
-                        <img src="upload/goods.jpg" style="width:50px;height:50px;"/></a></td>
-                <td>${i.productName}
-                    <input type="hidden" value="${i.productId}">
-                </td>
-                <td>
-                    <p>颜色：${i.productColor}</p>
-
-                    <p>规格：${i.productSpec}</p>
-                </td>
-                <td class="center"><span class="rmb_icon" id="Price${i.productId}">${i.productPrice}</span></td>
-                <td class="center">
-                    <input type="button" value="-" class="jj_btn" onclick="reduce(${i.productId},${i.productPrice})"/>
-                    <input type="text" value="${i.productCount}" class="number" readonly id="count${i.productId}"/>
-                    <input type="button" value="+" class="jj_btn" onclick="puls(${i.productId},${i.productPrice})"/>
-                </td>
-                <#--小计-->
-                <td class="center"><strong class="rmb_icon"><span
-                                id="valuation${i.productId}">${i.productPrice*i.productCount}</span></strong>
-                </td>
-                <td class="center"><a href="javascript:delShopCar(${i.productId})">删除</a></td>
+                <th><input type="checkbox" id="checkAll"/></th>
+                <th>产品</th>
+                <th>名称</th>
+                <th>属性</th>
+                <th>单价</th>
+                <th>数量</th>
+                <th>小计</th>
+                <th>操作</th>
             </tr>
-        </#list>
-    </table>
+
+            <#list list as i>
+                <tr>
+                    <td class="center"><input type="checkbox" id="check${i.productId}" name="ck"
+                                              value="${i.productPrice*i.productCount}" onclick="radiock()"/></td>
+                    <td class="center"><a href="product.html">
+                            <img src="upload/goods.jpg" style="width:50px;height:50px;"/></a></td>
+                    <td>${i.productName}
+                        <input type="hidden" value="${i.productId}">
+                    </td>
+                    <td>
+                        <p>颜色：${i.productColor}</p>
+
+                        <p>规格：${i.productSpec}</p>
+                    </td>
+                    <td class="center"><span class="rmb_icon" id="Price${i.productId}">${i.productPrice}</span></td>
+                    <td class="center">
+                        <input type="button" value="-" class="jj_btn"
+                               onclick="reduce(${i.productId},${i.productPrice})"/>
+                        <input type="text" value="${i.productCount}" class="number" readonly id="count${i.productId}"/>
+                        <input type="button" value="+" class="jj_btn" onclick="puls(${i.productId},${i.productPrice})"/>
+                    </td>
+                    <#--小计-->
+                    <td class="center"><strong class="rmb_icon"><span
+                                    id="valuation${i.productId}">${i.productPrice*i.productCount}</span></strong>
+                    </td>
+                    <td class="center"><a href="javascript:delShopCar(${i.productId})">删除</a></td>
+                </tr>
+            </#list>
+        </table>
+    </form>
 
     <div class="order_btm_btn">
         <#--href="index.html 写上自己的首页地址即可"-->
@@ -244,8 +247,8 @@
                 id: id
             },
             success: function (data) {
-                if (data){
-                    location.href="/page/test";
+                if (data) {
+                    location.href = "/page/test";
                 }
             }
         })
@@ -253,25 +256,32 @@
 
     //点击结算按钮的操作
     function CheckoutCart() {
-
         //判断是否有商品
         var check = false;
         //先定义一个价格
         var totalPrice = 0;
-        //先判断有没有选中商品
-        $("input[name='ck']:checked").each(function (i) {
-            check = $(this).is(":checked")
-            var val = Number($(this).val());
-            totalPrice = Number(accAdd(totalPrice, val));
-        })
+        //获取到选中商品的id；
+        var ids = "";
+        ///所有复选框
+        var arr = $("input[name='ck']")
+        //遍历复选框
+        for (var i = 0; i < arr.length; i++) {
+            //判断是否有商品选中
+            if (arr[i].checked) {
+                check = true;
+                var price = Number(arr[i].value);
+                totalPrice = Number(accAdd(totalPrice, price));
+                ids += arr[i].id;
+            }
+        }
+        //判断有没有选中商品
         if (!check) {
             alert("请选中你要购买的物品")
             return;
         }
-        //如果有选中的商品 那么拿到商品的总价
-        alert("您选中物品总价是："+totalPrice)
 
-
+        alert(ids)
+        alert("您选中物品总价是：" + totalPrice)
     }
 
     //点击全选时复选框的操作
@@ -333,19 +343,36 @@
 
     //数量减
     function reduce(id, price) {
-        var count = $("#count" + id).val();
-        count = count <= 1 ? 1 : --count;
-        $("#count" + id).val(count);
-        $("#valuation" + id).html(accMul(count, price));
-        $("#check" + id).val(accMul(count, price))
+        $.ajax({
+            url:'/page/reduceCount',
+            data:{
+                id:id
+            },
+            success:function () {
+                var count = $("#count" + id).val();
+                count = count <= 1 ? 1 : --count;
+                $("#count" + id).val(count);
+                $("#valuation" + id).html(accMul(count, price));
+                $("#check" + id).val(accMul(count, price))
+            }
+        })
     }
 
     //数量加
     function puls(id, price) {
-        var count = $("#count" + id).val();
-        $("#count" + id).val(++count);
-        $("#valuation" + id).html(accMul(count, price));
-        $("#check" + id).val(accMul(count, price))
+
+        $.ajax({
+            url:'/page/pulsCount',
+            data:{
+                id:id
+            },
+            success:function () {
+                var count = $("#count" + id).val();
+                $("#count" + id).val(++count);
+                $("#valuation" + id).html(accMul(count, price));
+                $("#check" + id).val(accMul(count, price))
+            }
+        })
     }
 
 </script>
