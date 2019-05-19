@@ -7,9 +7,9 @@ public class UserBean implements Serializable {
 
     private Integer userId; //id
 
-    private  String name;  //用户名
+    private String phone;   //手机号，既是账号，又是绑定手机号
 
-    private String userName; //账号
+    private  String name;  //昵称
 
     private String password;  //密码
 
@@ -19,8 +19,6 @@ public class UserBean implements Serializable {
 
     private String email;   //邮箱
 
-    private String phone;   //手机
-
     private String createTime;  //创建时间
 
     private String updateTime;   // 修改时间
@@ -29,12 +27,30 @@ public class UserBean implements Serializable {
 
     private String queAnsId;    //密保答案
 
+    private String roleName; //用户身份
+
+    public String getRoleName() {
+        return roleName;
+    }
+
+    public void setRoleName(String roleName) {
+        this.roleName = roleName;
+    }
+
     public Integer getUserId() {
         return userId;
     }
 
     public void setUserId(Integer userId) {
         this.userId = userId;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getName() {
@@ -45,13 +61,6 @@ public class UserBean implements Serializable {
         this.name = name;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
 
     public String getPassword() {
         return password;
@@ -85,13 +94,6 @@ public class UserBean implements Serializable {
         this.email = email;
     }
 
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
 
     public String getCreateTime() {
         return createTime;
@@ -129,17 +131,17 @@ public class UserBean implements Serializable {
     public String toString() {
         return "UserBean{" +
                 "userId=" + userId +
+                ", phone='" + phone + '\'' +
                 ", name='" + name + '\'' +
-                ", userName='" + userName + '\'' +
                 ", password='" + password + '\'' +
                 ", headImg='" + headImg + '\'' +
                 ", status=" + status +
                 ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
                 ", createTime='" + createTime + '\'' +
                 ", updateTime='" + updateTime + '\'' +
                 ", roleId=" + roleId +
                 ", queAnsId='" + queAnsId + '\'' +
+                ", roleName='" + roleName + '\'' +
                 '}';
     }
 }

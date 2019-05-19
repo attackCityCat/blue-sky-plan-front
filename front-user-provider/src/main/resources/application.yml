@@ -13,9 +13,9 @@ eureka:
 
 spring:
   application:
-    name: front-user-provider #应用名称  保证唯一   一般采用项目名
+    name: front-user-consumer #应用名称  保证唯一   一般采用项目名
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
+    #type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://192.168.1.156/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
