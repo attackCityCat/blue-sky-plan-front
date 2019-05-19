@@ -15,7 +15,7 @@ spring:
   application:
     name: front-shopping-car-provider #应用名称  保证唯一   一般采用项目名
   redis:
-    host: 127.0.0.1 #192.168.1.154
+    host: 192.168.1.154
     port: 6379
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
