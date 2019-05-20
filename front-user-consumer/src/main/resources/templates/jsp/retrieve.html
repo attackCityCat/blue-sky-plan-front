@@ -18,6 +18,10 @@
             });
         });
     </script>
+
+    <style>
+        span {color: red}
+    </style>
 </head>
 <body>
 <!--header-->
@@ -178,19 +182,23 @@
         <h2>找回密码</h2>
         <ul>
             <li class="user_icon">
-                <input type="text" class="textbox" placeholder="手机号码">
+                <input type="text" class="textbox" placeholder="手机号码" id="phone" onblur="txt5()">
+                <span id="spanP"></span>
             </li>
+            <span id="spanY"></span>
             <li class="link_li">
-                <input type="button" value="获取手机校验码" class="get_num_btn">
+                <input type="button" value="获取手机验证码" class="sbmt_btn" id="btn" disabled="disabled">
             </li>
             <li class="user_cc">
                 <input type="text" class="textbox" placeholder="手机校验码">
             </li>
             <li class="user_pwd">
-                <input type="password" class="textbox" placeholder="设置新密码">
+                <input type="password" class="textbox" placeholder="设置新密码" id="password" onblur="txt1()">
+                <span id="spanB"></span>
             </li>
             <li class="user_pwd">
-                <input type="password" class="textbox" placeholder="确认新密码">
+                <input type="password" class="textbox" placeholder="确认新密码" id="ps" onblur="txt2()">
+                <span id="spanC"></span>
             </li>
             <li class="link_li">
                 <input type="button" value="找回密码" class="sbmt_btn">
@@ -198,6 +206,105 @@
         </ul>
     </div>
 </section>
+<script type="text/javascript">
+    $(document).ready(function(){
+        var ordertime=20   //设置再次发送验证码等待时间
+        var timeleft=ordertime
+        var btn=$("#btn")
+        var phone=$("#phone")
+        var reg = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;  //电话号码的正则匹配式
+
+        phone.keyup(function(){
+            if (reg.test(phone.val())){
+                btn.removeAttr("disabled")  //当号码符合规则后发送验证码按钮可点击
+            }
+            else{
+                btn.attr("disabled",true)
+            }
+        })
+
+        //计时函数
+        function timeCount(){
+            timeleft-=1
+            if (timeleft>0){
+                btn.val(timeleft+" 秒后重发");
+                setTimeout(timeCount,1000)
+            }
+            else {
+                btn.val("重新发送");
+                timeleft=ordertime   //重置等待时间
+                btn.removeAttr("disabled");
+            }
+        }
+
+        //事件处理函数
+        btn.on("click",function(){
+            $(this).attr("disabled",true); //防止多次点击
+            //此处可添加 ajax请求 向后台发送 获取验证码请求
+            timeCount(this);
+            $.ajax({
+                url:"/code/findSendCode",
+                type:"post",
+                data:{
+                    account:$("#phone").val()
+                },
+                dataType:"json",
+                success:function(result){
+                    if(result.code==0){
+                         alert(result.msg);
+                    }else{
+                         alert(result.msg);
+                    }
+                }
+            })
+        })
+
+    })
+</script>
+<script type="text/javascript">
+    //联系电话
+    function txt5(){
+        var ar = document.getElementById("phone").value;
+        var reg = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/
+        if(reg.test(ar)){
+            document.getElementById("spanP").innerHTML = ""
+            return true;
+        }else{
+            document.getElementById("spanP").innerHTML = "请输入正确的手机号码"
+            return false;
+        }
+    }
+
+    //密码
+    function txt1(){
+        ar = document.getElementById("password").value;
+        var reg = /^[a-zA-Z0-9]{6,18}$/
+        if(reg.test(ar)){
+            document.getElementById("spanB").innerHTML = ""
+            return true;
+        }else{
+            document.getElementById("spanB").innerHTML = "不能使用特殊字符或是空"
+            return false;
+        }
+    }
+
+    //确认密码
+    function txt2(){
+        var arr = document.getElementById("ps").value;
+        if(arr==""){
+            document.getElementById("spanC").innerHTML = "与设置的密码保持一致"
+            return false;
+        }else{
+            if(arr==ar){
+                document.getElementById("spanC").innerHTML = ""
+                return true;
+            }else{
+                document.getElementById("spanC").innerHTML = "与设置的密码保持一致"
+                return false;
+            }
+        }
+    }
+</script>
 <!--footer-->
 <footer>
     <!--help-->

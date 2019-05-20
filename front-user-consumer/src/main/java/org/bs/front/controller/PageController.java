@@ -45,4 +45,11 @@ public class PageController {
         public   String   toRetrieve(){
               return  "jsp/retrieve";
         }
+
+        @GetMapping("/toFreeCenter")
+        public   String   toFreeCenter(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+            return  "center/freeCenter";
+        }
 }

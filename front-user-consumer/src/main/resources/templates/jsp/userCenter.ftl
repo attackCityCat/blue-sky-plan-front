@@ -206,7 +206,7 @@
             <a href="http://demo.demohuo.top/modals/57/5750/demo/profile.html" class="user_icon">
                 <img src="${user.headImg!}">
                 <span>修改头像</span>
-            </a>
+            </a>0
             <div class="user_infor">
                 <p><strong>${user.name}</strong>（用户）<span class="user_vip unaccredited">未认证！</span><a href="http://demo.demohuo.top/modals/57/5750/demo/authenticate.html">申请入驻</a></p><!--**未认证的class值为"unaccredited"**-->
                 <p>上次登录时间：<time>2013-01-14 13:55</time>，用户ID：${user.userId}</p>
