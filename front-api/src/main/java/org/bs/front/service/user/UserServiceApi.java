@@ -13,4 +13,8 @@ public interface UserServiceApi {
     //注册用户
     @RequestMapping(value = "/users/toenroll",method = RequestMethod.POST)
     void saveUser(@RequestBody UserBean userBean);
+
+    //找回密码
+    @PutMapping("/retrieve/userRetrieve")
+    void editRetrieve(@RequestParam("phone") String phone, @RequestParam("password") String password);
 }

@@ -29,4 +29,16 @@ public class UserController {
               }
        }
 
+       //找回密码
+       @PutMapping("/retrieve/userRetrieve")
+       public  Boolean  editRetrieve(@RequestParam("phone") String phone,@RequestParam("password") String password){
+              try {
+                     userMapper.editRetrieve(phone,password);
+                     return  true;
+              } catch (Exception e) {
+                     e.printStackTrace();
+                     return  false;
+              }
+       }
+
 }

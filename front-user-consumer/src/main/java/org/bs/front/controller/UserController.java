@@ -80,20 +80,21 @@ public class UserController {
      * @return
      */
        @RequestMapping(value = "/code/findSendCode")
-       public   HashMap<String, Object> findSendCode(String account) {
+       public   HashMap<String, Object> findSendCode(String account,HttpSession session) {
 
            HashMap<String, Object> result = new HashMap<>();
 
            try {
 
-               Integer code = (int) ((Math.random() * 9 + 1) * 100000);
+               Integer code = (int)((Math.random() * 9 + 1) * 100000);
+               System.out.println(code);
                HashMap<String, Object> params = new HashMap<>();
 
                params.put("accountSid", ConstantConf.SMS_ACCOUNTSID);
 
                params.put("to", account);
 
-               long timestamp = System.currentTimeMillis();
+               String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
                System.out.println(timestamp);
                params.put("timestamp", timestamp);
 
@@ -111,11 +112,7 @@ public class UserController {
                System.out.println(resCode);
 
                if (parseObject.getString("respCode").equals(ConstantConf.SMS_RESPCODE)) {
-                   /*// 调用redis将验证码缓存起来
-                   String cacheKey = ConstantConf.SMS_CODE_CACHE_KEY + account;
-                   redisTemplate.opsForValue().set(cacheKey, code, ConstantConf.SMS_CODE_TIME_OUT, TimeUnit.MINUTES);
-                   // 给用户加倒计时锁，标识起来，不让60秒内重复获取
-                   redisTemplate.opsForValue().set(cacheKey, "lock", ConstantConf.SMS_CODE_LOCK_TIME, TimeUnit.SECONDS);*/
+                   session.setAttribute("code",code);
                    result.put("code", 0);
                    result.put("msg", "发送成功");
                    return result;
@@ -131,4 +128,22 @@ public class UserController {
                return result;
            }
        }
+
+
+    /**
+     * 找回密码
+     */-
+     @PutMapping("/retrieve/userRetrieve")
+     public  Boolean  editRetrieve(String phone,String yanzhen,String password,HttpSession session){
+         try {
+             String code = session.getAttribute("code").toString();
+             if(code.equals(yanzhen)){
+                 userService.editRetrieve(phone,password);
+             }
+             return  true;
+         } catch (Exception e) {
+             e.printStackTrace();
+             return  false;
+         }
+     }
 }

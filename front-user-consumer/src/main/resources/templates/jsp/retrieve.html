@@ -31,7 +31,7 @@
         <div class="wrap">
             <!--topLeftNav-->
             <ul class="topLtNav">
-                <li><a href="" class="obviousText">亲，请登录</a></li>
+                <li><a href="/page/toLogin" class="obviousText">亲，请登录</a></li>
                 <li><a href="">注册</a></li>
                 <li><a href="">移动端</a></li>
             </ul>
@@ -190,7 +190,7 @@
                 <input type="button" value="获取手机验证码" class="sbmt_btn" id="btn" disabled="disabled">
             </li>
             <li class="user_cc">
-                <input type="text" class="textbox" placeholder="手机校验码">
+                <input type="text" class="textbox" placeholder="手机校验码" id="yanzheng">
             </li>
             <li class="user_pwd">
                 <input type="password" class="textbox" placeholder="设置新密码" id="password" onblur="txt1()">
@@ -201,11 +201,35 @@
                 <span id="spanC"></span>
             </li>
             <li class="link_li">
-                <input type="button" value="找回密码" class="sbmt_btn">
+                <input type="button" value="找回密码" class="sbmt_btn" id="retrieve">
             </li>
         </ul>
     </div>
 </section>
+<script type="text/javascript">
+    $("#retrieve").click(function(){
+        if(txt1()&txt2()&txt5()) {
+            $.ajax({
+                url: "/retrieve/userRetrieve",
+                type: "put",
+                data: {
+                    phone: $("#phone").val(),
+                    yanzhen: $("#yanzheng").val(),
+                    password: $("#password").val()
+                },
+                dataType: "json",
+                success: function (result) {
+                    if (result) {
+                        alert("成功重置密码");
+                        window.location.href="/page/toLogin";
+                    } else {
+                        alert("找回失败");
+                    }
+                }
+            })
+        }
+    })
+</script>
 <script type="text/javascript">
     $(document).ready(function(){
         var ordertime=20   //设置再次发送验证码等待时间

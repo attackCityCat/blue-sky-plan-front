@@ -65,7 +65,7 @@
                         <input type="submit" value="搜索">
                     </div>
                 </form>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#" class="advancedSearch">高级搜索</a>
+                <a href="" class="advancedSearch">高级搜索</a>
             </div>
         </div>
     </div>
@@ -75,45 +75,45 @@
             <li class="category">
                 <a>全部产品分类</a>
                 <dl class="asideNav indexAsideNav" style="display: none;">
-                    <dt><a href="http://demo.demohuo.top/modals/57/5750/demo/channel.html">女装</a></dt>
+                    <dt><a href="">女装</a></dt>
                     <dd>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">夏装新</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">连衣裙</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">T恤</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">衬衫</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">裤子</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">牛仔裤</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">背带裤</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">短外套</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">时尚外套</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">风衣</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">毛衣</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">背心</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">吊带</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">民族服装</a>
+                        <a href="">夏装新</a>
+                        <a href="">连衣裙</a>
+                        <a href="">T恤</a>
+                        <a href="">衬衫</a>
+                        <a href="">裤子</a>
+                        <a href="">牛仔裤</a>
+                        <a href="">背带裤</a>
+                        <a href="">短外套</a>
+                        <a href="">时尚外套</a>
+                        <a href="">风衣</a>
+                        <a href="">毛衣</a>
+                        <a href="">背心</a>
+                        <a href="">吊带</a>
+                        <a href="">民族服装</a>
                     </dd>
-                    <dt><a href="http://demo.demohuo.top/modals/57/5750/demo/channel.html">男装</a></dt>
+                    <dt><a href="">男装</a></dt>
                     <dd>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">衬衫</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">背心</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">西装</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">POLO衫</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">马夹</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">皮衣</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">毛衣</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">针织衫</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">牛仔裤</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">外套</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">夹克</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">卫衣</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">风衣</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">民族风</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">原创设计</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">大码</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">情侣装</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">开衫</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">运动裤</a>
-                        <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">工装裤</a>
+                        <a href="">衬衫</a>
+                        <a href="">背心</a>
+                        <a href="">西装</a>
+                        <a href="">POLO衫</a>
+                        <a href="">马夹</a>
+                        <a href="">皮衣</a>
+                        <a href="">毛衣</a>
+                        <a href="">针织衫</a>
+                        <a href="">牛仔裤</a>
+                        <a href="">外套</a>
+                        <a href="">夹克</a>
+                        <a href="">卫衣</a>
+                        <a href="">风衣</a>
+                        <a href="">民族风</a>
+                        <a href="">原创设计</a>
+                        <a href="">大码</a>
+                        <a href="">情侣装</a>
+                        <a href="">开衫</a>
+                        <a href="">运动裤</a>
+                        <a href="">工装裤</a>
                     </dd>
                 </dl>
             </li>
@@ -121,28 +121,28 @@
                 <a href="/page/toUser" class="active">首页</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">时尚搭配</a>
+                <a href="">时尚搭配</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/channel.html">原创设计</a>
+                <a href="">原创设计</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/channel.html">时尚代购</a>
+                <a href="">时尚代购</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/channel.html">民族风</a>
+                <a href="">民族风</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/information.html">时尚搭配</a>
+                <a href="">时尚搭配</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/library.html">搭配知识</a>
+                <a href="">搭配知识</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">促销专区</a>
+                <a href="">促销专区</a>
             </li>
             <li>
-                <a href="http://demo.demohuo.top/modals/57/5750/demo/user.html#">其他</a>
+                <a href="">其他</a>
             </li>
         </ul>
     </nav>
@@ -175,9 +175,9 @@
     <aside class="user_aside_nav">
         <dl>
             <dt>控制面板</dt>
-            <dd><a href="http://demo.demohuo.top/modals/57/5750/demo/profile.html">个人资料</a></dd>
-            <dd><a href="http://demo.demohuo.top/modals/57/5750/demo/change_password.html">修改密码</a></dd>
-            <dd><a href="http://demo.demohuo.top/modals/57/5750/demo/account.html">资金管理</a></dd>
+            <dd><a href="">个人资料</a></dd>
+            <dd><a href="">修改密码</a></dd>
+            <dd><a href="">资金管理</a></dd>
             <dd><a href="">设置密保</a></dd>
         </dl>
         <dl>
@@ -193,7 +193,6 @@
             <dd><a href="http://demo.demohuo.top/modals/57/5750/demo/setting.html">店铺设置</a></dd>
             <dd><a href="http://demo.demohuo.top/modals/57/5750/demo/seller_product_list.html">商品列表</a></dd>
             <dd><a href="http://demo.demohuo.top/modals/57/5750/demo/seller_order_list.html">订单列表</a></dd>
-            <dd><a href="http://demo.demohuo.top/modals/57/5750/demo/offer_list.html">询价单</a></dd>
         </dl>
     </aside>
     <!--右侧：内容区域-->
@@ -206,11 +205,11 @@
             <a href="http://demo.demohuo.top/modals/57/5750/demo/profile.html" class="user_icon">
                 <img src="${user.headImg!}">
                 <span>修改头像</span>
-            </a>0
+            </a>
             <div class="user_infor">
-                <p><strong>${user.name}</strong>（用户）<span class="user_vip unaccredited">未认证！</span><a href="http://demo.demohuo.top/modals/57/5750/demo/authenticate.html">申请入驻</a></p><!--**未认证的class值为"unaccredited"**-->
-                <p>上次登录时间：<time>2013-01-14 13:55</time>，用户ID：${user.userId}</p>
-                <p>账户余额：<strong class="rmb_icon">0.00</strong><a href="http://demo.demohuo.top/modals/57/5750/demo/account.html" class="btn">充值</a><a href="http://demo.demohuo.top/modals/57/5750/demo/account.html" class="btn">提现</a></p>
+                <p><strong>${user.name}</strong>（用户）</p>
+
+                <p>用户ID：${user.userId}</p>
             </div>
         </div>
         <!--买家订单提醒-->
