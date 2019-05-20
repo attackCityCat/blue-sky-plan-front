@@ -179,37 +179,9 @@
     <div class="IdxmainArea">
         <!--slide-->
         <div id="slide" class="swiper-container-horizontal">
-            <!--<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1725px, 0px, 0px);">-->
-            <!--<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>
-            <div class="swiper-slide" data-swiper-slide-index="0" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide01.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide02.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>-->
-            <!--<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 575px;">-->
             <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
                 <img src="/img/slide01.png">
             </a>
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="pagination"><span class="swiper-pagination-bullet">
-                </span><span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-            </div>-->
         </div>
         <!--singleAd-->
         <div class="singleAd">
@@ -221,7 +193,7 @@
         <dl class="bestShop">
             <dt>
                 <strong>优秀商家推荐</strong>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop_list.html" class="fr">更多</a>
+                <a href="#">更多</a>
             </dt>
             <dd>
                 <a href="">
@@ -296,21 +268,20 @@
         <dl class="idxRtAtc">
             <dt>
                 <em class="obviousText">最新公告</em>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+                <a href="#">more</a>
             </dt>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
         </dl>
         <dl class="idxRtAtc">
             <dt>
                 <em>质量标准技术参数</em>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+                <a href="#">more</a>
             </dt>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
+            <dd>2019年5月20日 11:29:21 网站前台升级</dd>
+            <dd>2019年5月20日 11:29:34 网络畅通</dd>
         </dl>
     </div>
 </section>
