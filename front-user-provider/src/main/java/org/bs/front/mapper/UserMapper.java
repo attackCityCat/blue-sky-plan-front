@@ -2,6 +2,7 @@ package org.bs.front.mapper;
 
 import org.apache.ibatis.annotations.Select;
 import org.bs.front.pojo.user.UserBean;
+import org.springframework.web.bind.annotation.RequestBody;
 
 
 public interface UserMapper {
@@ -11,5 +12,5 @@ public interface UserMapper {
             "from front_user where phone =  #{value}")
     UserBean queryUserName(String phone);
 
-    void saveUser(UserBean userBean);
+    void saveUser(@RequestBody UserBean userBean);
 }

@@ -22,4 +22,6 @@ spring:
     password: 123456
 
 mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-locations: classpath:mybatis/confg.xml
   type-aliases-package: org.bs.front.pojo
