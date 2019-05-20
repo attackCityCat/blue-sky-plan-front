@@ -92,13 +92,13 @@
     //删除购物车的商品
     function delShopCar(id) {
         $.ajax({
-            url: '/page/delShopCar',
+            url: '/car/page/delShopCar',
             data: {
                 id: id
             },
             success: function (data) {
                 if (data) {
-                    location.href = "/page/test";
+                    location.href = "/car/page/test";
                 }
             }
         })
@@ -129,7 +129,7 @@
             return;
         }
         //发送请求到收银台啊
-        location.href="/order/cashier?totalPrice="+totalPrice+"&ids="+ids;
+        location.href="/pay/order/cashier?totalPrice="+totalPrice+"&ids="+ids;
     }
 
     //点击全选时复选框的操作
@@ -192,7 +192,7 @@
     //数量减
     function reduce(id, price) {
         $.ajax({
-            url:'/page/reduceCount',
+            url:'/car/page/reduceCount',
             data:{
                 id:id
             },
@@ -210,7 +210,7 @@
     function puls(id, price) {
 
         $.ajax({
-            url:'/page/pulsCount',
+            url:'/car/page/pulsCount',
             data:{
                 id:id
             },

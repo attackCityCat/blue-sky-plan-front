@@ -12,12 +12,19 @@ eureka:
     lease-expiration-duration-in-seconds: 2 #表示eureka server至上一次收到client的心跳之后，等待下一次心跳的超时时间，
     #在这个时间内若没收到下一次心跳，则将移除该instance
 
+
+
 spring:
   application:
     name: front-product-provider #应用名称  保证唯一   一般采用项目名
   data:
     solr:
-      host: http://127.0.0.1:8079/solr
+      host: http://192.168.1.154:8079/solr
+  datasource:
+    url: jdbc:mysql://192.168.1.156/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
 
 mybatis:
   type-aliases-package: org.bs.front.pojo

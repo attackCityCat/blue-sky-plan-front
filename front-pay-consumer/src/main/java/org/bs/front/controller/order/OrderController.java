@@ -33,26 +33,6 @@ public class OrderController {
     @Resource
     OrderService orderService;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @RequestMapping(value = "/goAlipay", produces = "text/html; charset=UTF-8")
     @ResponseBody
     public String goAlipay(@RequestParam(value = "request") HttpServletRequest request,
