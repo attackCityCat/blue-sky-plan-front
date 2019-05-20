@@ -74,7 +74,11 @@ public class UserController {
            }
        }
 
-       //获取验证码
+    /**
+     * 获取验证码
+     * @param account
+     * @return
+     */
        @RequestMapping(value = "/code/findSendCode")
        public   HashMap<String, Object> findSendCode(String account) {
 
