@@ -73,7 +73,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-user-consumer/src/main/java/org/bs/front/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="580">
               <caret line="118" column="2" selection-start-line="118" selection-start-column="2" selection-end-line="118" selection-end-column="2" />
             </state>
           </provider>
@@ -460,7 +460,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558316789713" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558316861032" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -599,7 +599,7 @@
       <workItem from="1558048125131" duration="1534000" />
       <workItem from="1558247977520" duration="20038000" />
       <workItem from="1558269419820" duration="1931000" />
-      <workItem from="1558312108952" duration="3895000" />
+      <workItem from="1558312108952" duration="4199000" />
     </task>
     <task id="LOCAL-00001" summary="蓝天计划电商平台前端网站框架版本1.1.0">
       <created>1557913307044</created>
@@ -699,11 +699,67 @@
       <option name="project" value="LOCAL" />
       <updated>1558316632974</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="5.20  09：40  rjf  提交">
+      <created>1558316665231</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316665231</updated>
+    </task>
+    <task id="LOCAL-00016" summary="5.20  09：40  rjf  提交">
+      <created>1558316687274</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316687274</updated>
+    </task>
+    <task id="LOCAL-00017" summary="5.20  09：40  rjf  提交">
+      <created>1558316711070</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316711070</updated>
+    </task>
+    <task id="LOCAL-00018" summary="5.20  09：40  rjf  提交">
+      <created>1558316735765</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316735765</updated>
+    </task>
+    <task id="LOCAL-00019" summary="5.20  09：40  rjf  提交">
+      <created>1558316748543</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316748543</updated>
+    </task>
+    <task id="LOCAL-00020" summary="5.20  09：40  rjf  提交">
+      <created>1558316770586</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316770586</updated>
+    </task>
+    <task id="LOCAL-00021" summary="5.20  09：40  rjf  提交">
+      <created>1558316797068</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316797068</updated>
+    </task>
+    <task id="LOCAL-00022" summary="5.20  09：40  rjf  提交">
+      <created>1558316873777</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1558316873777</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50999000" />
+    <option name="totallyTimeSpent" value="51303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1100,7 +1156,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-user-consumer/src/main/java/org/bs/front/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
+        <state relative-caret-position="580">
           <caret line="118" column="2" selection-start-line="118" selection-start-column="2" selection-end-line="118" selection-end-column="2" />
         </state>
       </provider>
