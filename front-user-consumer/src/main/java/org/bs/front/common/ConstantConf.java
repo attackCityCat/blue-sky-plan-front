@@ -30,12 +30,12 @@ public class ConstantConf {
      */
     public   static  final   String   SMS_RESPCODE = "00000";
 
-   /* // 验证码过期时间  单位 分钟
+    // 验证码过期时间  单位 分钟
     public static final Long SMS_CODE_TIME_OUT = 5L;
     // 验证码
     public static final String SMS_CODE_CACHE_KEY = "smscode";
     // 短信验证码重复锁
     public static final String SMS_CODE_LOCK = "lock";
     // 重读获取短信验证码锁时间  单位 秒
-    public static final Long SMS_CODE_LOCK_TIME = 60L;*/
+    public static final Long SMS_CODE_LOCK_TIME = 60L;
 }

@@ -80,7 +80,7 @@ public class UserController {
      * @return
      */
        @RequestMapping(value = "/code/findSendCode")
-       public   HashMap<String, Object> findSendCode(String account,HttpSession session) {
+       public   HashMap<String, Object> findSendCode(String account) {
 
            HashMap<String, Object> result = new HashMap<>();
 
@@ -112,7 +112,11 @@ public class UserController {
                System.out.println(resCode);
 
                if (parseObject.getString("respCode").equals(ConstantConf.SMS_RESPCODE)) {
-                   session.setAttribute("code",code);
+                   // 调用redis将验证码缓存起来
+                   String cacheKey = ConstantConf.SMS_CODE_CACHE_KEY+account;
+
+                   redisTemplate.opsForValue().set(cacheKey, String.valueOf(code),ConstantConf.SMS_CODE_TIME_OUT,TimeUnit.MINUTES);
+
                    result.put("code", 0);
                    result.put("msg", "发送成功");
                    return result;
@@ -130,14 +134,22 @@ public class UserController {
        }
 
 
-    /**
+    /***
      * 找回密码
-     */-
+     * @param phone
+     * @param yanzhen
+     * @param password
+     * @param session
+     * @return
+     */
      @PutMapping("/retrieve/userRetrieve")
-     public  Boolean  editRetrieve(String phone,String yanzhen,String password,HttpSession session){
+     public  Boolean  editRetrieve(String phone,String yanzhen,String password){
          try {
-             String code = session.getAttribute("code").toString();
-             if(code.equals(yanzhen)){
+
+             String cacheKey = ConstantConf.SMS_CODE_CACHE_KEY+phone;
+             String string = redisTemplate.opsForValue().get(cacheKey).toString();
+
+             if(string.equals(yanzhen)){
                  userService.editRetrieve(phone,password);
              }
              return  true;
