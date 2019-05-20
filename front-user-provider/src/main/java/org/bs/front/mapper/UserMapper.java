@@ -1,8 +1,10 @@
 package org.bs.front.mapper;
 
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 public interface UserMapper {
@@ -13,4 +15,7 @@ public interface UserMapper {
     UserBean queryUserName(String phone);
 
     void saveUser(@RequestBody UserBean userBean);
+
+    @Update("update  front_user  set password = #{password} where phone = #{phone} ")
+    void editRetrieve(@RequestParam("phone") String phone, @RequestParam("password") String password);
 }
