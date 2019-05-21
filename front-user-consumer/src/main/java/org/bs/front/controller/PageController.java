@@ -52,4 +52,18 @@ public class PageController {
             model.addAttribute("user",user);
             return  "center/freeCenter";
         }
+
+        @GetMapping("/toMeans")
+        public   String   toMeans(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+            return "personal/means";
+        }
+
+        @GetMapping("/toModify")
+        public   String   toModify(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+            return "personal/modify";
+        }
 }

@@ -2,11 +2,13 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>个人中心</title>
-    <link rel="icon" href="http://demo.demohuo.top/modals/57/5750/demo/images/icon/favicon.ico" type="image/x-icon">
+    <title>个人中心-个人资料</title>
+
+    <link rel="icon" href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/images/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/js/style.css">
     <script src="/js/html5.js"></script>
     <script src="/js/jquery.js"></script>
+
     <script>
         $(document).ready(function(){
             $("nav .indexAsideNav").hide();
@@ -197,78 +199,59 @@
     <!--右侧：内容区域-->
     <div class="user_rt_cont">
         <div class="top_title">
-            <strong><em>${user.name}</em>&nbsp;&nbsp;个人中心</strong>
+            <strong>个人资料基础信息</strong>
         </div>
-        <!--用户信息-->
-        <div class="user_factbook">
-            <a href="" class="user_icon">
-                <img src="${user.headImg!}">
-                <span>修改头像</span>
-            </a>
-            <div class="user_infor">
-                <p><strong>${user.name}</strong>（用户）</p>
-
-                <p>用户ID：${user.userId}</p>
-            </div>
-        </div>
-        <!--买家订单提醒-->
-        <dl class="user_order_tips">
-            <dt>买家订单提醒</dt>
-            <dd>
-                <a href="">
-                    <strong>20</strong>
-                    <em>待付款订单</em>
-                </a>
-            </dd>
-            <dd>
-                <a href="">
-                    <strong>10</strong>
-                    <em>待发货订单</em>
-                </a>
-            </dd>
-            <dd>
-                <a href="">
-                    <strong>30</strong>
-                    <em>待确认订单</em>
-                </a>
-            </dd>
-            <dd>
-                <a href="">
-                    <strong>15</strong>
-                    <em>待评价订单</em>
-                </a>
-            </dd>
-        </dl>
-        <!--卖家订单提醒-->
-        <dl class="user_order_tips">
-            <dt>卖家订单提醒</dt>
-            <dd>
-                <a href="">
-                    <strong>9</strong>
-                    <em>待付款订单</em>
-                </a>
-            </dd>
-            <dd>
-                <a href="">
-                    <strong>10</strong>
-                    <em>待发货订单</em>
-                </a>
-            </dd>
-            <dd>
-                <a href="">
-                    <strong>20</strong>
-                    <em>待评价订单</em>
-                </a>
-            </dd>
-            <dd>
-                <a href="">
-                    <strong>2</strong>
-                    <em>退换货订单</em>
-                </a>
-            </dd>
-        </dl>
+        <from id="userFrom">
+        <table class="order_table">
+            <tbody>
+            <tr>
+                <td width="80" align="right">昵称：</td>
+                <td><input type="text" class="textbox" id="name" value="${user.name}"></td>
+            </tr>
+            <tr>
+                <td width="80" align="right">手机号码：</td>
+                <td><input type="text" class="textbox" id="phone" value="${user.phone}"></td>
+            </tr>
+            <tr>
+                <td width="80" align="right">电子邮箱：</td>
+                <td><input type="text" class="textbox textbox_225" id="email" value="${user.email}"></td>
+            </tr>
+            <tr>
+                <td width="80" align="right">创建日期：</td>
+                <td><input type="text" class="textbox textbox_225" id="createTime" value="${user.createTime}"></td>
+            </tr>
+            <tr>
+                <td width="80" align="right"></td>
+                <td><input type="button" class=" group_btn" value="更新保存" id="genxin"></td>
+            </tr>
+            </tbody>
+        </table>
+            <input type="hidden" id="userId" value="${user.userId}">
+        </from>
     </div>
 </section>
+<script type="text/javascript">
+    $("#genxin").click(function(){
+
+          $.ajax({
+              url:"/users/userFrom",
+              type:"put",
+              data:{
+                 name:$("#name").val(),
+                 phone:$("#phone").val(),
+                 email:$("#email").val(),
+                 createTime:$("#createTime").val(),
+                 userId:$("#userId").val()
+              },
+              dataType:"json",
+              success:function(data){
+                  if(data){
+                      alert("保存成功");
+                  }
+              }
+          })
+    })
+</script>
 <!--footer-->
 <footer>
     <!--help-->

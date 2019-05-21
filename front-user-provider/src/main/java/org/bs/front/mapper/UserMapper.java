@@ -18,4 +18,9 @@ public interface UserMapper {
 
     @Update("update  front_user  set password = #{password} where phone = #{phone} ")
     void editRetrieve(@RequestParam("phone") String phone, @RequestParam("password") String password);
+
+    @Update("update  front_user  set password = #{password}, update_time = sysdate() where user_Id = #{id}")
+    void editPassword(@RequestParam("id")Integer id, @RequestParam("password") String password);
+
+    void editUserFrom(UserBean userBean);
 }

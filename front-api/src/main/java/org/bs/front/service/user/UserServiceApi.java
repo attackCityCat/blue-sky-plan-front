@@ -17,4 +17,12 @@ public interface UserServiceApi {
     //找回密码
     @PutMapping("/retrieve/userRetrieve")
     void editRetrieve(@RequestParam("phone") String phone, @RequestParam("password") String password);
+
+    //修改密码
+    @PutMapping("/users/userPassword")
+    void editPassword(@RequestParam("id") Integer id, @RequestParam("password") String password);
+
+    //跟新保存
+    @PutMapping("/users/userFrom")
+    void editUserFrom(@RequestBody UserBean userBean);
 }

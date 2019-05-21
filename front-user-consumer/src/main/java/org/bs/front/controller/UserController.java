@@ -158,4 +158,40 @@ public class UserController {
              return  false;
          }
      }
+
+
+    /***
+     * 修改密码
+     * @param Id
+     * @param password
+     * @return
+     */
+     @PutMapping("/users/userPassword")
+     public   Boolean  editPassword(Integer Id,String password){
+        try {
+            userService.editPassword(Id,password);
+            return  true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return  false;
+        }
+     }
+
+
+    /***
+     * 更新保存
+     * @param userBean
+     * @return
+     */
+     @PutMapping("/users/userFrom")
+     public   Boolean  editUserFrom(UserBean userBean){
+         try {
+             userService.editUserFrom(userBean);
+             return  true;
+         } catch (Exception e) {
+             e.printStackTrace();
+             return  false;
+         }
+     }
+
 }

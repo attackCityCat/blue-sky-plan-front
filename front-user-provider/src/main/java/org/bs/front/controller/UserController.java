@@ -41,4 +41,30 @@ public class UserController {
               }
        }
 
+
+       //修改密码
+       @PutMapping("/users/userPassword")
+       public   Boolean   editPassword(@RequestParam("id") Integer id,@RequestParam("password") String password){
+              try {
+                     userMapper.editPassword(id,password);
+                     return  true;
+              } catch (Exception e) {
+                     e.printStackTrace();
+                     return   false;
+              }
+       }
+
+
+       //更新保存
+       @PutMapping("/users/userFrom")
+       public   Boolean   editUserFrom(@RequestBody UserBean userBean){
+              try {
+                     userMapper.editUserFrom(userBean);
+                     return   true;
+              } catch (Exception e) {
+                     e.printStackTrace();
+                     return   false;
+              }
+       }
+
 }

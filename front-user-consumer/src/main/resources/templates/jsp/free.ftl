@@ -80,74 +80,74 @@
             <li class="category">
                 <a>全部产品分类</a>
                 <dl class="asideNav indexAsideNav">
-                    <dt><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">女装</a></dt>
+                    <dt><a href="">女装</a></dt>
                     <dd>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">夏装新</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">连衣裙</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">T恤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">衬衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">裤子</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">牛仔裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">背带裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">短外套</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">时尚外套</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">风衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">毛衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">背心</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">吊带</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">民族服装</a>
+                        <a href="">夏装新</a>
+                        <a href="">连衣裙</a>
+                        <a href="">T恤</a>
+                        <a href="">衬衫</a>
+                        <a href="">裤子</a>
+                        <a href="">牛仔裤</a>
+                        <a href="">背带裤</a>
+                        <a href="">短外套</a>
+                        <a href="">时尚外套</a>
+                        <a href="">风衣</a>
+                        <a href="">毛衣</a>
+                        <a href="">背心</a>
+                        <a href="">吊带</a>
+                        <a href="">民族服装</a>
                     </dd>
-                    <dt><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">男装</a></dt>
+                    <dt><a href="">男装</a></dt>
                     <dd>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">衬衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">背心</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">西装</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">POLO衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">马夹</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">皮衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">毛衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">针织衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">牛仔裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">外套</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">夹克</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">卫衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">风衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">民族风</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">原创设计</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">大码</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">情侣装</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">开衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">运动裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">工装裤</a>
+                        <a href="">衬衫</a>
+                        <a href="">背心</a>
+                        <a href="">西装</a>
+                        <a href="">POLO衫</a>
+                        <a href="">马夹</a>
+                        <a href="">皮衣</a>
+                        <a href="">毛衣</a>
+                        <a href="">针织衫</a>
+                        <a href="">牛仔裤</a>
+                        <a href="">外套</a>
+                        <a href="">夹克</a>
+                        <a href="">卫衣</a>
+                        <a href="">风衣</a>
+                        <a href="">民族风</a>
+                        <a href="">原创设计</a>
+                        <a href="">大码</a>
+                        <a href="">情侣装</a>
+                        <a href="">开衫</a>
+                        <a href="">运动裤</a>
+                        <a href="">工装裤</a>
                     </dd>
                 </dl>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html" class="active">首页</a>
+                <a href="" class="active">首页</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">时尚搭配</a>
+                <a href="">时尚搭配</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">原创设计</a>
+                <a href="">原创设计</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">时尚代购</a>
+                <a href="">时尚代购</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">民族风</a>
+                <a href="">民族风</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/information.html">时尚搭配</a>
+                <a href="">时尚搭配</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/library.html">搭配知识</a>
+                <a href="">搭配知识</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">促销专区</a>
+                <a href="">促销专区</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">其他</a>
+                <a href="">其他</a>
             </li>
         </ul>
     </nav>
@@ -179,41 +179,13 @@
     <div class="IdxmainArea">
         <!--slide-->
         <div id="slide" class="swiper-container-horizontal">
-            <!--<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1725px, 0px, 0px);">-->
-            <!--<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>
-            <div class="swiper-slide" data-swiper-slide-index="0" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide01.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide02.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>-->
-            <!--<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 575px;">-->
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
+            <a href="">
                 <img src="/img/slide01.png">
             </a>
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="pagination"><span class="swiper-pagination-bullet">
-                </span><span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-            </div>-->
         </div>
         <!--singleAd-->
         <div class="singleAd">
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
+            <a href="">
                 <img src="/img/sigleAd.png">
             </a>
         </div>
@@ -221,7 +193,7 @@
         <dl class="bestShop">
             <dt>
                 <strong>优秀商家推荐</strong>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop_list.html" class="fr">更多</a>
+                <a href="" class="fr">更多</a>
             </dt>
             <dd>
                 <a href="">
@@ -296,21 +268,21 @@
         <dl class="idxRtAtc">
             <dt>
                 <em class="obviousText">最新公告</em>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+                <a href="">more</a>
             </dt>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
+            <dd><a href="">2015年12月20日系统升级通告统升级通告</a></dd>
+            <dd><a href="">2015年12月20日系统升级通告</a></dd>
+            <dd><a href="">2015年12月20日系统升级通告</a></dd>
+            <dd><a href="">2015年12月20日系统升级通告</a></dd>
+            <dd><a href="">2015年12月20日系统升级通告</a></dd>
         </dl>
         <dl class="idxRtAtc">
             <dt>
                 <em>质量标准技术参数</em>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+                <a href="">more</a>
             </dt>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
+            <dd><a href="">2015年12月20日系统升级通告统升级通告</a></dd>
+            <dd><a href="">2015年12月20日系统升级通告</a></dd>
         </dl>
     </div>
 </section>
@@ -318,15 +290,15 @@
 <section class="wrap idxproLi">
     <h2>
         <strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">精品女装</a>
+            <a href="">精品女装</a>
         </strong>
         <span class="classLi">
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">夏装</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">连衣裙</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">开衫</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">牛仔裤</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">背带裤</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">T恤</a>
+   <a href="">夏装</a>
+   <a href="">连衣裙</a>
+   <a href="">开衫</a>
+   <a href="">牛仔裤</a>
+   <a href="">背带裤</a>
+   <a href="">T恤</a>
   </span>
     </h2>
     <div class="ltArea">
@@ -358,49 +330,49 @@
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods008.png">
                     <h3>2019时尚新款</h3>
                     <p><span>1000.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods009.png">
                     <h3>2019时尚新款</h3>
                     <p><span>980.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods010.png">
                     <h3>2019时尚新款</h3>
                     <p><span>642.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods005.png">
                     <h3>2019时尚新款</h3>
                     <p><span>793.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods006.png">
                     <h3>2019时尚新款</h3>
                     <p><span>755.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods007.png">
                     <h3>2019时尚新款</h3>
                     <p><span>360.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods008.png">
                     <h3>2019时尚新款</h3>
                     <p><span>1255.00</span></p>
@@ -409,10 +381,10 @@
         </ul>
         <!--bestBrand-->
         <div class="idxBrandLi">
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo01.png"></a>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo02.png"></a>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo03.png"></a>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo04.png"></a>
+            <a href=""><img src="/img/brandLogo01.png"></a>
+            <a href=""><img src="/img/brandLogo02.png"></a>
+            <a href=""><img src="/img/brandLogo03.png"></a>
+            <a href=""><img src="/img/brandLogo04.png"></a>
         </div>
     </div>
 </section>
@@ -421,88 +393,88 @@
 <section class="wrap idxproLi">
     <h2>
         <strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">时尚女装</a>
+            <a href="">时尚女装</a>
         </strong>
         <span class="classLi">
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">夏装</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">连衣裙</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">开衫</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">牛仔裤</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">背带裤</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">T恤</a>
+   <a href="">夏装</a>
+   <a href="">连衣裙</a>
+   <a href="">开衫</a>
+   <a href="">牛仔裤</a>
+   <a href="">背带裤</a>
+   <a href="">T恤</a>
   </span>
     </h2>
     <div class="ltArea">
         <!--ad:category pic-->
-        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html"><img src="/img/bestCategoryPic01.png"></a>
+        <a href=""><img src="/img/bestCategoryPic01.png"></a>
     </div>
     <div class="ctLi">
         <ul>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods001.png">
                     <h3>2019时尚新款</h3>
                     <p><span>1000.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods003.png">
                     <h3>2019时尚新款</h3>
                     <p><span>545.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods004.png">
                     <h3>2019时尚新款</h3>
                     <p><span>1000.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods003.png">
                     <h3>2019时尚新款</h3>
                     <p><span>1000.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods001.png">
                     <h3>2019时尚新款</h3>
                     <p><span>980.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods002.png">
                     <h3>2019时尚新款</h3>
                     <p><span>642.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods004.png">
                     <h3>2019时尚新款</h3>
                     <p><span>793.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods001.png">
                     <h3>2019时尚新款</h3>
                     <p><span>755.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods002.png">
                     <h3>2019时尚新款</h3>
                     <p><span>360.00</span></p>
                 </a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
+                <a href="">
                     <img src="/img/goods003.png">
                     <h3>2019时尚新款</h3>
                     <p><span>1255.00</span></p>
@@ -511,10 +483,10 @@
         </ul>
         <!--bestBrand-->
         <div class="idxBrandLi">
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo01.png"></a>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo02.png"></a>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo03.png"></a>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop.html"><img src="/img/brandLogo04.png"></a>
+            <a href=""><img src="/img/brandLogo01.png"></a>
+            <a href=""><img src="/img/brandLogo02.png"></a>
+            <a href=""><img src="/img/brandLogo03.png"></a>
+            <a href=""><img src="/img/brandLogo04.png"></a>
         </div>
     </div>
 </section>
@@ -523,35 +495,35 @@
 <section class="wrap idexCase">
     <h2>
         <strong>服装搭配</strong>
-        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">more</a>
+        <a href="">more</a>
     </h2>
     <ul>
         <li>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
+            <a href="">
                 <img src="/img/case001.png">
                 <h3>时尚搭配案例</h3>
             </a>
         </li>
         <li>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
+            <a href="">
                 <img src="/img/case002.png">
                 <h3>时尚搭配案例</h3>
             </a>
         </li>
         <li>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
+            <a href="">
                 <img src="/img/case003.png">
                 <h3>时尚搭配案例</h3>
             </a>
         </li>
         <li>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
+            <a href="">
                 <img src="/img/case004.png">
                 <h3>时尚搭配案例</h3>
             </a>
         </li>
         <li>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
+            <a href="">
                 <img src="/img/case005.png">
                 <h3>时尚搭配案例</h3>
             </a>
@@ -563,35 +535,35 @@
     <dl>
         <dt>
             <strong>招标资讯</strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+            <a href="">more</a>
         </dt>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
+        <dd><a href="">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
+        <dd><a href="">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
+        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
     </dl>
     <dl style="margin:0 2.5%">
         <dt>
             <strong>最新询价信息</strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+            <a href="">more</a>
         </dt>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
+        <dd><a href="">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
+        <dd><a href="">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
+        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
     </dl>
     <dl>
         <dt>
             <strong>行业资讯</strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+            <a href="">more</a>
         </dt>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
+        <dd><a href="">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
+        <dd><a href="">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
+        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
     </dl>
 </section>
 
@@ -612,37 +584,37 @@
         <li>
             <dl>
                 <dt>消费者保障</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="">保障范围</a></dd>
+                <dd><a href="">退换货流程</a></dd>
+                <dd><a href="">服务中心</a></dd>
+                <dd><a href="">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>新手上路</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="">保障范围</a></dd>
+                <dd><a href="">退换货流程</a></dd>
+                <dd><a href="">服务中心</a></dd>
+                <dd><a href="">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>付款方式</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="">保障范围</a></dd>
+                <dd><a href="">退换货流程</a></dd>
+                <dd><a href="">服务中心</a></dd>
+                <dd><a href="">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>服务保障</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="">保障范围</a></dd>
+                <dd><a href="">退换货流程</a></dd>
+                <dd><a href="">服务中心</a></dd>
+                <dd><a href="">更多服务特色</a></dd>
             </dl>
         </li>
     </ul>

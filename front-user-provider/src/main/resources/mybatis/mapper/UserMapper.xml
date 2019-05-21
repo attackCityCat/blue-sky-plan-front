@@ -5,4 +5,9 @@
               insert   into   front_user (password,status,email,phone,create_time,role_id,name)
               values  (#{password},0,#{email},#{phone},sysdate(),1,#{name})
         </insert>
+
+        <update id="editUserFrom">
+              update   front_user  set  phone = #{phone} , password = #{password} , email = #{email} ,
+               update_time = sysdate() , name = #{name} where user_id = #{userId}
+        </update>
 </mapper>
