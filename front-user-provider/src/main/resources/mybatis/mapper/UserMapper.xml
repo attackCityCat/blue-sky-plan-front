@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="org.bs.front.mapper.UserMapper" >
-        <insert id="saveUser">
+
+<!--        <insert id="saveUser">
               insert   into   front_user (password,status,email,phone,create_time,role_id,name)
               values  (#{password},0,#{email},#{phone},sysdate(),1,#{name})
-        </insert>
+        </insert>-->
+
 </mapper>

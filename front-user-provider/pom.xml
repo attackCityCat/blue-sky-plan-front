@@ -21,9 +21,18 @@
 
     <dependencies>
         <!-- druid连接池 -->
+<!--
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
+        </dependency>
+-->
+
+        <!---->
+        <dependency>
+            <groupId>org.bs.front</groupId>
+            <artifactId>front-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
