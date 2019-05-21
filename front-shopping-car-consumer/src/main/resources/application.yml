@@ -8,6 +8,16 @@ spring:
   application:
     name: front-shopping-car-consumer
 
+  redis:
+    host: 127.0.0.1 #192.168.1.145  小骚的redis
+    port: 6379
+
+  rabbitmq:
+    host: 192.168.1.145   #x辛旭 的ip地址
+    port: 5672
+    username: rbdq
+    password: 123456       #rabbitmq队列配置
+
   profiles: default
   freemarker:
     template-loader-path: classpath:/templates

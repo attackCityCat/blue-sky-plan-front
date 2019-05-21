@@ -19,6 +19,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -34,8 +35,8 @@ public class UserController {
        @Autowired
        private  UserService  userService;
 
-       @Autowired
-       private   RedisTemplate<String,String>   redisTemplate;
+       @Resource
+       private   RedisTemplate<String,Object>   redisTemplate;
 
        @GetMapping("/login/login")
        public HashMap<String,Object> login(UserBean userBean,HttpSession session ){

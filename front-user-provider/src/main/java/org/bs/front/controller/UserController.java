@@ -1,12 +1,18 @@
 package org.bs.front.controller;
 
 
-import org.springframework.web.bind.annotation.RestController;
+import org.bs.front.mapper.UserMapper;
+import org.bs.front.pojo.showproduct.ProductBean;
+import org.bs.front.pojo.user.UserBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class UserController {
 
-/*    @Autowired
+   @Autowired
     private UserMapper userMapper;
 
 
@@ -38,12 +44,12 @@ public class UserController {
             e.printStackTrace();
             return false;
         }
-    }*/
+    }
 
     //查询商品列表
-   // @RequestMapping("toMain")
-   // public List<ProductBean> findShopList() {
-      //  return userMapper.findShopList();
-   // }
+   @RequestMapping(value = "findShopList")
+    public List<ProductBean> findShopList() {
+        return userMapper.findShopList();
+    }
 
 }

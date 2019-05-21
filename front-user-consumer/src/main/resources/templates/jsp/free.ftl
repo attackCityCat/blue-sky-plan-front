@@ -38,8 +38,8 @@
             <!--topRightNav-->
             <ul class="topRtNav">
                 <li><a href="/page/toUserCenter">个人中心</a></li>
-                <li><a href="" class="cartIcon">购物车<i>0</i></a></li>
-                <li><a href="" class="favorIcon">收藏夹</a></li>
+                <li><a href="" class="cartIcon">购物车<i>${count}</i></a></li>
+                <li><a href="javascrip" class="favorIcon">收藏夹</a></li>
                 <li><a href="">商家中心</a></li>
                 <li><a href="" class="srvIcon">客户服务</a></li>
                 <li><a href="">联盟管理</a></li>
@@ -197,50 +197,50 @@
             </dt>
             <dd>
                 <a href="">
-                    <img src="/img/001.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/002.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/003.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/001.png" height="150" width="150"/>
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg" height="150" width="150"/>
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/005.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/006.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/007.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/008.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
         </dl>
@@ -289,20 +289,19 @@
 <section class="wrap idxproLi">
     <h2>
         <strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">精品女装</a>
+            <a href="#">精品女装</a>
         </strong>
         <span class="classLi">
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">夏装</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">连衣裙</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">开衫</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">牛仔裤</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">背带裤</a>
-   <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product_list.html">T恤</a>
+   <a href="#">夏装</a>
+   <a href="#">连衣裙</a>
+   <a href="#">开衫</a>
+   <a href="#">牛仔裤</a>
+   <a href="#">背带裤</a>
+   <a href="#">T恤</a>
   </span>
     </h2>
     <div class="ltArea">
         <!--ad:category pic-->
-        <a href="">
             <img src="/img/bestCategoryPic02.png"></a>
     </div>
     <div class="ctLi">
@@ -534,48 +533,36 @@
     <dl>
         <dt>
             <strong>招标资讯</strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+            <a href="#">more</a>
         </dt>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
     </dl>
     <dl style="margin:0 2.5%">
         <dt>
-            <strong>最新询价信息</strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+            <strong>团队招人</strong>
+            <a href="#">more</a>
         </dt>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
     </dl>
     <dl>
         <dt>
-            <strong>行业资讯</strong>
-            <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+            <strong>团队福利</strong>
+            <a href="#">more</a>
         </dt>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
     </dl>
 </section>
-
-<div id="centerUser"></div>
-<script type="text/javascript">
-    $(function(){
-        initCenter();
-    })
-
-    function  initCenter(){
-
-    }
-</script>
 
 <footer>
     <!--help-->
@@ -583,37 +570,37 @@
         <li>
             <dl>
                 <dt>消费者保障</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>新手上路</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>付款方式</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>服务保障</dt>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">保障范围</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">退换货流程</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">服务中心</a></dd>
-                <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
     </ul>
@@ -622,5 +609,12 @@
         <address>联系地址：北京市海淀区西三旗悦秀路金科教育 1810A 班</address>
     </div>
 </footer>
+<script type="text/javascript">
+
+    function tan() {
+        alert("感谢您的关注，功能正在开发中！~")
+    }
+
+</script>
 </body>
 </html>

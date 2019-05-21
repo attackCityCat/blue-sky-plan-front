@@ -98,22 +98,22 @@ public class ShopCarController {
     @RequestMapping("addShopCar")
     public void addShopCar() {
         ProductBean bean = new ProductBean();
-        bean.setProductId(11);
+        bean.setProductId(39);
         bean.setProductColor("蓝色");
         bean.setProductImg("111111");
         bean.setProductName("内衣");
         bean.setProductCount(1);
-        bean.setProductPrice(5.1f);
+        bean.setProductPrice(5.1);
         bean.setProductSpec("xxxxx");
         ProductBean bean1 = new ProductBean();
-        bean1.setProductId(12);
+        bean1.setProductId(40);
         bean1.setProductColor("蓝色");
         bean1.setProductImg("111111");
         bean1.setProductName("内衣");
         bean1.setProductCount(1);
-        bean1.setProductPrice(5.1f);
+        bean1.setProductPrice(5.1);
         bean1.setProductSpec("xxxxx");
-        String key = ConstantClass.FIND_USER_SHOP_CAR + "userId";
+        String key = ConstantClass.FIND_USER_SHOP_CAR + 2;
         redisTemplate.opsForHash().put(key, ConstantClass.SHOP_KEY + bean.getProductId(), bean);
         redisTemplate.opsForHash().put(key, ConstantClass.SHOP_KEY + bean1.getProductId(), bean1);
 

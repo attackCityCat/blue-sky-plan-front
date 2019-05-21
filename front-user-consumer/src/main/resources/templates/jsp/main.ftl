@@ -221,55 +221,54 @@
         <!--bestShop-->
         <dl class="bestShop">
             <dt>
-                <strong>优秀商家推荐</strong>
-                <a href="" class="fr">更多</a>
+                <strong>中国蓝天计划优质商店🇨🇳</strong>
             </dt>
             <dd>
                 <a href="">
-                    <img src="/img/001.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/002.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/003.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/001.png" height="150" width="150"/>
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg" height="150" width="150"/>
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/005.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/006.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/007.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
             <dd>
                 <a href="">
-                    <img src="/img/008.png">
-                    <h2>DM精品女装</h2>
+                    <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg">
+                    <h2>China Number One</h2>
                 </a>
             </dd>
         </dl>
@@ -319,93 +318,33 @@
 <section class="wrap idxproLi">
     <h2>
         <strong>
-            <a href="">精品女装</a>
+            <a href="#">精品女装</a>
         </strong>
         <span class="classLi">
-   <a href="">夏装</a>
-   <a href="">连衣裙</a>
-   <a href="">开衫</a>
-   <a href="">牛仔裤</a>
-   <a href="">背带裤</a>
-   <a href="">T恤</a>
+   <a href="#">夏装</a>
+   <a href="#">连衣裙</a>
+   <a href="#">开衫</a>
+   <a href="#">牛仔裤</a>
+   <a href="#">背带裤</a>
+   <a href="#">T恤</a>
   </span>
     </h2>
     <div class="ltArea">
         <!--ad:category pic-->
-        <a href=""><img src="/img/bestCategoryPic02.png"></a>
+        <img src="/img/bestCategoryPic02.png"></a>
     </div>
     <div class="ctLi">
+        <!--此处数据要从数据库加载出来，并且点击时要跳转到详情页面-->
         <ul>
+            <#list list as i >
             <li>
                 <a href="">
-                    <img src="/img/goods005.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
+                    <img src="${i.img}">
+                    <h3>${i.productTitle}</h3>
+                    <p><span>${i.productPrice}</span></p>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods006.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>545.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods007.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods008.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods009.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>980.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods010.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>642.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods005.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>793.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods006.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>755.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods007.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>360.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods008.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1255.00</span></p>
-                </a>
-            </li>
+           </#list>
         </ul>
         <!--bestBrand-->
         <div class="idxBrandLi">
@@ -563,34 +502,34 @@
     <dl>
         <dt>
             <strong>招标资讯</strong>
-            <a href="">more</a>
+            <a href="#">more</a>
         </dt>
-        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
+        <dd><a href="#">中国蓝天计划项目公开招标招标公告</a></dd>
     </dl>
     <dl style="margin:0 2.5%">
         <dt>
-            <strong>最新询价信息</strong>
-            <a href="">more</a>
+            <strong>团队招人</strong>
+            <a href="#">more</a>
         </dt>
-        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="">四川省资阳市安岳县民政局第二次全国地名普查外包服务采购项目公开招标采购公告</a></dd>
-        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
+        <dd><a href="#">蓝天计划高质量高品质团队招人</a></dd>
     </dl>
     <dl>
         <dt>
-            <strong>行业资讯</strong>
-            <a href="">more</a>
+            <strong>团队福利</strong>
+            <a href="#">more</a>
         </dt>
-        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
-        <dd><a href="">四川省老年大学教学用具及设备采购二标段公开招标采购公告</a></dd>
-        <dd><a href="">慢道峰山桥至仙境源风机路、曲径通幽至老虎洞至孙家至王沟服务区亮化工程公开招标公告</a></dd>
-        <dd><a href="">内蒙古君联生物发展有限公司阿巴嘎旗流化床锅炉除尘及链条炉排炉内脱硫设施采购项目公开招标招标公告</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
+        <dd><a href="#">待遇雄厚，福利火爆，更多详情请大喊“班长”</a></dd>
     </dl>
 </section>
 
@@ -600,37 +539,37 @@
         <li>
             <dl>
                 <dt>消费者保障</dt>
-                <dd><a href="">保障范围</a></dd>
-                <dd><a href="">退换货流程</a></dd>
-                <dd><a href="">服务中心</a></dd>
-                <dd><a href="">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>新手上路</dt>
-                <dd><a href="">保障范围</a></dd>
-                <dd><a href="">退换货流程</a></dd>
-                <dd><a href="">服务中心</a></dd>
-                <dd><a href="">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>付款方式</dt>
-                <dd><a href="">保障范围</a></dd>
-                <dd><a href="">退换货流程</a></dd>
-                <dd><a href="">服务中心</a></dd>
-                <dd><a href="">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
         <li>
             <dl>
                 <dt>服务保障</dt>
-                <dd><a href="">保障范围</a></dd>
-                <dd><a href="">退换货流程</a></dd>
-                <dd><a href="">服务中心</a></dd>
-                <dd><a href="">更多服务特色</a></dd>
+                <dd><a href="javascript:tan()">保障范围</a></dd>
+                <dd><a href="javascript:tan()">退换货流程</a></dd>
+                <dd><a href="javascript:tan()">服务中心</a></dd>
+                <dd><a href="javascript:tan()">更多服务特色</a></dd>
             </dl>
         </li>
     </ul>
@@ -639,5 +578,12 @@
         <address>联系地址：北京市海淀区西三旗悦秀路金科教育 1810A 班</address>
     </div>
 </footer>
+<script type="text/javascript">
+
+    function tan() {
+        alert("感谢您的关注，功能正在开发中！~")
+    }
+
+</script>
 </body>
 </html>

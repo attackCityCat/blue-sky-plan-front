@@ -17,7 +17,7 @@ public class ProductBean implements Serializable {
 
     private String productColor;    //商品颜色
 
-    private Float productPrice;   //商品价格
+    private Double productPrice;   //商品价格
 
     private Integer productCount;   //商品数量
 
@@ -61,11 +61,11 @@ public class ProductBean implements Serializable {
         this.productColor = productColor;
     }
 
-    public Float getProductPrice() {
+    public Double getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(Float productPrice) {
+    public void setProductPrice(Double productPrice) {
         this.productPrice = productPrice;
     }
 
