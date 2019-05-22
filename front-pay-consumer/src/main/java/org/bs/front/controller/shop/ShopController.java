@@ -44,16 +44,15 @@ public class ShopController {
     //查询图片
     @RequestMapping(value = "queryImg")
     @ResponseBody
-    public List<ImgBean> queryImg(@RequestParam(value = "id") Integer id,Model model){
-        List<ImgBean> list = shopService.queryImg(id);
-        model.addAttribute("img",list);
+    public List<ImgBean> queryImg(@RequestParam(value = "ids") String[] ids){
+        List<ImgBean> list = shopService.queryImg(ids);
         System.out.println(list);
         return list;
     }
 
     //查询方法
     @RequestMapping(value = "/queryShopList")
-    public String queryShopList(ShopBean shop,String queryShop, Model model) throws IOException, SolrServerException {
+    public String queryShopList(ShopBean shop,Integer page,Integer rows,String queryShop, Model model) throws IOException, SolrServerException {
         //返回的参数map
         Map<String, Object> mSolr = new HashMap<String, Object>();
         //查询的耳集合
@@ -75,6 +74,7 @@ public class ShopController {
                 "product_concern,brand_id,size_id,product_state,color_id,shelf_time,product_audit,product_selling,store_id");
         // 高亮字段
         params.addHighlightField("product_title");
+        //分页
 
         //高亮
         //打开开关

@@ -13,6 +13,5 @@ import java.util.List;
  * @date 2019/5/2213:05
  */
 public interface ShopMapper {
-    @Select("select * from cms_product_img where product_id = #{value}")
-    List<ImgBean> queryImg(Integer id);
+    List<ImgBean> queryImg(String[] ids);
 }

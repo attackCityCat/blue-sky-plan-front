@@ -40,9 +40,8 @@ public class ShopController {
 
     @RequestMapping(value = "queryImg")
     @ResponseBody
-    public List<ImgBean> queryImg(@RequestParam(value = "id") Integer id, Model model){
-        List<ImgBean> list = shopMapper.queryImg(id);
-        model.addAttribute("img",list);
+    public List<ImgBean> queryImg(@RequestParam(value = "ids") String[] ids){
+        List<ImgBean> list = shopMapper.queryImg(ids);
         return list;
     }
 
