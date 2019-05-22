@@ -67,7 +67,7 @@ public class OrderController {
      */
     @RequestMapping(value = "cashier")
     @ResponseBody
-    public List<ProductBean> queryShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "ids") int[] ids){
+    public List<ProductBean> queryShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "ids") Integer[] ids){
 
         //定义一个商品的K
         String ShopKey = ConstantClass.SHOP_KEY;

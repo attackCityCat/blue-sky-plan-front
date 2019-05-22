@@ -66,11 +66,35 @@ public class UserController {
               return size;
        }
 
-
-    //查询商品列表
-   @RequestMapping(value = "findShopList")
+    //查询女装商品列表
+    @RequestMapping(value = "findShopList")
     public List<ProductBean> findShopList() {
         return userMapper.findShopList();
     }
+
+    //查询男装商品列表
+    @RequestMapping(value = "findShopListMen")
+    public List<ProductBean> findShopListMen() {
+        return userMapper.findShopListMen();
+    }
+
+    //查询商品详情
+    @RequestMapping("/queryShopDetails")
+    public ProductBean queryShopDetails(@RequestParam(value = "id") Integer id){
+        return userMapper.queryShopDetails(id);
+    }
+
+    //查询商品详情的图片
+    @RequestMapping("/queryShopImg")
+    List<String> queryShopImg(@RequestParam(value = "id") Integer id){
+        return userMapper.queryShopImg(id);
+    }
+
+    //查出销量最高的4条数据
+    @RequestMapping("/topSelling")
+    public List<ProductBean> topSelling(){
+        return userMapper.topSelling();
+    }
+
 
 }

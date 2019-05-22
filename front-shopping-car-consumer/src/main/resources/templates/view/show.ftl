@@ -129,7 +129,7 @@
             return;
         }
         //发送请求到收银台啊
-        location.href="http:localhost:8088/order/cashier?totalPrice="+totalPrice+"&ids="+ids;
+        location.href="http://localhost:8088/order/cashier?totalPrice="+totalPrice+"&ids="+ids;
     }
 
     //点击全选时复选框的操作

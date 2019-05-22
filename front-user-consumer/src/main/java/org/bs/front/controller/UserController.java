@@ -3,6 +3,10 @@ package org.bs.front.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.netflix.ribbon.proxy.annotation.Http;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtBuilder;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
@@ -16,16 +20,23 @@ import org.bs.front.utils.HttpClientUtil;
 import org.bs.front.utils.Md5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.session.web.http.CookieSerializer;
+import org.springframework.session.web.http.DefaultCookieSerializer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+
+import sun.misc.BASE64Encoder;
 
 @RestController
 public class UserController {
@@ -37,19 +48,24 @@ public class UserController {
        private   RedisTemplate<String,Object>   redisTemplate;
 
        @PostMapping("/login/login")
-       public HashMap<String,Object> login(UserBean userBean,HttpSession session ){
+       public HashMap<String,Object> login(UserBean userBean, HttpServletRequest request ){
+
+           HttpSession session = request.getSession();
+
            HashMap<String, Object> result = new HashMap<String, Object>();
+
            Subject subject = SecurityUtils.getSubject();
+
            UsernamePasswordToken token = new UsernamePasswordToken(userBean.getPhone(),userBean.getPassword());
 
            try{
-
                subject.login(token);
                result.put("code",0);
                result.put("msg","登录成功");
                UserBean user = (UserBean) subject.getPrincipal();
-
                session.setAttribute(session.getId(),user);
+               CookieSerializer cookieSerializer = new DefaultCookieSerializer();
+               System.out.println(cookieSerializer.readCookieValues(request));
                return  result;
            }catch(UnknownAccountException e){
                result.put("code",1);
@@ -158,4 +174,9 @@ public class UserController {
              return  false;
          }
      }
+
+
+
+
+
 }

@@ -28,5 +28,5 @@ public interface OrderServiceApi {
     List<OrderBean> queryOrder();
 
     @RequestMapping(value = "cashier")
-    List<ProductBean> queryShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "ids") int[] ids);
+    List<ProductBean> queryShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "ids") Integer[] ids);
 }

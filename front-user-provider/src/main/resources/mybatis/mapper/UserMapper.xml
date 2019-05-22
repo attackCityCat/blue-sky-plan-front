@@ -20,12 +20,41 @@
             tpt.product_state as productState ,
             tpt.product_audit as productAudit,
             tpt.product_selling as productSelling,
-						cpi.url as img,
             tpt.shelf_time as shelfTime,
             tbt.brand_name as brandName,
             tst.size_name as sizeName,
             tc.color_name as colorName,
-             CONCAT(btype.type_name,'--',stype.type_name) as typeName
+						cpi.url as img,
+             btype.type_name as typeName
+             from cms_product tpt
+            left join cms_brand tbt on tpt.brand_id = tbt.id
+            left join cms_size tst on tpt.size_id = tst.id
+            left join cms_type stype on tpt.type_id = stype.id
+            left join cms_type btype on stype.pid = btype.id
+            left join cms_product_color tc on tpt.color_id = tc.id
+						left join cms_product_img cpi on cpi.product_id=tpt.product_id
+			where 	btype.id = 2
+			LIMIT 0,10
+    </select>
+    <select id="findShopListMen" resultType="org.bs.front.pojo.showproduct.ProductBean">
+        select
+            tpt.product_id as id,
+            tpt.product_title as productTitle ,
+            tpt.product_price as productPrice ,
+            tpt.product_stock as productStock ,
+            tpt.product_time as productTime ,
+            tpt.product_sales as productSales ,
+            tpt.product_comments as productComments ,
+            tpt.product_concern as productConcern ,
+            tpt.product_state as productState ,
+            tpt.product_audit as productAudit,
+            tpt.product_selling as productSelling,
+            tpt.shelf_time as shelfTime,
+            tbt.brand_name as brandName,
+            tst.size_name as sizeName,
+            tc.color_name as colorName,
+						cpi.url as img,
+             btype.type_name as typeName
              from cms_product tpt
             left join cms_brand tbt on tpt.brand_id = tbt.id
             left join cms_size tst on tpt.size_id = tst.id
@@ -33,6 +62,67 @@
             left join cms_type btype on stype.pid = btype.id
             left join cms_product_color tc on tpt.color_id = tc.id
 			left join cms_product_img cpi on cpi.product_id=tpt.product_id
-						LIMIT 0,10
+			where 	btype.id = 1
+			LIMIT 0,10
+    </select>
+
+    <select id="queryShopDetails" parameterType="int" resultType="org.bs.front.pojo.showproduct.ProductBean">
+                select
+            tpt.product_id as id,
+            tpt.product_title as productTitle ,
+            tpt.product_price as productPrice ,
+            tpt.product_stock as productStock ,
+            tpt.product_time as productTime ,
+            tpt.product_sales as productSales ,
+            tpt.product_comments as productComments ,
+            tpt.product_concern as productConcern ,
+            tpt.product_state as productState ,
+            tpt.product_audit as productAudit,
+            tpt.product_selling as productSelling,
+            tpt.shelf_time as shelfTime,
+            tbt.brand_name as brandName,
+            tst.size_name as sizeName,
+            tc.color_name as colorName,
+						cpi.url as img,
+             btype.type_name as typeName
+             from cms_product tpt
+            left join cms_brand tbt on tpt.brand_id = tbt.id
+            left join cms_size tst on tpt.size_id = tst.id
+            left join cms_type stype on tpt.type_id = stype.id
+            left join cms_type btype on stype.pid = btype.id
+            left join cms_product_color tc on tpt.color_id = tc.id
+			left join cms_product_img cpi on cpi.product_id=tpt.product_id
+			where 	tpt.product_id = #{value}
+
+    </select>
+    <select id="topSelling"  resultType="org.bs.front.pojo.showproduct.ProductBean">
+               select
+            tpt.product_id as id,
+            tpt.product_title as productTitle ,
+            tpt.product_price as productPrice ,
+            tpt.product_stock as productStock ,
+            tpt.product_time as productTime ,
+            tpt.product_sales as productSales ,
+            tpt.product_comments as productComments ,
+            tpt.product_concern as productConcern ,
+            tpt.product_state as productState ,
+            tpt.product_audit as productAudit,
+            tpt.product_selling as productSelling,
+            tpt.shelf_time as shelfTime,
+            tbt.brand_name as brandName,
+            tst.size_name as sizeName,
+            tc.color_name as colorName,
+						cpi.url as img,
+             btype.type_name as typeName
+             from cms_product tpt
+            left join cms_brand tbt on tpt.brand_id = tbt.id
+            left join cms_size tst on tpt.size_id = tst.id
+            left join cms_type stype on tpt.type_id = stype.id
+            left join cms_type btype on stype.pid = btype.id
+            left join cms_product_color tc on tpt.color_id = tc.id
+						left join cms_product_img cpi on cpi.product_id=tpt.product_id
+			ORDER BY 	tpt.product_sales DESC
+			LIMIT 0,4
+
     </select>
 </mapper>

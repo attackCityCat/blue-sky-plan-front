@@ -26,19 +26,28 @@ public class PageController {
     RedisTemplate<String,Object> redisTemplate;
 
 
+
     /**
      * 进入主页并 查询商品列表
+     *
      * @param model
-     * @return
+     * @returnfindShopList
      */
     @RequestMapping("toMain")
     public String toIndex(Model model) {
 
+        //查询女装
         List<ProductBean> list = userService.findShopList();
-       System.out.println("////////////////////////"+list);
-        model.addAttribute("list",list);
-        // 开会内容 商品下架时 从购物车删除  商品涨价或者降价时 购物车的价钱也要跟着加减
-        return "jsp/main";
+        //查询男装
+        List<ProductBean> listMen = userService.findShopListMen();
+        System.out.println("查询到的女装信息为----》" + list);
+        System.out.println("查询到的男装信息为----》" + listMen);
+        //返回女装数据
+        model.addAttribute("list", list);
+        //返回男装数据
+        model.addAttribute("listMan", listMen);
+
+        return "jsp/free";
     }
 
        @GetMapping("toLogin")
@@ -90,5 +99,31 @@ public class PageController {
         UserBean user = (UserBean) session.getAttribute(session.getId());
         model.addAttribute("user", user);
         return "center/freeCenter";
+    }
+
+
+    /**
+     * 查询商品详情以及商品图片
+     * @param id
+     * @param model
+     * @return
+     */
+    @RequestMapping("/queryShopDetails")
+    public String queryShopDetails(Integer id,Model model){
+        //查询商品的详情
+        ProductBean pro =  userService.queryShopDetails(id);
+
+        //在详情页面展示4条销量最高的数据
+        List<ProductBean> list = userService.topSelling();
+
+
+        List<String> shopImg =  userService.queryShopImg(id);
+        System.out.println(pro);
+        System.out.println(shopImg);
+        System.out.println(list);
+        model.addAttribute("list",list);
+        model.addAttribute("img",shopImg);
+        model.addAttribute("pro",pro);
+        return "jsp/product";
     }
 }

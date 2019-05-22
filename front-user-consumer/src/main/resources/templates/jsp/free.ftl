@@ -46,7 +46,7 @@
             <!--topRightNav-->
             <ul class="topRtNav">
                 <li><a href="/page/toUserCenter">个人中心</a></li>
-                <li><a href="JavaScript:toShoppingCar('http://localhost:8084/page/test');" class="cartIcon">购物车<i>${count}</i></a></li>
+                <li><a href="JavaScript:toShoppingCar('http://localhost:8084/page/test');" class="cartIcon">购物车<i>?</i></a></li>
                 <li><a href="JavaScript:;" class="favorIcon">收藏夹</a></li>
                 <li><a href="">商家中心</a></li>
                 <li><a href="" class="srvIcon">客户服务</a></li>
@@ -300,7 +300,7 @@
 <section class="wrap idxproLi">
     <h2>
         <strong>
-            <a href="#">精品女装</a>
+            <a href="#">精品男装</a>
         </strong>
         <span class="classLi">
    <a href="#">夏装</a>
@@ -312,81 +312,20 @@
   </span>
     </h2>
     <div class="ltArea">
-        <!--ad:category pic-->
+        <!--ad:category pic 精品男装图-->
             <img src="/img/bestCategoryPic02.png"></a>
     </div>
     <div class="ctLi">
         <ul>
-            <li>
-                <a href="">
-                    <img src="/img/goods005.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods006.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>545.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img src="/img/goods007.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods008.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods009.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>980.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods010.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>642.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods005.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>793.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods006.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>755.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods007.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>360.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods008.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1255.00</span></p>
-                </a>
-            </li>
+            <#list listMan as n >
+                <li>
+                    <a href="javascript:commodityManDetails(${n.id})">
+                        <img src="${n.img}">
+                        <h3>${n.productTitle}</h3>
+                        <p><span>${n.productPrice}</span></p>
+                    </a>
+                </li>
+            </#list>
         </ul>
         <!--bestBrand-->
         <div class="idxBrandLi">
@@ -419,76 +358,17 @@
     </div>
     <div class="ctLi">
         <ul>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods001.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods003.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>545.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods004.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods003.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1000.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods001.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>980.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods002.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>642.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods004.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>793.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods001.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>755.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods002.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>360.00</span></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/product.html">
-                    <img src="/img/goods003.png">
-                    <h3>2019时尚新款</h3>
-                    <p><span>1255.00</span></p>
-                </a>
-            </li>
+            <ul>
+                <#list list as i >
+                    <li>
+                        <a href="javascript:commodityDetails(${i.id})">
+                            <img src="${i.img}">
+                            <h3>${i.productTitle}</h3>
+                            <p><span>${i.productPrice}</span></p>
+                        </a>
+                    </li>
+                </#list>
+            </ul>
         </ul>
         <!--bestBrand-->
         <div class="idxBrandLi">
@@ -606,8 +486,13 @@
         menuShow = true;
     }
 
+    hideMenu = function(){
+        $("#menu").hide();
+        menuShow = false;
+    }
 
-    $("#menu-head").mouseup(function () {
+
+    $("#menu-head").mouseover(function () {
         showOrHideMenu();
     })
 
@@ -617,11 +502,27 @@
     }
 
     toShoppingCar = function(url){
-        hiedMenu();
+        hideMenu();
         createIframe(url);
     }
     createIframe = function(url){
         $("#window").html("<iframe src='"+url+"' style='width:99%; height:99%'></iframe>");
+    }
+
+
+
+
+    function tan() {
+        alert("感谢您的关注，功能正在开发中！~")
+    }
+
+    //点击商品时进入详情页面
+    function commodityDetails(id) {
+        location.href = "/page/queryShopDetails?id=" + id;
+    }
+
+    function commodityManDetails(id) {
+        location.href = "/page/queryShopDetails?id=" + id;
     }
 </script>
 </html>

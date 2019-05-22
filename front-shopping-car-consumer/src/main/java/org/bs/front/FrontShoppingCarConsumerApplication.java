@@ -5,11 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 @SpringBootApplication
 @EnableEurekaClient     //都是能够让注册中心能够发现，扫描到改服务
 @EnableDiscoveryClient  //都是能够让注册中心能够发现，扫描到改服务
 @EnableFeignClients //注解开启Feign的功能 Feign本身自带断路器
+@EnableRedisHttpSession
 public class FrontShoppingCarConsumerApplication {
 
     public static void main(String[] args) {

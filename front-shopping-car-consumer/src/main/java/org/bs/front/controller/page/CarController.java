@@ -1,16 +1,19 @@
 package org.bs.front.controller.page;
 
+import com.alibaba.fastjson.JSON;
 import com.netflix.client.http.HttpResponse;
 import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.product.ProductBean;
 import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.ShopCarService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -24,25 +27,31 @@ public class CarController {
     @Autowired
     private ShopCarService shopCarService;
 
+
     //进入购物车
     @RequestMapping(value = "test")
-    private String queryShopCar(Model model, HttpSession session, HttpServletResponse response) throws IOException {
+    private String queryShopCar(Model model,HttpSession session, HttpServletResponse response) throws IOException {
 
-        //暂时的关闭此功能 等上线时开通
+        String id = session.getId();
+        System.out.println(id);
+
         UserBean userBean = (UserBean)session.getAttribute(session.getId());
 
+        //暂时的关闭此功能 等上线时开通
 
         //System.out.println("我是session"+user);
         //判断是否登陆 未登录就将请求转发到登陆   页否则就继续
-/*       if(userBean==null){
+       if(userBean==null){
             response.sendRedirect("http://localhost:8082/page/toLogin");
             return null;
-       }*/
+       }
 
-//        Integer  userId = userBean.getUserId();
+        Integer  userId = userBean.getUserId();
+
+       System.out.println(userId);
 
         //根据用户的key取redis中查询对应的值
-        String key = ConstantClass.FIND_USER_SHOP_CAR+2;
+        String key = ConstantClass.FIND_USER_SHOP_CAR+userId;
 
         System.out.println("看一下这个Key有没有值-------》"+key);
         //上数据库查询这个用户的商品
