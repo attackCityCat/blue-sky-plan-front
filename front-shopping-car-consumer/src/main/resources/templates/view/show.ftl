@@ -191,8 +191,13 @@
 
     //数量减
     function reduce(id, price) {
+        var count = $("#count" + id).val();
+        if(count<=1){
+            alert("不要请删除 不要在减了")
+            return;
+        }
         $.ajax({
-            url:'/car/page/reduceCount',
+            url:'/page/reduceCount',
             data:{
                 id:id
             },
@@ -210,7 +215,7 @@
     function puls(id, price) {
 
         $.ajax({
-            url:'/car/page/pulsCount',
+            url:'/page/pulsCount',
             data:{
                 id:id
             },

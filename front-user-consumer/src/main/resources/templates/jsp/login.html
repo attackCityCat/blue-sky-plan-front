@@ -202,7 +202,7 @@
       $("#register").click(function(){
           $.ajax({
               url:'/login/login',
-              type:'get',
+              type:'post',
               data:{
                   phone:$("#count").val(),
                   password:$("#password").val(),

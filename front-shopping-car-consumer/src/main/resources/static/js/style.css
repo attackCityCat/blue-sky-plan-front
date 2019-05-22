@@ -53,7 +53,7 @@ small,weak{color:#666}
 .fl{float:left;}
 .fr{float:right;}
 .obviousText{color:#ff4400;}
-.wrap{width:1200px;height:auto;margin:0 auto;}
+.wrap{width:1200px;margin:0 auto;}
 .cartIcon:before{font-family:'151219regular';content:"$";}
 .favorIcon:before{font-family:'151219regular';content:"*";}
 .srvIcon:before{font-family:'151219regular';content:"#";}

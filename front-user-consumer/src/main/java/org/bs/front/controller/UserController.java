@@ -30,7 +30,7 @@ public class UserController {
        @Autowired
        private   RedisTemplate<String,String>   redisTemplate;
 
-       @GetMapping("/login/login")
+       @PostMapping("/login/login")
        public HashMap<String,Object> login(UserBean userBean,HttpSession session ){
            HashMap<String, Object> result = new HashMap<String, Object>();
            Subject subject = SecurityUtils.getSubject();

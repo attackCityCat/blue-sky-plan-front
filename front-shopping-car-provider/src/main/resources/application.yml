@@ -15,11 +15,11 @@ spring:
   application:
     name: front-shopping-car-provider #应用名称  保证唯一   一般采用项目名
   redis:
-    host: 192.168.1.154
+    host: 192.168.1.119
     port: 6379
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.156/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
+    url: jdbc:mysql://192.168.1.115/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
     username: root
     password: 123456
     type: com.alibaba.druid.pool.DruidDataSource

@@ -27,8 +27,13 @@ public class ShiroConfig {
         shiroFilterFactoryBean.setUnauthorizedUrl("/page/to403");
 
         LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
+        map.put("/code/findSendCode","anon");
+        map.put("/retrieve/userRetrieve","anon");
+        map.put("/users/toenroll","anon");
         map.put("/login/login","anon");
         map.put("/page/toEnroll","anon");
+        map.put("/page/toUser","anon");
+        map.put("/page/toFreeCenter","anon");
         map.put("/page/toMain","anon");
         map.put("/page/toRetrieve","anon");
         map.put("/js/*","anon");

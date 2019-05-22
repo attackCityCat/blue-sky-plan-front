@@ -19,9 +19,9 @@ spring:
     name: front-product-provider #应用名称  保证唯一   一般采用项目名
   data:
     solr:
-      host: http://192.168.1.154:8079/solr
+      host: http://192.168.1.119:8079/solr
   datasource:
-    url: jdbc:mysql://192.168.1.156/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
+    url: jdbc:mysql://192.168.1.115/blue_sky_plan?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: 123456

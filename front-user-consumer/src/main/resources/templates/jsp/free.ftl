@@ -10,6 +10,12 @@
     <script src="/js/jquery.js"></script>
     <script src="/js/swiper.min.js"></script>
 
+    <style type="text/css">
+        #menu-head:hover {
+            display: inline-block;
+        }
+    </style>
+
     <script>
         $(document).ready(function(){
             //焦点图
@@ -33,13 +39,15 @@
             <ul class="topLtNav">
                 <li><a href="/page/toLogin" class="obviousText">你好!</a></li>
                 <li><a href="">欢迎</a></li>
-                <li><a href="">${user.name}</a></li>
+                <li><a href="">
+                        ${(user.name)!'请登录'}
+                        </a></li>
             </ul>
             <!--topRightNav-->
             <ul class="topRtNav">
                 <li><a href="/page/toUserCenter">个人中心</a></li>
-                <li><a href="" class="cartIcon">购物车<i>0</i></a></li>
-                <li><a href="" class="favorIcon">收藏夹</a></li>
+                <li><a href="JavaScript:toShoppingCar('http://localhost:8084/page/test');" class="cartIcon">购物车<i>0</i></a></li>
+                <li><a href="JavaScript:;" class="favorIcon">收藏夹</a></li>
                 <li><a href="">商家中心</a></li>
                 <li><a href="" class="srvIcon">客户服务</a></li>
                 <li><a href="">联盟管理</a></li>
@@ -78,76 +86,78 @@
     <nav>
         <ul class="wrap navList">
             <li class="category">
-                <a>全部产品分类</a>
-                <dl class="asideNav indexAsideNav">
-                    <dt><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">女装</a></dt>
-                    <dd>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">夏装新</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">连衣裙</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">T恤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">衬衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">裤子</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">牛仔裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">背带裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">短外套</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">时尚外套</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">风衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">毛衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">背心</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">吊带</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">民族服装</a>
-                    </dd>
-                    <dt><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">男装</a></dt>
-                    <dd>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">衬衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">背心</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">西装</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">POLO衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">马夹</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">皮衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">毛衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">针织衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">牛仔裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">外套</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">夹克</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">卫衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">风衣</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">民族风</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">原创设计</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">大码</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">情侣装</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">开衫</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">运动裤</a>
-                        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">工装裤</a>
-                    </dd>
-                </dl>
+                <a id="menu-head">全部产品分类</a>
+                <div id="menubox">
+                    <dl class="asideNav indexAsideNav" id="menu">
+                        <dt><a href="#">女装</a></dt>
+                        <dd>
+                            <a href="#">夏装新</a>
+                            <a href="#">连衣裙</a>
+                            <a href="#">T恤</a>
+                            <a href="#">衬衫</a>
+                            <a href="#">裤子</a>
+                            <a href="#">牛仔裤</a>
+                            <a href="#">背带裤</a>
+                            <a href="#">短外套</a>
+                            <a href="#">时尚外套</a>
+                            <a href="#">风衣</a>
+                            <a href="#">毛衣</a>
+                            <a href="#">背心</a>
+                            <a href="#">吊带</a>
+                            <a href="#">民族服装</a>
+                        </dd>
+                        <dt><a href="#">男装</a></dt>
+                        <dd>
+                            <a href="#">衬衫</a>
+                            <a href="#">背心</a>
+                            <a href="#">西装</a>
+                            <a href="#">POLO衫</a>
+                            <a href="#">马夹</a>
+                            <a href="#">皮衣</a>
+                            <a href="#">毛衣</a>
+                            <a href="#">针织衫</a>
+                            <a href="#">牛仔裤</a>
+                            <a href="#">外套</a>
+                            <a href="#">夹克</a>
+                            <a href="#">卫衣</a>
+                            <a href="#">风衣</a>
+                            <a href="#">民族风</a>
+                            <a href="#">原创设计</a>
+                            <a href="#">大码</a>
+                            <a href="#">情侣装</a>
+                            <a href="#">开衫</a>
+                            <a href="#">运动裤</a>
+                            <a href="#">工装裤</a>
+                        </dd>
+                    </dl>
+                </div>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html" class="active">首页</a>
+                <a href="/page/toUSer" class="active">首页</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">时尚搭配</a>
+                <a href="#">时尚搭配</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">原创设计</a>
+                <a href="#">原创设计</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">时尚代购</a>
+                <a href="#">时尚代购</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/channel.html">民族风</a>
+                <a href="#">民族风</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/information.html">时尚搭配</a>
+                <a href="#">时尚搭配</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/library.html">搭配知识</a>
+                <a href="#">搭配知识</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">促销专区</a>
+                <a href="#">促销专区</a>
             </li>
             <li>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">其他</a>
+                <a href="#">其他</a>
             </li>
         </ul>
     </nav>
@@ -173,44 +183,16 @@
     });
 
 </script>
-
+<div id="window" style="height: 500px">
 <!--advertisment area-->
 <section class="wrap">
     <!--ctCont-->
     <div class="IdxmainArea">
         <!--slide-->
         <div id="slide" class="swiper-container-horizontal">
-            <!--<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1725px, 0px, 0px);">-->
-            <!--<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>
-            <div class="swiper-slide" data-swiper-slide-index="0" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide01.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide02.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>-->
-            <!--<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 575px;">-->
             <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
                 <img src="/img/slide01.png">
             </a>
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="pagination"><span class="swiper-pagination-bullet">
-                </span><span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-            </div>-->
         </div>
         <!--singleAd-->
         <div class="singleAd">
@@ -222,7 +204,7 @@
         <dl class="bestShop">
             <dt>
                 <strong>优秀商家推荐</strong>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/shop_list.html" class="fr">更多</a>
+                <a href="#">更多</a>
             </dt>
             <dd>
                 <a href="">
@@ -297,21 +279,20 @@
         <dl class="idxRtAtc">
             <dt>
                 <em class="obviousText">最新公告</em>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+                <a href="#">more</a>
             </dt>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
+            <dd>2019年5月20日 11:27:59 升级展示页面</dd>
         </dl>
         <dl class="idxRtAtc">
             <dt>
                 <em>质量标准技术参数</em>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_list.html">more</a>
+                <a href="#">more</a>
             </dt>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告统升级通告</a></dd>
-            <dd><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/article_read.html">2015年12月20日系统升级通告</a></dd>
+            <dd>2019年5月20日 11:29:21 网站前台升级</dd>
+            <dd>2019年5月20日 11:29:34 网络畅通</dd>
         </dl>
     </div>
 </section>
@@ -524,7 +505,7 @@
 <section class="wrap idexCase">
     <h2>
         <strong>服装搭配</strong>
-        <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">more</a>
+        <a href="">more</a>
     </h2>
     <ul>
         <li>
@@ -596,6 +577,9 @@
     </dl>
 </section>
 
+
+</div>
+
 <footer>
     <!--help-->
     <ul class="wrap help">
@@ -642,4 +626,34 @@
     </div>
 </footer>
 </body>
+<script type="text/javascript">
+    hiedMenu = function(){
+        $("#menu").hide();
+    }
+
+    showMenu = function(){
+        $("#menu").show();
+    }
+
+    $("#menu-head").mouseover(function () {
+        $("#menu").show();
+    })
+
+    $("#menubox").mouseout(function () {
+        $("#menu").hide();
+    })
+
+    toUser = function(url){
+        showMenu();
+
+    }
+
+    toShoppingCar = function(url){
+        hiedMenu();
+        createIframe(url);
+    }
+    createIframe = function(url){
+        $("#window").html("<iframe src='"+url+"' style='width:99%; height:99%'></iframe>");
+    }
+</script>
 </html>

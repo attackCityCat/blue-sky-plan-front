@@ -5,13 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-<#if list?exists>
-<#list list as i>
+<form id>
+    anniu
+</form>
+<span id="">
 
-    ${i.productName?if_exists}
-    ${i.productSpec?if_exists}
 
-    </#list>
-    </#if>
+</span>
+
+id
+
+spanid.html(暂无信息)
+
+
 </body>
 </html>
