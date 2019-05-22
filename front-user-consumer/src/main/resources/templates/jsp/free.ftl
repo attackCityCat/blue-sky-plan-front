@@ -588,25 +588,32 @@
 </script>
 </body>
 <script type="text/javascript">
-    hiedMenu = function(){
-        $("#menu").hide();
+
+    var menuShow = true;
+
+    showOrHideMenu = function(){
+        if (menuShow) {
+            $("#menu").hide();
+            menuShow = false;
+        }else {
+            $("#menu").show();
+            menuShow = true;
+        }
     }
 
     showMenu = function(){
         $("#menu").show();
+        menuShow = true;
     }
 
-    $("#menu-head").mouseover(function () {
-        $("#menu").show();
+
+    $("#menu-head").mouseup(function () {
+        showOrHideMenu();
     })
 
-    $("#menubox").mouseout(function () {
-        $("#menu").hide();
-    })
 
     toUser = function(url){
         showMenu();
-
     }
 
     toShoppingCar = function(url){
