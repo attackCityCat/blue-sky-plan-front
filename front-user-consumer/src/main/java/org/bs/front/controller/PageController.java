@@ -2,6 +2,7 @@ package org.bs.front.controller;
 
 import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.showproduct.ProductBean;
+import org.bs.front.pojo.showproduct.TypeBean;
 import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -62,6 +63,11 @@ public class PageController {
     @RequestMapping("toMain")
     public String toIndex(Model model) {
 
+        //查询男装类型
+       List<TypeBean> typeManList = userService.findShopTypeManList();
+       //查询女装类型
+       List<TypeBean> typeList = userService.findShopTypeList();
+
         //查询女装
         List<ProductBean> list = userService.findShopList();
         //查询男装
@@ -70,6 +76,10 @@ public class PageController {
         model.addAttribute("list", list);
         //返回男装数据
         model.addAttribute("listMan", listMen);
+        //返回女装类型数据
+        model.addAttribute("typeList",typeList);
+        //返回男装类型数据
+        model.addAttribute("typeManList",typeManList);
 
         return "jsp/main";
     }

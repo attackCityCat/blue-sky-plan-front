@@ -1,6 +1,7 @@
 package org.bs.front.service.user;
 
 import org.bs.front.pojo.showproduct.ProductBean;
+import org.bs.front.pojo.showproduct.TypeBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,4 +42,11 @@ public interface UserServiceApi {
     //查出销量最高的4条数据
     @RequestMapping("/topSelling")
     List<ProductBean> topSelling();
+
+    //查询男装类型
+    @RequestMapping("/findShopTypeManList")
+    List<TypeBean> findShopTypeManList();
+    //查询女装类型
+    @RequestMapping("/findShopTypeList")
+    List<TypeBean> findShopTypeList();
 }

@@ -28,7 +28,8 @@
     <div class="gallery">
         <div>
             <div id="preview" class="spec-preview"><span class="jqzoom"><img jqimg="${pro.img}"
-                                     height="420px"  width="420px"   src="${pro.img}"/></span></div>
+                                                                             height="420px" width="420px"
+                                                                             src="${pro.img}"/></span></div>
             <!--缩图开始-->
             <div class="spec-scroll"><a class="prev">&lt;</a> <a class="next">&gt;</a>
                 <div class="items">
@@ -48,14 +49,13 @@
         <div class="goods_infor">
             <#--//商品id // 商品标题 // 商品价格 //商品图  //商品规格 //商品颜色 //商品数量-->
             <form action="/page/addShopCar" id="addShopCarFrom">
-                id: <input type="text" value="${pro.id}" id="productId" name="productId">
-                名称： <input type="text" value="${pro.productTitle}" id="productName" name="productName">
-                价格：<input type="text" value="${pro.productPrice}" id="productPrice" name="productPrice">
-                图：<input type="text" value="${pro.img}" id="productImg" name="productImg">
-
-                数量：<input type="text" value="" id="productCount" name="productCount">
-                颜色：<input type="text" value="" id="productColor" name="productColor">
-                规格：<input type="text" value="" id="productSpec" name="productSpec">
+                <input type="hidden" value="${pro.id}" id="productId" name="productId">
+                <input type="hidden" value="${pro.productTitle}" id="productName" name="productName">
+                <input type="hidden" value="${pro.productPrice}" id="productPrice" name="productPrice">
+                <input type="hidden" value="${pro.img}" id="productImg" name="productImg">
+                <input type="hidden" value="" id="productCount" name="productCount">
+                <input type="hidden" value="" id="productColor" name="productColor">
+                <input type="hidden" value="" id="productSpec" name="productSpec">
             </form>
             <h2>${pro.productTitle}</h2>
             <ul>
@@ -334,9 +334,29 @@
         $("#procount").val(++count);
     }
 
+    //精确计算乘法
+    function accMul(arg1, arg2) {
+        var m = 0, s1 = arg1.toString(), s2 = arg2.toString();
+        try {
+            m += s1.split(".")[1].length
+        } catch (e) {
+        }
+        try {
+            m += s2.split(".")[1].length
+        } catch (e) {
+        }
+        return Number(s1.replace(".", "")) * Number(s2.replace(".", "")) / Math.pow(10, m)
+    }
+
     //立即购买 点击时直接跳转到支付页
     function purchase(price) {
-        location.href=""+price;
+        $("#productCount").val($("#procount").val())
+        var count = $("#productCount").val();
+        var ids = $("#productId").val();
+        //计算出商品的总价
+        var totalPrice = (price, count);
+        //跳转到收银台页面  totalPrice总价 ids 商品的id
+        location.href = "/路径/路径?totalPrice=" + totalPrice + "&ids?=" + ids;
     }
 
     //添加商品到购物车

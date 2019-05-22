@@ -3,6 +3,7 @@ package org.bs.front.controller;
 
 import org.bs.front.mapper.UserMapper;
 import org.bs.front.pojo.showproduct.ProductBean;
+import org.bs.front.pojo.showproduct.TypeBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -74,6 +75,17 @@ public class UserController {
     @RequestMapping("/topSelling")
     public List<ProductBean> topSelling(){
         return userMapper.topSelling();
+    }
+
+    //查询男装类型
+    @RequestMapping("/findShopTypeManList")
+    public List<TypeBean> findShopTypeManList(){
+        return userMapper.findShopTypeManList();
+    }
+    //查询女装类型
+    @RequestMapping("/findShopTypeList")
+    public List<TypeBean> findShopTypeList(){
+        return userMapper.findShopTypeList();
     }
 
 }

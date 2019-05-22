@@ -3,6 +3,7 @@ package org.bs.front.mapper;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.bs.front.pojo.showproduct.ProductBean;
+import org.bs.front.pojo.showproduct.TypeBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -38,4 +39,13 @@ public interface UserMapper {
 
     //查询销量最高的4条数据
     List<ProductBean> topSelling();
+
+    //查询男装类型
+    @Select(" SELECT c.type_name FROM cms_type t " +
+            "left join cms_type c on c.pid=t.id where c.pid =1 limit 0,15")
+    List<TypeBean> findShopTypeManList();
+    //查询女装类型
+    @Select(" SELECT c.type_name FROM cms_type t " +
+            "left join cms_type c on c.pid=t.id where c.pid =2 limit 0,15")
+    List<TypeBean> findShopTypeList();
 }

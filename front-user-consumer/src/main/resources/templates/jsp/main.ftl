@@ -83,43 +83,15 @@
                 <dl class="asideNav indexAsideNav">
                     <dt><a href="javascript:tan()">女装</a></dt>
                     <dd>
-                        <a href="javascript:tan()">夏装新</a>
-                        <a href="javascript:tan()">连衣裙</a>
-                        <a href="javascript:tan()">T恤</a>
-                        <a href="javascript:tan()">衬衫</a>
-                        <a href="javascript:tan()">裤子</a>
-                        <a href="javascript:tan()">牛仔裤</a>
-                        <a href="javascript:tan()">背带裤</a>
-                        <a href="javascript:tan()">短外套</a>
-                        <a href="javascript:tan()">时尚外套</a>
-                        <a href="javascript:tan()">风衣</a>
-                        <a href="javascript:tan()">毛衣</a>
-                        <a href="javascript:tan()">背心</a>
-                        <a href="javascript:tan()">吊带</a>
-                        <a href="javascript:tan()">民族服装</a>
+                        <#list typeManList as nv>
+                            <a href="javascript:tan()">${nv.type_name}</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </#list>
                     </dd>
                     <dt><a href="javascript:tan()">男装</a></dt>
                     <dd>
-                        <a href="javascript:tan()">衬衫</a>
-                        <a href="javascript:tan()">背心</a>
-                        <a href="javascript:tan()">西装</a>
-                        <a href="javascript:tan()">POLO衫</a>
-                        <a href="javascript:tan()">马夹</a>
-                        <a href="javascript:tan()">皮衣</a>
-                        <a href="javascript:tan()">毛衣</a>
-                        <a href="javascript:tan()">针织衫</a>
-                        <a href="javascript:tan()">牛仔裤</a>
-                        <a href="javascript:tan()">外套</a>
-                        <a href="javascript:tan()">夹克</a>
-                        <a href="javascript:tan()">卫衣</a>
-                        <a href="javascript:tan()">风衣</a>
-                        <a href="javascript:tan()">民族风</a>
-                        <a href="javascript:tan()">原创设计</a>
-                        <a href="javascript:tan()">大码</a>
-                        <a href="javascript:tan()">情侣装</a>
-                        <a href="javascript:tan()">开衫</a>
-                        <a href="javascript:tan()">运动裤</a>
-                        <a href="javascript:tan()">工装裤</a>
+                        <#list typeManList as man>
+                        <a href="javascript:tan()">${man.type_name}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </#list>
                     </dd>
                 </dl>
             </li>
@@ -181,37 +153,11 @@
     <div class="IdxmainArea">
         <!--slide-->
         <div id="slide" class="swiper-container-horizontal">
-            <!--<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-1725px, 0px, 0px);">-->
-            <!--<div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>
-            <div class="swiper-slide" data-swiper-slide-index="0" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide01.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide02.png">
-                </a>
-            </div>
-            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 575px;">
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#">
-                    <img src="/upload/slide03.png">
-                </a>
-            </div>-->
-            <!--<div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 575px;">-->
+
             <a href="javascript:tan()">
                 <img src="/img/slide01.png">
             </a>
-            <!--</div>-->
-            <!--</div>-->
-            <!--<div class="pagination"><span class="swiper-pagination-bullet">
-                </span><span class="swiper-pagination-bullet"></span>
-                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
-            </div>-->
+
         </div>
         <!--singleAd-->
         <div class="singleAd">
