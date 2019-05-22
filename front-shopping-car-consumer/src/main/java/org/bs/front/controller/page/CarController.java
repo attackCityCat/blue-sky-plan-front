@@ -29,15 +29,17 @@ public class CarController {
     private String queryShopCar(Model model, HttpSession session, HttpServletResponse response) throws IOException {
 
         //暂时的关闭此功能 等上线时开通
-       /* UserBean user = (UserBean)session.getAttribute(session.getId());
+        UserBean userBean = (UserBean)session.getAttribute(session.getId());
 
-        Integer  userId = userBean.getUserId()
+
         //System.out.println("我是session"+user);
         //判断是否登陆 未登录就将请求转发到登陆   页否则就继续
-       if(user==null){
-            response.sendRedirect("http://localhost:8099/user/page/toLogin");
+/*       if(userBean==null){
+            response.sendRedirect("http://localhost:8082/page/toLogin");
             return null;
-        }*/
+       }*/
+
+//        Integer  userId = userBean.getUserId();
 
         //根据用户的key取redis中查询对应的值
         String key = ConstantClass.FIND_USER_SHOP_CAR+2;
@@ -65,7 +67,7 @@ public class CarController {
     @ResponseBody
     public boolean delShopCar(Integer id){
         try {
-            String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId";
+            String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+2;
             String ShopKey = ConstantClass.SHOP_KEY+id;
            boolean bol = shopCarService.delShopCar(UserKey,ShopKey);
             return true;
@@ -87,7 +89,7 @@ public class CarController {
     @RequestMapping("pulsCount")
     @ResponseBody
     public void pulsCount(String id){
-        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId";
+        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+2;
         String ShopKey = ConstantClass.SHOP_KEY+id;
         shopCarService.pulsCount(UserKey,ShopKey);
     }
@@ -98,9 +100,20 @@ public class CarController {
     @RequestMapping("reduceCount")
     @ResponseBody
     public void reduceCount(String id){
-        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+"userId";
+        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+2;
         String ShopKey = ConstantClass.SHOP_KEY+id;
         shopCarService.reduceCount(UserKey,ShopKey);
+    }
+
+
+    @RequestMapping("checkUser")
+    @ResponseBody
+    public Boolean checkUser(HttpServletRequest httpServletRequest){
+        HttpSession session = httpServletRequest.getSession();
+        Object attribute = session.getAttribute(session.getId());
+        if (attribute == null)
+            return false;
+        return true;
     }
 
 

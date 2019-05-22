@@ -9,6 +9,7 @@ import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.bs.front.common.ConstantConf;
+import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.UserService;
 import org.bs.front.utils.HttpClientUtil;
@@ -23,10 +24,7 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @RestController
@@ -50,6 +48,7 @@ public class UserController {
                result.put("code",0);
                result.put("msg","登录成功");
                UserBean user = (UserBean) subject.getPrincipal();
+
                session.setAttribute(session.getId(),user);
                return  result;
            }catch(UnknownAccountException e){

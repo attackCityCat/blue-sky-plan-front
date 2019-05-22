@@ -39,7 +39,7 @@
             <ul class="topLtNav">
                 <li><a href="/page/toLogin" class="obviousText">你好!</a></li>
                 <li><a href="">欢迎</a></li>
-                <li><a href="">
+                <li><a href="/page/toLogin">
                         ${(user.name)!'请登录'}
                         </a></li>
             </ul>
@@ -263,11 +263,11 @@
         <div class="idxRtLogin">
             <div class="fstArea">
                 <a href="" class="userIcon">
-                    <img src="${user.headImg!}">
+                    <img src="${(user.headImg)!''}">
                 </a>
                 <div class="rtInfor">
-                    <p>Hi!你好</p>
-                    <p class="obviousText">${user.name} 用户 已登陆</p>
+                    <p><a href="/page/toLogin">${(user.name)!'请登录'}</a>Hi!你好</p>
+                    <p class="obviousText"></p>
                 </div>
             </div>
             <div class="classLi">
@@ -578,51 +578,7 @@
 
 </div>
 
-<footer>
-    <!--help-->
-    <ul class="wrap help">
-        <li>
-            <dl>
-                <dt>消费者保障</dt>
-                <dd><a href="javascript:tan()">保障范围</a></dd>
-                <dd><a href="javascript:tan()">退换货流程</a></dd>
-                <dd><a href="javascript:tan()">服务中心</a></dd>
-                <dd><a href="javascript:tan()">更多服务特色</a></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>新手上路</dt>
-                <dd><a href="javascript:tan()">保障范围</a></dd>
-                <dd><a href="javascript:tan()">退换货流程</a></dd>
-                <dd><a href="javascript:tan()">服务中心</a></dd>
-                <dd><a href="javascript:tan()">更多服务特色</a></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>付款方式</dt>
-                <dd><a href="javascript:tan()">保障范围</a></dd>
-                <dd><a href="javascript:tan()">退换货流程</a></dd>
-                <dd><a href="javascript:tan()">服务中心</a></dd>
-                <dd><a href="javascript:tan()">更多服务特色</a></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>服务保障</dt>
-                <dd><a href="javascript:tan()">保障范围</a></dd>
-                <dd><a href="javascript:tan()">退换货流程</a></dd>
-                <dd><a href="javascript:tan()">服务中心</a></dd>
-                <dd><a href="javascript:tan()">更多服务特色</a></dd>
-            </dl>
-        </li>
-    </ul>
-    <div class="wrap btmInfor">
-        <p>© 2013 DeathGhost.cn 版权所有 网络文化经营许可证：浙网文[2013]***-027号 增值电信业务经营许可证：浙B2-200***24-1 信息网络传播视听节目许可证：1109***4号</p>
-        <address>联系地址：北京市海淀区西三旗悦秀路金科教育 1810A 班</address>
-    </div>
-</footer>
+
 <script type="text/javascript">
 
     function tan() {

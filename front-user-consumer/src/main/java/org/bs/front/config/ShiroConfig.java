@@ -38,6 +38,7 @@ public class ShiroConfig {
         map.put("/page/toRetrieve","anon");
         map.put("/js/*","anon");
         map.put("/img/*","anon");
+        map.put(" /page/test","authc");
         map.put("/*/*","authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(map);
         return  shiroFilterFactoryBean;
