@@ -22,7 +22,23 @@ public interface UserServiceApi {
     void editRetrieve(@RequestParam("phone") String phone, @RequestParam("password") String password);
 
 
-    //查询商品列表
+    //查询女装商品列表
     @RequestMapping(value = "findShopList")
     List<ProductBean> findShopList();
+
+    //查询男装商品列表
+    @RequestMapping(value = "findShopListMen")
+    List<ProductBean> findShopListMen();
+
+    //查询商品详情
+    @RequestMapping("/queryShopDetails")
+    ProductBean queryShopDetails(@RequestParam(value = "id") Integer id);
+
+    //查询商品详情的图片
+    @RequestMapping("/queryShopImg")
+    List<String> queryShopImg(@RequestParam(value = "id") Integer id);
+
+    //查出销量最高的4条数据
+    @RequestMapping("/topSelling")
+    List<ProductBean> topSelling();
 }

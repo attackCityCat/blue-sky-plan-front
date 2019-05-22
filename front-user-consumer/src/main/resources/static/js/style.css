@@ -466,7 +466,7 @@ footer .btmInfor p{color:#09;margin:5px 0;}
 .order_choice li dd{margin:15px 0;overflow:hidden;}
 .order_choice li dd .radio{border:1px #d2d2d2 solid;display: inline-block;padding:10px 25px;cursor:pointer;margin-right:15px;}
 .order_choice li dd .radio input{display:none;}
-.order_choice li dd .radio.istrue{border:1px #c40000 solid;color:#c40000;font-weight:bold;}
+
 .order_choice li dd .textbox{width:60px;height:26px;line-height:26px;text-align:center;margin:0 8px;border:1px #d2d2d2 solid;padding:5px;}
 .order_choice li dd mark{background:none;font-size:12px;color:grey;}
 .order_choice li dd mark strong{color:red;}
@@ -619,10 +619,9 @@ footer .btmInfor p{color:#09;margin:5px 0;}
 .user_form .rt_form h2{height:40px;line-height:40px;border-bottom:1px #c40000 solid;font-size:16px;font-weight:bold;}
 .user_form .rt_form li{margin:8px 0;border-bottom:1px #d2d2d2 solid;}
 .user_form .rt_form li:before{font-family: '151219regular';font-size:24px;display:block;float:left;height:38px;line-height:38px;color:#09;}
-.user_form .rt_form .user_icon:before{content:"👨‍‍"}
-.user_form .rt_form .user_pwd:before{content:"🔒"}
-.user_form .rt_form .user_cc:before{content:"📞"}
-.user_form .rt_form .user_em:before{content:"📮"}
+.user_form .rt_form .user_icon:before{content:"U"}
+.user_form .rt_form .user_pwd:before{content:"M"}
+.user_form .rt_form .user_cc:before{content:"Y"}
 .user_form .rt_form li .textbox{display:block;margin-left:30px;width:235px;border:none;}
 .user_form .rt_form .link_li{height:40px;line-height:40px;border:none;}
 .user_form .rt_form li .get_num_btn{background:#d2d2d2;border-radius:2px;font-size:14px;border:none;color:white;width:100%;height:40px;cursor:pointer;}

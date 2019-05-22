@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -23,21 +24,53 @@ public class PageController {
 
 
     @Resource
-    RedisTemplate<String,Object> redisTemplate;
+    RedisTemplate<String, Object> redisTemplate;
+
+
+    /**
+     * 用户新增商品到购物车
+     * @param productBean
+     * @param session
+     * @return
+     */
+    @RequestMapping("addShopCar")
+    public String addShopCar(org.bs.front.pojo.product.ProductBean productBean, HttpSession session) {
+       // UserBean user = (UserBean) session.getAttribute(session.getId());
+      //  Integer userId = user.getUserId();
+
+        //目前先这样写 上线时 写成 ueserId
+        String userKey = ConstantClass.FIND_USER_SHOP_CAR;
+        //商品key为商品key+商品id
+        String shopKey = ConstantClass.SHOP_KEY + productBean.getProductId();
+
+        System.out.println(productBean);
+
+        //将用户加入购物车的商品存进redis缓存起来
+        redisTemplate.opsForHash().put(userKey, shopKey, productBean);
+
+        //完成以后重定向到首页
+        return "redirect:toMain";
+    }
 
 
     /**
      * 进入主页并 查询商品列表
+     *
      * @param model
-     * @return
+     * @returnfindShopList
      */
     @RequestMapping("toMain")
     public String toIndex(Model model) {
 
+        //查询女装
         List<ProductBean> list = userService.findShopList();
-       System.out.println("////////////////////////"+list);
-        model.addAttribute("list",list);
-        // 开会内容 商品下架时 从购物车删除  商品涨价或者降价时 购物车的价钱也要跟着加减
+        //查询男装
+        List<ProductBean> listMen = userService.findShopListMen();
+        //返回女装数据
+        model.addAttribute("list", list);
+        //返回男装数据
+        model.addAttribute("listMan", listMen);
+
         return "jsp/main";
     }
 
@@ -64,8 +97,8 @@ public class PageController {
 
         //当进入到这个方法的时候说明用户登陆成功 直接查一下用户的购物车并返回页面
         long hashLength = redisTemplate.opsForHash().size(ConstantClass.FIND_USER_SHOP_CAR + user.getUserId());
-        System.out.println("此用户购物车的商品有---》"+hashLength);
-        model.addAttribute("count",hashLength);
+        System.out.println("此用户购物车的商品有---》" + hashLength);
+        model.addAttribute("count", hashLength);
         model.addAttribute("user", user);
         return "jsp/free";
     }
@@ -87,5 +120,26 @@ public class PageController {
         UserBean user = (UserBean) session.getAttribute(session.getId());
         model.addAttribute("user", user);
         return "center/freeCenter";
+    }
+
+    /**
+     * 查询商品详情以及商品图片
+     *
+     * @param id
+     * @param model
+     * @return
+     */
+    @RequestMapping("/queryShopDetails")
+    public String queryShopDetails(Integer id, Model model) {
+        //查询商品的详情
+        ProductBean pro = userService.queryShopDetails(id);
+
+        //在详情页面展示4条销量最高的数据
+        List<ProductBean> list = userService.topSelling();
+        List<String> shopImg = userService.queryShopImg(id);
+        model.addAttribute("list", list);
+        model.addAttribute("img", shopImg);
+        model.addAttribute("pro", pro);
+        return "jsp/product";
     }
 }
