@@ -40,7 +40,7 @@ public class CarController {
         }*/
 
         //根据用户的key取redis中查询对应的值
-        String key = ConstantClass.FIND_USER_SHOP_CAR+"userId";
+        String key = ConstantClass.FIND_USER_SHOP_CAR+2;
 
         System.out.println("看一下这个Key有没有值-------》"+key);
         //上数据库查询这个用户的商品

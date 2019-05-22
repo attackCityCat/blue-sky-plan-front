@@ -1,7 +1,8 @@
 package org.bs.front.controller;
 
+
 import org.bs.front.mapper.UserMapper;
-import org.bs.front.pojo.product.ProductBean;
+import org.bs.front.pojo.showproduct.ProductBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -17,8 +18,8 @@ import java.util.stream.Collectors;
 @RestController
 public class UserController {
 
-       @Autowired
-       private  UserMapper  userMapper;
+   @Autowired
+    private UserMapper userMapper;
 
        @Resource
        private RedisTemplate<String,Object> redisTemplate;
@@ -64,5 +65,12 @@ public class UserController {
 
               return size;
        }
+
+
+    //查询商品列表
+   @RequestMapping(value = "findShopList")
+    public List<ProductBean> findShopList() {
+        return userMapper.findShopList();
+    }
 
 }

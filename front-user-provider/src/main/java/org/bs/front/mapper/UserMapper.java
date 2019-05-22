@@ -2,10 +2,13 @@ package org.bs.front.mapper;
 
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.bs.front.pojo.showproduct.ProductBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Component
 public interface UserMapper {
@@ -19,4 +22,7 @@ public interface UserMapper {
 
     @Update("update  front_user  set password = #{password} where phone = #{phone} ")
     void editRetrieve(@RequestParam("phone") String phone, @RequestParam("password") String password);
+
+
+   List<ProductBean> findShopList();
 }

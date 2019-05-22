@@ -9,18 +9,6 @@
     <script src="/js/html5.js"></script>
     <script src="/js/jquery.js"></script>
     <script src="/js/swiper.min.js"></script>
-
-    <script>
-        $(document).ready(function(){
-            //焦点图
-            var mySwiper = new Swiper('#slide',{
-                autoplay:5000,
-                visibilityFullFit : true,
-                loop:true,
-                pagination : '.pagination',
-            });
-        })
-    </script>
 </head>
 <body>
 <!--advertisment<div class="wrap"><img src="upload/banner.jpg"/></div>-->
@@ -253,17 +241,17 @@
         <div class="idxRtLogin">
             <div class="fstArea">
                 <a href="" class="userIcon">
-                    <img src="/img/DefaultAvatar.png">
+                    <img src="${user.headImg!}">
                 </a>
                 <div class="rtInfor">
                     <p>Hi!你好</p>
-                    <p class="obviousText">免费入驻，提升品牌效应！</p>
+                    <p class="obviousText">${user.name} 用户 已登陆</p>
                 </div>
             </div>
-            <div class="secArea">
-                <a href="/page/toLogin">登录</a>
-                <a href="/page/toEnroll">免费注册</a>
-                <a href="">商户入驻</a>
+            <div class="classLi">
+                <a href="">&nbsp;待发货&nbsp;|</a>
+                <a href="">&nbsp;待收货&nbsp;|</a>
+                <a href="">待评价</a>
             </div>
         </div>
         <dl class="idxRtAtc">
@@ -304,7 +292,8 @@
     </h2>
     <div class="ltArea">
         <!--ad:category pic-->
-        <a href=""><img src="/img/bestCategoryPic02.png"></a>
+        <a href="">
+            <img src="/img/bestCategoryPic02.png"></a>
     </div>
     <div class="ctLi">
         <ul>

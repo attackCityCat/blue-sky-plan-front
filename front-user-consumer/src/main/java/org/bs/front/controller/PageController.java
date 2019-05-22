@@ -1,37 +1,55 @@
 package org.bs.front.controller;
 
 import org.bs.front.constant.ConstantClass;
+import org.bs.front.pojo.showproduct.ProductBean;
 import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 @RequestMapping("page")
 public class PageController {
-
     @Autowired
-    UserService userService;
+    private UserService userService;
 
-    @GetMapping("toMain")
-    public String toIndex() {
+
+    @Resource
+    RedisTemplate<String,Object> redisTemplate;
+
+
+    /**
+     * 进入主页并 查询商品列表
+     * @param model
+     * @return
+     */
+    @RequestMapping("toMain")
+    public String toIndex(Model model) {
+
+        List<ProductBean> list = userService.findShopList();
+       System.out.println("////////////////////////"+list);
+        model.addAttribute("list",list);
+        // 开会内容 商品下架时 从购物车删除  商品涨价或者降价时 购物车的价钱也要跟着加减
         return "jsp/main";
     }
 
-    @GetMapping("toLogin")
-    public String toLogin() {
-        return "jsp/login";
-    }
+       @GetMapping("toLogin")
+       public   String  toLogin(){
+            return   "jsp/login";
+       }
 
-    @GetMapping("/toEnroll")
-    public String toEnroll() {
-        return "jsp/enroll";
-    }
+       @GetMapping("/toEnroll")
+       public   String   toEnroll(){
+            return "jsp/enroll";
+       }
 
     /**
      * 当用户登录成功就要去查购物车 展示出来购物车的商品数量

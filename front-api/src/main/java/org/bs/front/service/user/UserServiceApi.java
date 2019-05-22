@@ -1,7 +1,10 @@
 package org.bs.front.service.user;
 
+import org.bs.front.pojo.showproduct.ProductBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 public interface UserServiceApi {
@@ -25,4 +28,9 @@ public interface UserServiceApi {
      */
     @RequestMapping(value = "queryShopCarCount")
     Integer queryShopCarCount(@RequestParam(value = "key") String key);
+
+
+    //查询商品列表
+    @RequestMapping(value = "findShopList")
+    List<ProductBean> findShopList();
 }

@@ -56,6 +56,25 @@
             <version>1.2.33</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+
+        <!--自己的api jar-->
+        <dependency>
+            <groupId>org.bs.front</groupId>
+            <artifactId>front-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!-- thymeleaf 模板依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -26,4 +26,5 @@ spring:
 
 
 mybatis:
-  type-aliases-package: org.bs.front.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-locations: classpath:mybatis/confg.xml
