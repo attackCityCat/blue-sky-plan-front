@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="front-product-provider" />
-        <module name="front-api" />
+        <module name="front-eureka" />
         <module name="front-zuul" />
         <module name="front-user-consumer" />
         <module name="front-pay-consumer" />
@@ -16,7 +16,7 @@
         <module name="front-product-consumer" />
         <module name="front-user-provider" />
         <module name="front-shopping-car-provider" />
-        <module name="front-eureka" />
+        <module name="front-api" />
       </profile>
     </annotationProcessing>
   </component>
