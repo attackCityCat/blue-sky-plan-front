@@ -2,24 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ffaac1c-7625-4c04-8bbf-e69a504f3a4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/util/ResultUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/util/ResultUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ImgBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopServiceApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/shop/ShopService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/utils/RequestUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/shop/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/ShopMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/utils/RequestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/order/OrderBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/order/OrderBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/OrderServiceApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/OrderServiceApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/ShopCarServiceApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/ShopCarServiceApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-pay-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-pay-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/page/PageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/page/PageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/order/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/order.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/payManey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/settle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/AlipayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/AlipayDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/CorsMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/CorsMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/front-shopping-car-provider/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/resources/mybatis/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/src/main/resources/mybatis/OrderMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,44 +53,105 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="128" column="31" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/FrontPayProviderApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="66" column="38" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="38" />
+            <state relative-caret-position="147">
+              <caret line="111" column="28" lean-forward="true" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+              <folding>
+                <element signature="e#1504#1520#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl">
+        <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="96" column="21" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="21" />
+            <state relative-caret-position="90">
+              <caret line="227" column="18" selection-start-line="227" selection-start-column="18" selection-end-line="227" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1330#1331#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
+                <element signature="e#1415#1416#0" expanded="true" />
+                <element signature="e#1459#1460#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/shop/ShopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="43" column="53" lean-forward="true" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ShopController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/ShopMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopServiceApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ShopServiceApi#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -88,6 +162,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML4 File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -95,29 +171,56 @@
     <findStrings>
       <find>radio istrue</find>
       <find>radio</find>
+      <find>queryShop</find>
+      <find>ctLi</find>
+      <find>促销</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/shop/ShopController.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.html" />
-        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/resources/mybatis/OrderMapper.xml" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/utils/RequestUtil.java" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/utils/RequestUtil.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/FeignConfiguration.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" />
-        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/shop/ShopService.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/page/PageController.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main.html" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.html" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main.ftl" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ImgBean.java" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopServiceApi.java" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/ShopMapper.java" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/shop/ShopController.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java" />
       </list>
     </option>
   </component>
@@ -132,7 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -144,6 +246,62 @@
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
               <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -158,6 +316,55 @@
               <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
@@ -166,15 +373,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
@@ -243,52 +441,37 @@
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
-              <item name="front-shopping-car-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,10 +483,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../workspace_poi" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.bs.front.mapper" />
+      <recent name="org.bs.front.service.shop" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.bs.front.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea1\blue-sky-plan-front\front-pay-consumer\src\main\java\org\bs\front\conf" />
+      <recent name="D:\idea1\blue-sky-plan-front\front-pay-consumer\src\main\java\org\bs\front\utils" />
+      <recent name="D:\idea1\blue-sky-plan-front\front-pay-consumer\src\main\resources\templates\view" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -412,7 +614,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558237386631</updated>
-      <workItem from="1558237388412" duration="20583000" />
+      <workItem from="1558237388412" duration="49389000" />
+      <workItem from="1558353061326" duration="9004000" />
+      <workItem from="1558407953793" duration="38851000" />
     </task>
     <task id="LOCAL-00001" summary="11点45分 刘佳伟">
       <created>1558237696596</created>
@@ -421,11 +625,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558237696596</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="5.19  19:18  刘佳伟  第四次提交 订单确认">
+      <created>1558264749403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558264749403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20583000" />
+    <option name="totallyTimeSpent" value="97244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -437,10 +648,10 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24357034" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50075644" side_tool="true" weight="0.34477124" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32843137" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
@@ -448,99 +659,37 @@
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32843137" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.34477124" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.27287582" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49924356" visible="true" weight="0.34150326" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.32189542" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Database" order="2" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Web" order="4" side_tool="true" />
-      <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.24962178" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32843137" />
-      <window_info anchor="bottom" id="Java Enterprise" order="4" />
-      <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32843137" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.34477124" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.27287582" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="14" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="11点45分 刘佳伟" />
-    <option name="LAST_COMMIT_MESSAGE" value="11点45分 刘佳伟" />
+    <MESSAGE value="5.19  19:18  刘佳伟  第四次提交 订单确认" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.19  19:18  刘佳伟  第四次提交 订单确认" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/OrderService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="115" column="34" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/constant/ConstantClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -551,53 +700,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/order.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7980" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="30" column="36" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="128" column="31" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/static/swiper.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/static/html5.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/static/jquery.js">
@@ -617,17 +725,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java">
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/payManey.html" />
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="114">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+          <folding>
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1099#1100#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/resources/mybatis/OrderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="66" column="38" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="38" />
+        <state relative-caret-position="19">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/utils/RequestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="29" column="36" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/utils/RequestUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/AlipayDemoController.java" />
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/FrontPayConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/FeignConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/CorsMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/order.ftl" />
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/settle.html" />
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/order/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -638,12 +843,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl">
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="96" column="21" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="21" />
+        <state relative-caret-position="798">
+          <caret line="71" column="18" lean-forward="true" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/apache/solr/solr-solrj/7.7.1/solr-solrj-7.7.1.jar!/org/apache/solr/common/SolrDocument.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="282" selection-start-line="282" selection-end-line="282" />
+          <folding>
+            <element signature="e#8671#8672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="115" column="25" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/constant/ConstantClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/static/html5.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/page/PageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="63" column="44" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/shop/ShopService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ImgBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/ShopMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ShopServiceApi#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/shop/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="43" column="53" lean-forward="true" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ShopController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="111" column="28" lean-forward="true" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+          <folding>
+            <element signature="e#1504#1520#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="227" column="18" selection-start-line="227" selection-start-column="18" selection-end-line="227" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>blue-sky-plan-front</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

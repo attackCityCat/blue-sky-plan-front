@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -20,13 +21,11 @@ import java.util.List;
 public interface OrderServiceApi {
 
     @RequestMapping(value = "addOrder")
-    void addOrder(@RequestBody OrderBean orderBean);
+    void addOrder(@RequestBody OrderBean orderBean
+            ,@RequestParam(value = "price") Double price);
 
     @RequestMapping(value = "queryOrder")
     List<OrderBean> queryOrder();
-
-    @RequestMapping(value = "goAlipay")
-    String goAlipay(@RequestParam(value = "request") HttpServletRequest request, @RequestParam(value = "response") HttpServletRequest response, @RequestParam(value="price") String price);
 
     @RequestMapping(value = "cashier")
     List<ProductBean> queryShopCar(@RequestParam(value = "userKey") String userKey, @RequestParam(value = "ids") int[] ids);

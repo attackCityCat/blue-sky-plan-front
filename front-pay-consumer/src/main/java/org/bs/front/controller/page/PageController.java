@@ -21,7 +21,7 @@ public class PageController {
 
     @RequestMapping("/toMain")
     public String toMain(){
-        return "view/main";
+        return "main.ftl";
     }
 
     @RequestMapping("/toSolrShop")

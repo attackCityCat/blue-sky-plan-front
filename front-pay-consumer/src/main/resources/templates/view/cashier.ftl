@@ -18,7 +18,9 @@
         <#list list as i>
             <tr>
                 <td class="center"><img src="upload/goods.jpg" style="width:50px;height:50px;"/></a></td>
-                <td>${i.productName}</td>
+                <td>${i.productName}
+
+                </td>
                 <td>
                     <p>颜色：${i.productColor}</p>
 
@@ -31,6 +33,7 @@
         </#list>
 
     </table>
+
     <!--支付与配送-->
     <ul class="order_choice">
         <li>
@@ -71,23 +74,37 @@
         </li>
     </ul>
     <div class="order_btm_btn">
-        <a href="system_prompts.html" class="link_btn_02 add_btn"/>共计金额<strong class="rmb_icon">${totalPrice}</strong>提交订单</a>
+        <input type="hidden" value="${totalPrice}" id="totalPrice">
+        <input type="hidden" value="${ids}" id="ids">
+        <a href="javascript:payManey()" class="link_btn_02 add_btn"/>共计金额<strong class="rmb_icon">${totalPrice}</strong>提交订单</a>
     </div>
 </section>
 
-
 <script type="text/javascript">
+
+    //结账且删除购物车
+    function payManey(){
+
+        $.ajax({
+            url:'/order/addOrder',
+            type:'post',
+            data:{
+                ids:$("#ids").val(),
+                price:$("#totalPrice").val()
+            },
+            success:function(){
+                location.href="/order/goAlipay?price="+$("#totalPrice").val();
+            }
+        })
+    }
+
 
     //用户点击返回i购物车时的操作
     function shopPingCar() {
         location.href = "/page/test";
     }
 
-
-
-
-
-//点击选择配送方式的操作
+    //点击选择配送方式的操作
     checkSend = function (){
         var arr = document.getElementsByName("peisong");
         for (var i = 0;i < arr.length;i++) {
@@ -98,6 +115,7 @@
             }
         }
     }
+
 
 
 
