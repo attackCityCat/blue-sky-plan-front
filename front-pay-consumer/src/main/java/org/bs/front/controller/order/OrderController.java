@@ -47,10 +47,13 @@ public class OrderController {
      * @throws IOException
      */
     @RequestMapping(value = "cashier")
-    private String queryShopCar(Double totalPrice,Integer[] ids,Integer userId,Model model) throws IOException {
+    private String queryShopCar(Model model,Double totalPrice,Integer[] ids,HttpSession session,Integer userId) throws IOException {
 
 
         //下面Key的userId上线时用 这个从session中获取的id 此时再测试 暂时写死
+        /*UserBean userBean = (UserBean) session.getAttribute(session.getId());
+
+        Integer userId = userBean.getUserId();*/
 
         //根据用户的key去redis中查询对应的值
         String userKey = ConstantClass.FIND_USER_SHOP_CAR+userId;
@@ -68,9 +71,7 @@ public class OrderController {
         model.addAttribute("ids",s);
         System.out.println(s);
 
-
         model.addAttribute("totalPrice",totalPrice);
-        model.addAttribute("productName",totalPrice);
         System.out.println(totalPrice);
 
         model.addAttribute("list", list);
@@ -81,9 +82,15 @@ public class OrderController {
 
     @RequestMapping(value = "/goAlipay", produces = "text/html; charset=UTF-8")
     @ResponseBody
-    public String goAlipay(HttpServletRequest request, HttpServletRequest response, String price) {
+    public String goAlipay(HttpServletRequest request, HttpServletRequest response, Double price) {
         //获得初始化的AlipayClient
-        AlipayClient alipayClient = new DefaultAlipayClient(AlipayConfig.gatewayUrl, AlipayConfig.app_id, AlipayConfig.merchant_private_key, "json", AlipayConfig.charset, AlipayConfig.alipay_public_key, AlipayConfig.sign_type);
+        AlipayClient alipayClient = new DefaultAlipayClient(AlipayConfig.gatewayUrl,
+                AlipayConfig.app_id,
+                AlipayConfig.merchant_private_key,
+                "json",
+                AlipayConfig.charset,
+                AlipayConfig.alipay_public_key,
+                AlipayConfig.sign_type);
 
         //设置请求参数
         AlipayTradePagePayRequest alipayRequest = new AlipayTradePagePayRequest();
@@ -94,7 +101,7 @@ public class OrderController {
         //商户订单号，商户网站订单系统中唯一订单号，必填
         String out_trade_no = UUID.randomUUID().toString();
         //付款金额，必填
-        String total_amount = price;
+        String total_amount = price.toString();
         //订单名称，必填
         String subject = "2016092900625986";
         //商品描述，可空
@@ -117,6 +124,7 @@ public class OrderController {
         } catch (AlipayApiException e) {
             e.printStackTrace();
         }
+        System.out.println(result);
         return result;
     }
 

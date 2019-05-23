@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bab97536-1c9e-4bc7-9594-a068160d45d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front-user-consumer/src/main/resources/static/js/jquery-easyui-1.5/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-user-consumer/src/main/resources/templates/jsp/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-user-consumer/src/main/resources/templates/jsp/main.ftl" afterDir="false" />
     </list>
@@ -32,18 +34,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="-172">
+              <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-496">
+              <caret line="46" column="60" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/page/PageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3159">
+              <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="166">
               <caret line="67" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-user-consumer/src/main/resources/templates/jsp/main.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4148">
-              <caret line="525" column="97" selection-start-line="525" selection-start-column="97" selection-end-line="525" selection-end-column="97" />
+            <state relative-caret-position="13878">
+              <caret line="610" selection-start-line="610" selection-end-line="610" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
@@ -191,9 +220,9 @@
         <option value="$PROJECT_DIR$/front-user-provider/src/main/java/org/bs/front/controller/UserController.java" />
         <option value="$PROJECT_DIR$/front-user-consumer/src/main/java/org/bs/front/controller/PageController.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/front-user-consumer/src/main/resources/templates/jsp/main.ftl" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" />
         <option value="$PROJECT_DIR$/front-shopping-car-consumer/src/main/resources/templates/view/show.ftl" />
+        <option value="$PROJECT_DIR$/front-user-consumer/src/main/resources/templates/jsp/main.ftl" />
       </list>
     </option>
   </component>
@@ -1031,7 +1060,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108863000" />
+    <option name="totallyTimeSpent" value="109235000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1843" height="1096" extended-state="6" />
@@ -1050,7 +1088,7 @@
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.32089552" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32942432" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
@@ -1260,8 +1298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="-172">
+          <caret line="66" column="29" lean-forward="true" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1387,18 +1425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/page/PageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
+        <state relative-caret-position="260">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2322">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1433,24 +1461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-user-consumer/src/main/resources/templates/jsp/main.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4148">
-          <caret line="525" column="97" selection-start-line="525" selection-start-column="97" selection-end-line="525" selection-end-column="97" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/product/ProductBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1465,6 +1475,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3159">
+          <caret line="117" column="29" lean-forward="true" selection-start-line="117" selection-start-column="29" selection-end-line="117" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-496">
+          <caret line="46" column="60" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front-shopping-car-provider/src/main/java/org/bs/front/controller/ShopCarController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -1475,12 +1509,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-shopping-car-consumer/src/main/java/org/bs/front/controller/page/CarController.java">
+    <entry file="file://$PROJECT_DIR$/front-user-consumer/src/main/resources/templates/jsp/main.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="13878">
+          <caret line="610" selection-start-line="610" selection-end-line="610" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
