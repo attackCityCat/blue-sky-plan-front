@@ -9,6 +9,7 @@ import org.bs.front.mapper.OrderMapper;
 import org.bs.front.pojo.order.OrderBean;
 import org.bs.front.pojo.product.ProductBean;
 import org.bs.front.utils.RequestUtil;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -45,12 +46,7 @@ public class OrderController {
     @Resource
     RedisTemplate<String,Object> redisTemplate;
 
-    @RequestMapping(value = "/addOrder")
-    @ResponseBody
-    public void addOrder(@RequestBody OrderBean orderBean,
-                         @RequestParam(value = "price") Double price) {
-        orderMapper.addOrder(orderBean);
-    }
+
 
     @RequestMapping(value = "/queryOrder")
     @ResponseBody

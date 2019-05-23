@@ -68,15 +68,15 @@
 
                 <!--点击高级搜索出的div-->
                 <div id="hide">
-                    <table bgcolor="#faebd7">
+                    <table>
                         <tr>
-                            <td width="100px" onclick="queryShopByCount()">10~50</td>
-                            <td width="100px">50~100</td>
-                            <td width="100px">100~150</td>
+                            <td width="100px" onclick="queryShopByPrice1()"><span id="price1" style="color:#a9a9a9">￥10~50</span></td>
+                            <td width="100px" onclick="queryShopByPrice2()"><span id="price2" style="color:#a9a9a9">￥50~100</span></td>
+                            <td width="100px" onclick="queryShopByPrice3()"><span id="price3" style="color:#a9a9a9">￥100~150</span></td>
                         </tr>
                         <tr>
-                            <td width="100px">150~200</td>
-                            <td colspan="2">500~1000</td>
+                            <td width="100px" onclick="queryShopByPrice4()"><span id="price4" style="color:#a9a9a9">￥150~200</span></td>
+                            <td colspan="2" onclick="queryShopByPrice5()"><span id="price5" style="color:#a9a9a9">￥500~1000</span></td>
                         </tr>
 
                     </table>
@@ -91,6 +91,34 @@
         queryImg();
     });
 
+    //按价格区间搜索
+    function queryShopByPrice1(){
+        var price = $("#price1").text();
+        var subString = price.substr(1);
+        location.href="/shop/queryShopList?price="+subString;
+    }
+    function queryShopByPrice2(){
+        var price = $("#price2").text();
+        var subString = price.substr(1);
+        location.href="/shop/queryShopList?price="+subString;
+    }
+    function queryShopByPrice3(){
+        var price = $("#price3").text();
+        var subString = price.substr(1);
+        location.href="/shop/queryShopList?price="+subString;
+    }
+    function queryShopByPrice4(){
+        var price = $("#price4").text();
+        var subString = price.substr(1);
+        location.href="/shop/queryShopList?price="+subString;
+    }
+    function queryShopByPrice5(){
+        var price = $("#price5").text();
+        var subString = price.substr(1);
+        location.href="/shop/queryShopList?price="+subString;
+    }
+
+    //打开div
     window.onload = function() {
 
         document.getElementById("show").onclick = function() {

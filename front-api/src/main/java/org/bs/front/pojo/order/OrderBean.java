@@ -1,6 +1,7 @@
 package org.bs.front.pojo.order;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author Lenovo
@@ -9,56 +10,147 @@ import java.io.Serializable;
  * @description: TODO
  * @date 2019/5/179:02
  */
+
 public class OrderBean implements Serializable {
     private static final long serialVersionUID = 6089302063749486319L;
 
-    private Integer order_id;
+    private String orderId;//订单id
 
-    private String order_no;
+    private String orderNo;//订单编号
 
-    private String order_createTime;
+    private String orderCreateTime;//下单时间
 
-    private Double order_countPrice;
+    private Integer orderStatus;//订单状态
 
-    public Integer getOrder_id() {
-        return order_id;
+    private String orderPhone;//联系电话
+
+    private String payManeyTime;//付款时间
+
+    private String shouJianRen;//收件人
+
+    private String orderCity;//收货地址
+
+    private String orderMessage;//订单留言
+
+    private String shopImg;//商品图片
+
+    private String shopName;//商品名称
+
+    private String shopOnePrice;//商品单价
+
+    private Integer shopCount;//商品数量
+
+    private String shopCountPrice;//商品总价
+
+    public String getOrderId() {
+        return orderId;
     }
 
-    public void setOrder_id(Integer order_id) {
-        this.order_id = order_id;
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 
-    public String getOrder_no() {
-        return order_no;
+    public String getOrderNo() {
+        return orderNo;
     }
 
-    public void setOrder_no(String order_no) {
-        this.order_no = order_no;
+    public void setOrderNo(String orderNo) {
+        this.orderNo = orderNo;
     }
 
-    public String getOrder_createTime() {
-        return order_createTime;
+    public String getOrderCreateTime() {
+        return orderCreateTime;
     }
 
-    public void setOrder_createTime(String order_createTime) {
-        this.order_createTime = order_createTime;
+    public void setOrderCreateTime(String orderCreateTime) {
+        this.orderCreateTime = orderCreateTime;
     }
 
-    public Double getOrder_countPrice() {
-        return order_countPrice;
+    public Integer getOrderStatus() {
+        return orderStatus;
     }
 
-    public void setOrder_countPrice(Double order_countPrice) {
-        this.order_countPrice = order_countPrice;
+    public void setOrderStatus(Integer orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
-    @Override
-    public String toString() {
-        return "OrderBean{" +
-                "order_id=" + order_id +
-                ", order_no='" + order_no + '\'' +
-                ", order_createTime='" + order_createTime + '\'' +
-                ", order_countPrice=" + order_countPrice +
-                '}';
+    public String getOrderPhone() {
+        return orderPhone;
+    }
+
+    public void setOrderPhone(String orderPhone) {
+        this.orderPhone = orderPhone;
+    }
+
+    public String getPayManeyTime() {
+        return payManeyTime;
+    }
+
+    public void setPayManeyTime(String payManeyTime) {
+        this.payManeyTime = payManeyTime;
+    }
+
+    public String getShouJianRen() {
+        return shouJianRen;
+    }
+
+    public void setShouJianRen(String shouJianRen) {
+        this.shouJianRen = shouJianRen;
+    }
+
+    public String getOrderCity() {
+        return orderCity;
+    }
+
+    public void setOrderCity(String orderCity) {
+        this.orderCity = orderCity;
+    }
+
+    public String getOrderMessage() {
+        return orderMessage;
+    }
+
+    public void setOrderMessage(String orderMessage) {
+        this.orderMessage = orderMessage;
+    }
+
+    public String getShopImg() {
+        return shopImg;
+    }
+
+    public void setShopImg(String shopImg) {
+        this.shopImg = shopImg;
+    }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    public String getShopOnePrice() {
+        return shopOnePrice;
+    }
+
+    public void setShopOnePrice(String shopOnePrice) {
+        this.shopOnePrice = shopOnePrice;
+    }
+
+    public Integer getShopCount() {
+        return shopCount;
+    }
+
+    public void setShopCount(Integer shopCount) {
+        this.shopCount = shopCount;
+    }
+
+    public String getShopCountPrice() {
+        return shopCountPrice;
+    }
+
+    public void setShopCountPrice(String shopCountPrice) {
+        this.shopCountPrice = shopCountPrice;
     }
 }
