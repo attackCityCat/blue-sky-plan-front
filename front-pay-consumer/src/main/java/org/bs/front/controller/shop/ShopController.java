@@ -52,13 +52,15 @@ public class ShopController {
 
     //查询方法
     @RequestMapping(value = "/queryShopList")
-    public String queryShopList(ShopBean shop,Integer page,Integer rows,String queryShop, Model model) throws IOException, SolrServerException {
+    public String queryShopList(ShopBean shop,String queryShop, Model model,Integer typeId) throws IOException, SolrServerException {
         //返回的参数map
         Map<String, Object> mSolr = new HashMap<String, Object>();
         //查询的耳集合
         List<ShopBean> shopList = new ArrayList<>();
         //查询参数的对象SolrQuery
         SolrQuery params = new SolrQuery();
+
+
         //判断关键词是否为空
         if (!"".equals(queryShop) && queryShop != null) {
             //不为空关键词为前台传递的参数
@@ -67,11 +69,22 @@ public class ShopController {
             //为空查询所有
             params.set("q", "*:*");
         }
+        //过滤下架
+        //params.set("fq","-product_state:"+0);
+
+        //类型过滤
+        if (typeId!=null){
+            params.set("fq","type_id:"+typeId);
+        }
+
+        //该参数就是控制条数
+        params.set("rows", Integer.MAX_VALUE);
+
         //默认查询的字段
         params.set("df", "product_title");
         //默认返回的字段
         params.set("fl", "id,product_title,product_price,product_stock,product_time,product_sales,product_comments," +
-                "product_concern,brand_id,size_id,product_state,color_id,shelf_time,product_audit,product_selling,store_id");
+                "product_concern,brand_id,size_id,type_id,product_state,color_id,shelf_time,product_audit,product_selling,store_id");
         // 高亮字段
         params.addHighlightField("product_title");
         //分页

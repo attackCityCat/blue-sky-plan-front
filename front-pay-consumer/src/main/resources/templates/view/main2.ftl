@@ -9,6 +9,13 @@
     <script src="/swiper.min.js"></script>
     <title>Title</title>
 </head>
+<style>
+    #hide {
+        display: none;
+        padding-top: 15px;
+        margin-left: 500px;
+    }
+</style>
 <body>
 <!--header-->
 <header>
@@ -32,6 +39,8 @@
             </ul>
         </div>
     </div>
+
+
     <!--logoArea-->
     <div class="wrap logoSearch">
 
@@ -54,15 +63,44 @@
                         <input type="button" id="queryShopBySolr" value="搜索">
                     </div>
                 </form>
-                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#" class="advancedSearch">高级搜索</a>
+
+                <a href="javascript:void(0)" id="show" class="advancedSearch">高级搜索</a>
+
+                <!--点击高级搜索出的div-->
+                <div id="hide">
+                    <table bgcolor="#faebd7">
+                        <tr>
+                            <td width="100px" onclick="queryShopByCount()">10~50</td>
+                            <td width="100px">50~100</td>
+                            <td width="100px">100~150</td>
+                        </tr>
+                        <tr>
+                            <td width="100px">150~200</td>
+                            <td colspan="2">500~1000</td>
+                        </tr>
+
+                    </table>
+                </div>
             </div>
         </div>
+
     </div>
 <script type="text/javascript">
     //初始化查询图片
     $(function(){
         queryImg();
     });
+
+    window.onload = function() {
+
+        document.getElementById("show").onclick = function() {
+
+            //在这个id里面写东西
+            document.getElementById("hide").style.display = "block";
+            /*这里发请求 在请求的回调函数写 下面那个关闭*/
+        }
+
+    }
 
     //查询图片
     function queryImg(){
