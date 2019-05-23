@@ -57,21 +57,22 @@
         <!--search-->
         <div class="search">
             <ul class="switchNav">
-                <li class="active" id="chanpin">产品</li>
-                <li id="shangjia">商家</li>
-                <li id="zixun">搭配</li>
-                <li id="wenku">文库</li>
+                <li id="chanpin" data="1" onclick="xx(this)">产品</li>
+                <li id="shangjia" data="2" onclick="xx(this)">商家</li>
+                <li id="zixun" data="3" onclick="xx(this)">搭配</li>
+                <li id="wenku" data="4" onclick="xx(this)">文库</li>
+                <input type="hidden" id="hiddenId" value="1"/>
             </ul>
             <div class="searchBox">
-                <form>
+                <form id="serach_form">
                     <div class="inputWrap">
-                        <input type="text" placeholder="输入产品关键词或货号">
+                        <input type="text" id="queryShop" placeholder="输入产品关键词或货号">
                     </div>
                     <div class="btnWrap">
-                        <input type="submit" value="搜索">
+                        <input type="button" id="queryShopBySolr" value="搜索">
                     </div>
                 </form>
-                <a href="javascript:tan()" class="advancedSearch">高级搜索</a>
+                <a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/index.html#" class="advancedSearch">高级搜索</a>
             </div>
         </div>
     </div>
@@ -495,6 +496,35 @@
 </footer>
 </div>
 <script type="text/javascript">
+
+
+    //查询图片
+    function queryImg(){
+        //根据name获取id
+        var hiddenId = document.getElementsByName("hiddenId");
+        var ids = "";
+        //遍历根据，截取
+        for (var i= 0 ;i<hiddenId.length;i++){
+            ids += ids==""? hiddenId[i].value : ","+hiddenId[i].value;
+        }
+
+        $.ajax({
+            url:'http://localhost:8088/shop/queryImg',
+            type:'post',
+            data:{
+                ids:ids
+            },
+            success:function(data){
+                for (var i = 0;i < data.length;i++){
+                    $("#imgId"+i).attr("src",data[i].url);
+                }
+            }
+        })
+    }
+    //点击查询
+    $("#queryShopBySolr").click(function(){
+        createIframe("http://localhost:8088/shop/queryShopList?queryShop="+$("#queryShop").val())
+    })
 
     function tan() {
         alert("感谢您的关注，功能正在开发中！~")
