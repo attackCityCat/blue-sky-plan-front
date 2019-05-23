@@ -13,7 +13,7 @@
     #hide {
         display: none;
         padding-top: 15px;
-        margin-left: 500px;
+        margin-left: 180px;
     }
 </style>
 <body>
@@ -40,7 +40,9 @@
         </div>
     </div>
 
+<form id="saveOrderForm">
 
+</form>
     <!--logoArea-->
     <div class="wrap logoSearch">
 
@@ -67,18 +69,28 @@
                 <a href="javascript:void(0)" id="show" class="advancedSearch">高级搜索</a>
 
                 <!--点击高级搜索出的div-->
+                <br><br>
                 <div id="hide">
+                    <br>
                     <table>
                         <tr>
-                            <td width="100px" onclick="queryShopByPrice1()"><span id="price1" style="color:#a9a9a9">￥10~50</span></td>
-                            <td width="100px" onclick="queryShopByPrice2()"><span id="price2" style="color:#a9a9a9">￥50~100</span></td>
-                            <td width="100px" onclick="queryShopByPrice3()"><span id="price3" style="color:#a9a9a9">￥100~150</span></td>
+                            <td width="80px"><span style="color:#a9a9a9;font-size:18px">价格:</span></td>
+                            <td width="120px" height="40px" onclick="queryShopByPrice1()"><span id="price1" style="color:#a9a9a9;font-size:18px">￥10~50</span></td>
+                            <td width="120px" onclick="queryShopByPrice2()"><span id="price2" style="color:#a9a9a9;font-size:18px">￥50~100</span></td>
+                            <td width="120px" onclick="queryShopByPrice3()"><span id="price3" style="color:#a9a9a9;font-size:18px">￥100~150</span></td>
+                            <td width="120px" ></td>
+                            <td width="120px" onclick="closeDiv()"><span style="color:#a9a9a9;font-size:18px">x</span></td>
                         </tr>
                         <tr>
-                            <td width="100px" onclick="queryShopByPrice4()"><span id="price4" style="color:#a9a9a9">￥150~200</span></td>
-                            <td colspan="2" onclick="queryShopByPrice5()"><span id="price5" style="color:#a9a9a9">￥500~1000</span></td>
+                            <td></td>
+                            <td width="120px" height="40px" onclick="queryShopByPrice4()"><span id="price4" style="color:#a9a9a9;font-size:18px">￥150~200</span></td>
+                            <td colspan="2" onclick="queryShopByPrice5()"><span id="price5" style="color:#a9a9a9;font-size:18px">￥500~1000</span></td>
                         </tr>
-
+                        <tr>
+                            <td></td>
+                            <td width="100px" onclick="asc()"><span id="asc" style="color:#a9a9a9">价格↑</span></td>
+                            <td colspan="2" onclick="desc()"><span id="desc" style="color:#a9a9a9">价格↓</span></td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -90,6 +102,14 @@
     $(function(){
         queryImg();
     });
+
+    //排序
+    function asc(){
+        location.href="/shop/queryShopList?hiId="+1;
+    }
+    function desc(){
+        location.href="/shop/queryShopList?hiId="+2;
+    }
 
     //按价格区间搜索
     function queryShopByPrice1(){
@@ -121,14 +141,21 @@
     //打开div
     window.onload = function() {
 
-        document.getElementById("show").onclick = function() {
-
-            //在这个id里面写东西
+        /*这里发请求 在请求的回调函数写 下面那个关闭*/
+        //打开
+        document.getElementById("show").onclick = function () {
             document.getElementById("hide").style.display = "block";
-            /*这里发请求 在请求的回调函数写 下面那个关闭*/
+        }
+    }
+        //关闭
+        function closeDiv(){
+            document.getElementById("hide").style.display = "none";
         }
 
-    }
+
+
+
+
 
     //查询图片
     function queryImg(){

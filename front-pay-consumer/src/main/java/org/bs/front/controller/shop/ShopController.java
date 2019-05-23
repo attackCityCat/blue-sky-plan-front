@@ -52,7 +52,7 @@ public class ShopController {
 
     //查询方法
     @RequestMapping(value = "/queryShopList")
-    public String queryShopList(ShopBean shop,String queryShop, Model model,Integer typeId,String price) throws IOException, SolrServerException {
+    public String queryShopList(ShopBean shop,String queryShop, Model model,Integer typeId,String price,Integer hiId) throws IOException, SolrServerException {
         //返回的参数map
         Map<String, Object> mSolr = new HashMap<String, Object>();
         //查询的耳集合
@@ -83,6 +83,16 @@ public class ShopController {
                 params.set("fq","product_price:["+split[0]+" TO "+split[1]+"]");
             }
         }
+
+        //排序
+        if (hiId!=null){
+            if (hiId==1){
+                params.addSort("product_price",SolrQuery.ORDER.asc);
+            }else{
+                params.addSort("product_price",SolrQuery.ORDER.desc);
+            }
+        }
+
 
         //该参数就是控制条数
         params.set("rows", Integer.MAX_VALUE);

@@ -138,13 +138,13 @@ public class OrderController {
     public void addOrder(String ids,Double price){
 
             //等待把活数据传过来，先用死数据
-            SimpleDateFormat sim = new SimpleDateFormat("yyyyMMddHHmmss");
+            /*SimpleDateFormat sim = new SimpleDateFormat("yyyyMMddHHmmss");
             String format = sim.format(new Date());
             OrderBean orderBean = new OrderBean();
             orderBean.setOrder_no(""+(System.currentTimeMillis() / 1000));//订单号
             orderBean.setOrder_countPrice(price);//总价
             orderBean.setOrder_createTime(format);//下单时间
-            orderService.addOrder(orderBean,price);
+            orderService.addOrder(orderBean,price);*/
 
     }
 
