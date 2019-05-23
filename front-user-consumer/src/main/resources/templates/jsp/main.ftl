@@ -22,6 +22,60 @@
             });
         })
     </script>
+    <style >
+        /*library slide*/
+        #lib_slide{width:742px;height:255px;overflow: hidden;position:relative;;}
+        #lib_slide .swiper-slide{text-align:center;height:255px;}
+        #lib_slide .swiper-slide img{width:742px;height:255px;}
+        #lib_slide .pagination{position: absolute; z-index: 20; bottom:5px; width:100%; text-align: center; right:0;}
+        #lib_slide .swiper-pagination-bullet{display: inline-block; width:30px;border-radius:0; height:5px; background:grey; margin: 0 2px; opacity: 0.8; cursor: pointer;}
+        #lib_slide .swiper-pagination-bullet-active{background:#64caff;}
+        .insideLink{height:35px;line-height:35px;padding:0 8px;margin-top:5px;}
+        .insideLink a{font-size:14px;}
+        .insideLink a:after{content:" - ";}
+        .insideLink a:last-child:after{content:"";}
+        .lib_rt_lt_btm{overflow:hidden;margin-top:10px;}
+        .lib_rt_lt_btm li{width:48%;border:1px #d2d2d2 solid;overflow:hidden;background:#fafafa;padding:3px;}
+        .lib_rt_lt_btm li img{width:130px;height:80px;float:left;}
+        .lib_rt_lt_btm li span{display:block;margin-left:140px;}
+        .lib_rt_lt_btm li span strong,.lib_rt_lt_btm li span em,.lib_rt_lt_btm li span i{display:block;font-style:normal;margin:5px 0;}
+        .lib_rt_lt_btm li span i{border:1px #d2d2d2 solid;width:100px;height:28px;line-height:28px;text-align:center;border-radius:2px;background:#f3f3f3;margin:0;margin-top:8px;}
+        .lib_rt_rt{margin-left:752px;overflow:hidden;}
+        .lib_rt_rt .statistics{border:1px #d2d2d2 solid;padding:0 10px;background:#fafafa;}
+        .lib_rt_rt .statistics h2{margin:0;text-align:center;height:35px;line-height:35px;font-size:16px;}
+        .lib_rt_rt .statistics p{text-align:center;font-weight:bold;color:#ff4400;height:40px;line-height:40px;letter-spacing:5px;font-size:20px;}
+        .lib_rt_rt .upld_li{margin:8px 0;overflow:hidden;background:#fafafa;padding:0 8px;border-top:2px #ccc solid;}
+        .lib_rt_rt .upld_li dt{height:45px;line-height:45px;font-size:16px;}
+        .lib_rt_rt .upld_li dd{margin:0;height:35px;line-height:35px;}
+        .lib_rt_rt .upld_li dd a{display:block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+        .upload_btn{cursor:pointer;display:block;border-radius:2px;background:#fd8a23;color:white;font-size:20px;text-align:center;height:40px;line-height:40px;}
+        .upload_btn:hover{color:#f8f8f8;}
+        .upload_btn:before{content:"^";font-family:'151219regular';margin-right:5px;}
+        .lib_best_category{margin:8px auto;overflow:hidden;}
+        .lib_best_category h2{height:40px;line-height:40px;border-bottom:2px #e4393c solid;font-size:20px;}
+        .lib_best_category li{float:left;width:280px;height:auto;overflow:hidden;padding:5px;border:1px #d2d2d2 solid;margin:0 4px;position:relative;}
+        .lib_best_category li a{display:block;}
+        .lib_best_category li a mark{position:absolute;top:5px;left:5px;color:white;background:#56c4a1;padding:8px 15px;}
+        .lib_best_category li a img{width:280px; height:140px;}
+        .lib_best_category li a h3{font-size:16px;color:#2d2d2d;margin:10px;}
+        .lib_best_category li a p{margin:0 10px;}
+        .lib_best_author{margin:8px auto;overflow:hidden;}
+        .lib_best_author h2{height:40px;line-height:40px;border-bottom:2px #e4393c solid;font-size:20px;}
+        .lib_best_author li{float:left;padding:8px;width:273px;margin:8px 5px;border-right:1px #d2d2d2 dotted;}
+        .lib_best_author li:nth-child(4n){border:none;}
+        .lib_best_author li .authorInfor{}
+        .lib_best_author li .authorInfor .userIcon{display:block;float:left;width:60px;height:60px;text-align:center;overflow:hidden;}
+        .lib_best_author li .authorInfor .userIcon img{width:auto;max-width:100%;height:60px;}
+        .lib_best_author li .authorInfor .rt_infor{margin-left:70px;overflow:hidden;}
+        .lib_best_author li .authorInfor .rt_infor p{margin:8px 0;}
+        .lib_best_author li .authorInfor .rt_infor p em{font-style:normal;color:#56c4a1;}
+        .lib_best_author li ul li{float:none;height:30px;line-height:30px;border:none;padding:0;}
+        .lib_best_author li ul li a{display:block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+        .lib_best_author li ul li a:before{font-family:'151219regular';margin-right:2px;font-size:20px;}
+        .word_ico:before{content:"W";}
+        .excel_ico:before{content:"X";}
+        .ppt_ico:before{content:"P";}
+    </style>
 </head>
 <body>
 <!--advertisment<div class="wrap"><img src="upload/banner.jpg"/></div>-->
@@ -147,24 +201,37 @@
 
 </script>
 
-<!--advertisment area-->
 <section class="wrap">
     <!--ctCont-->
     <div class="IdxmainArea">
         <!--slide-->
-        <div id="slide" class="swiper-container-horizontal">
-
-            <a href="javascript:tan()">
-                <img src="/img/slide01.png">
-            </a>
-
+        <div id="slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg"/>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg"/>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg"/>
+                    </a>
+                </div>
+            </div>
+            <div class="pagination"></div>
         </div>
         <!--singleAd-->
         <div class="singleAd">
-            <a href="javascript:tan()">
-                <img src="/img/sigleAd.png">
+            <a href="#">
+                <img src="https://lantianjihua.oss-cn-beijing.aliyuncs.com/timg.jpg"/>
             </a>
         </div>
+
         <!--bestShop-->
         <dl class="bestShop">
             <dt>

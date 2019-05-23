@@ -131,7 +131,7 @@
                             <input type="button" value="-" class="jj_btn" onclick="reduce()"/>
                             <input type="text" value="1" readonly class="num" id="procount"/>
                             <input type="button" value="+" class="jj_btn" onclick="puls()"/>
-                            <span>库存：</span><span id="productStock">${pro.productStock}</span>
+                            <span>库存：</span><span id="productStock" >${pro.productStock}</span>
                         </dd>
                     </dl>
                 </li>
@@ -355,10 +355,20 @@
 
     //立即购买 点击时直接跳转到支付页
     function purchase(price) {
-        var kc = $("#productStock").val();
+        var a = $("#productColor").val();
+        if (a == null || a == '') {
+            alert("请选则颜色");
+            return;
+        }
+        var b = $("#productSpec").val();
+        if (b == null || b == '') {
+            alert("请选则规格");
+            return;
+        }
+        var kc = $("#productStock").text();
         var sl = $("#procount").val();
-        if (sl > kc) {
-            alert("对不起库存不足")
+        if (sl>kc){
+            alert("对不起，库存不足")
             return;
         }
         $("#productCount").val($("#procount").val())
@@ -373,12 +383,6 @@
     //添加商品到购物车
     function addShopCar() {
 
-        var kc = $("#productStock").val();
-        var sl = $("#procount").val();
-        if (sl>kc){
-            alert("对不起库存不足")
-            return;
-        }
         //商品规格
         var productSpec = "";
         var arr = document.getElementsByName("guige")
@@ -405,7 +409,13 @@
         $("#productSpec").val(productSpec);
         var b = $("#productSpec").val();
         if (b == null || b == '') {
-            alert("请选中规格");
+            alert("请选则规格");
+            return;
+        }
+        var kc = $("#productStock").text();
+        var sl = $("#procount").val();
+        if (sl>kc){
+           alert("对不起，库存不足")
             return;
         }
         $("#addShopCarFrom").submit();
