@@ -19,5 +19,5 @@ import java.util.Map;
 public interface ShopServiceApi {
 
     @RequestMapping(value = "queryImg")
-    List<ImgBean> queryImg(@RequestParam(value = "id") Integer id);
+    List<ImgBean> queryImg(@RequestParam(value = "ids") String[] ids);
 }

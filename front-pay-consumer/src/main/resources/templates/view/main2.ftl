@@ -62,9 +62,31 @@
     //初始化查询图片
     $(function(){
         queryImg();
-    })
-    //查询图片
+    });
 
+    //查询图片
+    function queryImg(){
+        //根据name获取id
+        var hiddenId = document.getElementsByName("hiddenId");
+        var ids = "";
+        //遍历根据，截取
+        for (var i= 0 ;i<hiddenId.length;i++){
+            ids += ids==""? hiddenId[i].value : ","+hiddenId[i].value;
+        }
+
+        $.ajax({
+            url:'/shop/queryImg',
+            type:'post',
+            data:{
+                ids:ids
+            },
+            success:function(data){
+                for (var i = 0;i < data.length;i++){
+                   $("#imgId"+i).attr("src",data[i].url);
+                }
+            }
+        })
+    }
     //点击查询
     $("#queryShopBySolr").click(function(){
         location.href="/shop/queryShopList?queryShop="+$("#queryShop").val();
@@ -75,10 +97,12 @@
 <section class="wrap shop_goods_li">
     <h2>产品</h2>
     <ul class="favorite_list">
+        <#assign index = -1 >
         <#list list as i>
         <li>
             <a>
-                <img src="" id="1"/>
+                <#assign index = index+1>
+                <img src="" id="imgId${index}">
             </a>
                 <!-- 商品名称 -->
                 <h3>${i.product_title}</h3>
@@ -90,17 +114,10 @@
     </#list>
     </ul>
     <!--分页-->
-    <div class="paging">
-        <a>第一页</a>
-        <a class="active">2</a>
-        <a>3</a>
-        <a>...</a>
-        <a>89</a>
-        <a>最后一页</a>
-    </div>
 </section>
 <!--footer-->
+<script type="text/javascript">
 
-
+</script>
 </body>
 </html>
