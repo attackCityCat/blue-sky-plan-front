@@ -5,13 +5,19 @@ import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.api.request.AlipayTradePagePayRequest;
+import org.bs.front.constant.ConstantClass;
+import org.bs.front.pojo.user.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -21,10 +27,12 @@ import java.util.UUID;
 @Controller
 public class AlipayDemoController {
 
+    @Resource
+    private RedisTemplate<String,Object> redisTemplate;
+
     @RequestMapping(value = "/goAlipay", produces = "text/html; charset=UTF-8")
     @ResponseBody
-    public String goAlipay(HttpServletRequest request, HttpServletRequest response,String price) throws Exception {
-
+    public String goAlipay(HttpServletRequest request, HttpServletRequest response, String price) throws Exception {
 
         //获得初始化的AlipayClient
         AlipayClient alipayClient = new DefaultAlipayClient(AlipayConfig.gatewayUrl, AlipayConfig.app_id, AlipayConfig.merchant_private_key, "json", AlipayConfig.charset, AlipayConfig.alipay_public_key, AlipayConfig.sign_type);
@@ -62,24 +70,28 @@ public class AlipayDemoController {
     }
 
     @RequestMapping("/returnUrl")
-    public String returnUrl(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException, AlipayApiException {
+    public String returnUrl(HttpServletRequest request, HttpServletResponse response,HttpSession session) throws UnsupportedEncodingException, AlipayApiException {
         response.setContentType("text/html;charset=utf-8");
 
         boolean verifyResult = rsaCheckV1(request);
         if(verifyResult){
             //验证成功
+
+            UserBean userBean = (UserBean) session.getAttribute(session.getId());
+            String userId = ""+userBean.getUserId();
+            String ids = (String) session.getAttribute(userId);
+            String[] split = ids.split(",");
+            String key = ConstantClass.FIND_USER_SHOP_CAR+userId;
+            for (String id : split){
+                String pKey = ConstantClass.SHOP_KEY + id;
+                redisTemplate.opsForHash().delete(key,pKey);
+            }
             //请在这里加上商户的业务逻辑程序代码，如保存支付宝交易号
             //商户订单号
             String out_trade_no = new String(request.getParameter("out_trade_no").getBytes("ISO-8859-1"),"UTF-8");
             //支付宝交易号
             String trade_no = new String(request.getParameter("trade_no").getBytes("ISO-8859-1"),"UTF-8");
-            String ids = (String) request.getSession().getAttribute("ids");
-            if(!StringUtils.isEmpty(ids)){
-                String[] split = ids.split(",");
-                for (String s : split) {
 
-                }
-            }
             return "redirect:view";
 
         }else{

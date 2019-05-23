@@ -47,8 +47,7 @@ public class OrderController {
 
     @RequestMapping(value = "/addOrder")
     @ResponseBody
-    public void addOrder(@RequestBody OrderBean orderBean,
-                         @RequestParam(value = "price") Double price) {
+    public void addOrder(@RequestBody OrderBean orderBean) {
         orderMapper.addOrder(orderBean);
     }
 

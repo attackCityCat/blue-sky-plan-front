@@ -59,8 +59,8 @@
                     <label class="radio" id="x1"><input type="radio" name="peisong" onclick="checkSend()"/>自配送</label>
                     <label class="radio" id="x2"><input type="radio" name="peisong" onclick="checkSend()"/>快递</label>
                 </dd>
-                <dd>
-                    <textarea value="">北京市 海定区 西三旗 明园大学           暂时写死 </textarea>
+                <dd id="address">
+
                 </dd>
             </dl>
         </li>
@@ -81,6 +81,18 @@
 </section>
 
 <script type="text/javascript">
+
+    function findAddressInfo() {
+        $({
+            url: '',
+            success:function (data) {
+                var div = "";
+                for (var i = 0;i < arr.length;i++){
+                    div += '<div id="box'+i+'"></div>';
+                }
+            }
+        })
+    }
 
     //结账且删除购物车
     function payManey(){

@@ -47,7 +47,7 @@ public class OrderController {
      * @throws IOException
      */
     @RequestMapping(value = "cashier")
-    private String queryShopCar(Model model,Double totalPrice,Integer[] ids,HttpSession session,Integer userId) throws IOException {
+    private String queryShopCar(Model model,Double totalPrice,Integer[] ids,Integer userId) throws IOException {
 
 
         //下面Key的userId上线时用 这个从session中获取的id 此时再测试 暂时写死
@@ -71,7 +71,7 @@ public class OrderController {
         model.addAttribute("ids",s);
         System.out.println(s);
 
-        model.addAttribute("totalPrice",totalPrice);
+        model.addAttribute("totalPrice",totalPrice.toString());
         System.out.println(totalPrice);
 
         model.addAttribute("list", list);
@@ -125,6 +125,7 @@ public class OrderController {
             e.printStackTrace();
         }
         System.out.println(result);
+
         return result;
     }
 
@@ -153,7 +154,7 @@ public class OrderController {
             orderBean.setOrder_no(""+(System.currentTimeMillis() / 1000));//订单号
             orderBean.setOrder_countPrice(price);//总价
             orderBean.setOrder_createTime(format);//下单时间
-            orderService.addOrder(orderBean,price);
+            orderService.addOrder(orderBean);
 
     }
 

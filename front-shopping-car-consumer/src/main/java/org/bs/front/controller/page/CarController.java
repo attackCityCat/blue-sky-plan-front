@@ -58,7 +58,7 @@ public class CarController {
         List<ProductBean> list = shopCarService.queryShopCar(key);
 
         for (ProductBean productBean : list){
-            System.out.println(productBean.getProductImg());
+            System.out.println(productBean);
         }
 
         model.addAttribute("count",list.size());

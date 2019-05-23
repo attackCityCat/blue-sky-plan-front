@@ -1,19 +1,18 @@
 package org.bs.front.mapper;
 
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.bs.front.pojo.showproduct.ColorBean;
 import org.bs.front.pojo.showproduct.ProductBean;
 import org.bs.front.pojo.showproduct.SizeBean;
+import org.bs.front.pojo.showproduct.TypeBean;
 import org.bs.front.pojo.user.UserBean;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@Component
+
 public interface UserMapper {
 
     @Select("select user_id as userId , phone , password , status ,email , create_time as createTime ," +
@@ -43,24 +42,29 @@ public interface UserMapper {
     //查询销量最高的4条数据
     List<ProductBean> topSelling();
 
+    //查询男装类型
+    @Select(" SELECT c.type_name FROM cms_type t " +
+            "left join cms_type c on c.pid=t.id where c.pid =1 limit 0,15")
+    List<TypeBean> findShopTypeManList();
+    //查询女装类型
+    @Select(" SELECT c.type_name FROM cms_type t " +
+            "left join cms_type c on c.pid=t.id where c.pid =2 limit 0,15")
+    List<TypeBean> findShopTypeList();
+
+    //根据颜色和商品名进行查询
+    ProductBean findShopByColor(ProductBean productBean);
+
     /**
-     * 获取规格列表
+     * 获取规格集合
      * @return
      */
     @Select("select id,size_name as sizeName from cms_size")
     List<SizeBean> findSizeList();
 
+    /**
+     * 获取颜色集合
+     * @return
+     */
     @Select("select id,color_name as colorName from cms_product_color")
     List<ColorBean> findColorList();
-
-    @Select("select " +
-            "cp.product_id as id, " +
-            "cp.product_stock as productStock " +
-            "from cms_product cp " +
-            "left join cms_size cs on cp.size_id = cs.id " +
-            "left join cms_product_color cpc on cp.color_id = cpc.id " +
-            "where cp.product_title = #{title} " +
-            "and cp.size_id = #{sizeId} " +
-            "and cp.color_id = #{colorId}")
-    ProductBean findStore(@Param("title") String title,@Param("colorId") Integer colorId,@Param("sizeId") Integer sizeId);
 }

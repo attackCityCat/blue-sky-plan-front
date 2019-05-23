@@ -5,6 +5,7 @@ import org.bs.front.mapper.UserMapper;
 import org.bs.front.pojo.showproduct.ColorBean;
 import org.bs.front.pojo.showproduct.ProductBean;
 import org.bs.front.pojo.showproduct.SizeBean;
+import org.bs.front.pojo.showproduct.TypeBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -63,8 +64,7 @@ public class UserController {
     //查询商品详情
     @RequestMapping("/queryShopDetails")
     public ProductBean queryShopDetails(@RequestParam(value = "id") Integer id){
-        ProductBean productBean = userMapper.queryShopDetails(id);
-        return productBean;
+       return userMapper.queryShopDetails(id);
     }
 
     //查询商品详情的图片
@@ -79,29 +79,38 @@ public class UserController {
         return userMapper.topSelling();
     }
 
+    //查询男装类型
+    @RequestMapping("/findShopTypeManList")
+    public List<TypeBean> findShopTypeManList(){
+        return userMapper.findShopTypeManList();
+    }
+    //查询女装类型
+    @RequestMapping("/findShopTypeList")
+    public List<TypeBean> findShopTypeList(){
+        return userMapper.findShopTypeList();
+    }
+
+    //根据商品名 和颜色查询 对应商品
+    @RequestMapping("/findShopByColor")
+    public ProductBean findShopByColor(@RequestBody ProductBean productBean){
+        System.out.println(productBean.getProductTitle());
+        return userMapper.findShopByColor(productBean);
+    }
+
     /**
-     * 获取规格列表
-     * @return
+     * 获取规格集合
      */
-    @RequestMapping(value = "/findSizeList")
+    @RequestMapping("/findSizeList")
     List<SizeBean> findSizeList(){
         return userMapper.findSizeList();
-    };
-
+    }
 
     /**
-     * 获取颜色列表
-     * @return
+     * 获取规格集合
      */
-    @RequestMapping(value = "/findColorList")
+    @RequestMapping("/findColorList")
     List<ColorBean> findColorList(){
         return userMapper.findColorList();
-    };
-
-    @RequestMapping("/findStore")
-    ProductBean findStore(@RequestParam("title") String title,@RequestParam("colorId") Integer colorId,@RequestParam("sizeId") Integer sizeId){
-        ProductBean store = userMapper.findStore(title, colorId, sizeId);
-        return store;
-    };
+    }
 
 }

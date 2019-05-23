@@ -27,8 +27,9 @@
     <!--img:left-->
     <div class="gallery">
         <div>
-            <div id="preview" class="spec-preview"><span class="jqzoom"><img jqimg="${pro.img}"
-                                     height="420px"  width="420px"   src="${pro.img}"/></span></div>
+            <div id="preview" class="spec-preview">
+                <span class="jqzoom"><img jqimg="${pro.img}" id="productImgId" height="420px" width="420px"
+                                          src="${pro.img}"/></span></div>
             <!--缩图开始-->
             <div class="spec-scroll"><a class="prev">&lt;</a> <a class="next">&gt;</a>
                 <div class="items">
@@ -48,58 +49,64 @@
         <div class="goods_infor">
             <#--//商品id // 商品标题 // 商品价格 //商品图  //商品规格 //商品颜色 //商品数量-->
             <form action="/page/addShopCar" id="addShopCarFrom">
-                <input type="hidden" value="" id="productId" name="productId">
+                <input type="hidden" value="${pro.id}" id="productId" name="productId">
                 <input type="hidden" value="${pro.productTitle}" id="productName" name="productName">
                 <input type="hidden" value="${pro.productPrice}" id="productPrice" name="productPrice">
                 <input type="hidden" value="${pro.img}" id="productImg" name="productImg">
-
-                <input type="hidden" value="1" id="productCount" name="productCount">
-                <input type="hidden" value="${pro.colorId}" id="productColor" name="productColor">
-                <input type="hidden" value="${pro.sizeId}" id="productSpec" name="productSpec">
+                <input type="hidden" value="" id="productCount" name="productCount">
+                <input type="hidden" value="" id="productColor" name="productColor">
+                <input type="hidden" value="" id="productSpec" name="productSpec">
             </form>
             <h2>${pro.productTitle}</h2>
             <ul>
                 <li>
                     <dl class="horizontal">
                         <dt>价格：</dt>
-                        <dd><strong class="rmb_icon univalent">${pro.productPrice}</strong>元</dd>
+                        <dd><strong class="rmb_icon univalent"><span
+                                        id="productPriceId">${pro.productPrice}</span></strong>元
+                        </dd>
                     </dl>
                 </li>
                 <li>
                     <dl class="horizontal">
                         <dt>上架时间：</dt>
                         <dd>
-                            <time>${pro.shelfTime}</time>
+                            <time><span id="shelfTimeId">${pro.shelfTime}</span></time>
                         </dd>
                     </dl>
                 </li>
                 <li>
                     <dl class="horizontal">
                         <dt>品牌：</dt>
-                        <dd><em>${pro.brandName}</time></em>
+                        <dd><em><span id="brandNameId">${pro.brandName}</span></time></em>
                     </dl>
                 </li>
                 <li class="statistics">
                     <dl class="vertical">
                         <dt>月销量</dt>
-                        <dd>${pro.productSales}</dd>
+                        <dd><span id="productSalesId">${pro.productSales}</span></dd>
                     </dl>
                     <dl class="vertical">
                         <dt>累计评论</dt>
-                        <dd>${pro.productComments}</dd>
+                        <dd><span id="productCommentsId">${pro.productComments}</span></dd>
                     </dl>
                     <dl class="vertical">
                         <dt>关注</dt>
-                        <dd>${pro.productConcern}</dd>
+                        <dd><span id="productConcernId">${pro.productConcern}</span></dd>
                     </dl>
                 </li>
                 <li>
                     <dl class="horizontal horizontal_attr">
                         <dt>规格：</dt>
                         <dd>
-                            <#list sizes as i>
-                            <label id="size${i.id}"><input type="radio" name="size" value="${i.id}" onclick="checkSize(this)"/>${i.sizeName}</label>
-                            </#list>
+                            <label id="color00"><input type="radio" name="guige" value="1"
+                                                       onclick="checkColor1()"/>S码</label>
+                            <label id="color01"><input type="radio" name="guige" value="2"
+                                                       onclick="checkColor1()"/>M码</label>
+                            <label id="color02"><input type="radio" name="guige" value="3"
+                                                       onclick="checkColor1()"/>L码</label>
+                            <label id="color03"><input type="radio" name="guige" value="4" onclick="checkColor1()"/>XL码</label>
+                            <label id="color04"><input type="radio" name="guige" value="5" onclick="checkColor1()"/>XXL码</label>
                         </dd>
                     </dl>
                 </li>
@@ -107,10 +114,12 @@
                     <dl class="horizontal horizontal_attr">
                         <dt>颜色：</dt>
                         <dd>
-                            <#list colors as i>
-                                <label id="color${i.id}"><input type="radio" name="color" value="${i.id}"
-                                                          onclick="checkColor(this)"/>${i.colorName}</label>
-                            </#list>
+                            <label id="color0"><input type="radio" name="yanse" value="1"
+                                                      onclick="checkColor()"/>黑色</label>
+                            <label id="color1"><input type="radio" name="yanse" value="2"
+                                                      onclick="checkColor()"/>蓝色</label>
+                            <label id="color2"><input type="radio" name="yanse" value="3"
+                                                      onclick="checkColor()"/>白色</label>
                         </dd>
                     </dl>
                 </li>
@@ -122,7 +131,7 @@
                             <input type="button" value="-" class="jj_btn" onclick="reduce()"/>
                             <input type="text" value="1" readonly class="num" id="procount"/>
                             <input type="button" value="+" class="jj_btn" onclick="puls()"/>
-                            <span id="productStock">库存：${pro.productStock}</span>
+                            <span>库存：</span><span id="productStock">${pro.productStock}</span>
                         </dd>
                     </dl>
                 </li>
@@ -297,7 +306,6 @@
 </section>
 
 <script>
-
     function accAdd(arg1, arg2) {
         var r1, r2, m;
         try {
@@ -313,8 +321,6 @@
         m = Math.pow(10, Math.max(r1, r2))
         return ((arg1 * m + arg2 * m) / m).toFixed(2);
     }
-
-
     //点击商品减少操作
     function reduce() {
         var count = $("#procount").val();
@@ -324,12 +330,10 @@
         count = count <= 1 ? 1 : --count;
         $("#procount").val(count);
     }
-
     function puls() {
         var count = $("#procount").val();
         $("#procount").val(++count);
     }
-
     //精确计算乘法
     function accMul(arg1, arg2) {
         var m = 0, s1 = arg1.toString(), s2 = arg2.toString();
@@ -343,23 +347,33 @@
         }
         return Number(s1.replace(".", "")) * Number(s2.replace(".", "")) / Math.pow(10, m)
     }
-
     //立即购买 点击时直接跳转到支付页
     function purchase(price) {
+        var kc = $("#productStock").val();
+        var sl = $("#procount").val();
+        if (sl > kc) {
+            alert("对不起库存不足")
+            return;
+        }
         $("#productCount").val($("#procount").val())
         var count = $("#productCount").val();
         var ids = $("#productId").val();
         //计算出商品的总价
         var totalPrice = (price, count);
         //跳转到收银台页面  totalPrice总价 ids 商品的id
-        location.href = "http://localhost:8088/order/cashier?totalPrice=" + totalPrice + "&ids?=" + ids +"&userId = ${uId}";
+        location.href = "/路径/路径?totalPrice=" + totalPrice + "&ids?=" + ids;
     }
-
     //添加商品到购物车
     function addShopCar() {
+        var kc = $("#productStock").val();
+        var sl = $("#procount").val();
+        if (sl>kc){
+            alert("对不起库存不足")
+            return;
+        }
         //商品规格
         var productSpec = "";
-        var arr = document.getElementsByName("size")
+        var arr = document.getElementsByName("guige")
         for (var i = 0; i < arr.length; i++) {
             if (arr[i].checked) {
                 productSpec = arr[i].value;
@@ -367,7 +381,7 @@
         }
         //商品颜色
         var productColor = "";
-        var arr = document.getElementsByName("color")
+        var arr = document.getElementsByName("yanse")
         for (var i = 0; i < arr.length; i++) {
             if (arr[i].checked) {
                 productColor = arr[i].value;
@@ -388,70 +402,73 @@
         }
         $("#addShopCarFrom").submit();
     }
-
-    function findStock() {
+    //改变商品颜色的同时去数据库查询对应数据
+    function checkColor() {
+        var arr = document.getElementsByName("yanse");
+        //获取选中的颜色的值
+        var colorVal = "";
+        for (var i = 0; i < arr.length; i++) {
+            var obj = document.getElementById("color" + i);
+            if (arr[i].checked) {
+                colorVal = arr[i].value;
+                obj.classList.add('istrue');
+            } else {
+                obj.classList.remove('istrue');
+            }
+        }
+        //获取到商品的名
+        var productName = $("#productName").val();
+        //获取规格
+        var productSpec = "";
+        var arra = document.getElementsByName("guige")
+        for (var i = 0; i < arra.length; i++) {
+            if (arra[i].checked) {
+                productSpec = arra[i].value;
+            }
+        }
+        //发送请求查询这个颜色的商品
         $.ajax({
-            url:'/page/findStore',
-            data:{
-                title:$("#productName").val(),
-                colorId:$("#productColor").val(),
-                sizeId:$("#productSpec").val()
-            },
-            dataType:'json',
-            success:function (data) {
-                if (data != null) {
-                    $("#productId").val(data.id);
-                    $("#productStock").val(data.productStock);
+            url: '/page/findShopByColor',
+            data:
+                {
+                    productTitle: productName,
+                    colorId: colorVal,
+                    sizeId: productSpec
+                },
+            success: function (data) {
+                //判断返回的数据 为空的话则说明 没有对应的商品 则库存为空 不为空则把对应的数据赋值给每个对应的数据
+                if (data == null || data == '') {
+                    var htm = "<font color='red'>0</font>";
+                    $("#productStock").html(htm);
+                } else {
+                    $("#productId").html(data.id);//id
+                    $("#productName").val(data.productTitle);//标题
+                    $("#productImg").val(data.img);//图片
+                    $("#productPrice").val(data.productPrice);//表单的价格
+                    $("#productImgId").prop("src", data.img);//展示图
+                    $("#productImgId").attr("jqimg", data.img);//展示图
+                    $("#productPriceId").html(data.productPrice); //价格
+                    $("#shelfTimeId").html(data.shelfTime); //上架日期
+                    $("#brandNameId").html(data.brandName);//品牌
+                    $("#productSalesId").html(data.productSales); //月销量
+                    $("#productCommentsId").html(data.productComments);//累计评论
+                    $("#productConcernId").html(data.productConcern);//关注
+                    $("#productStock").html(data.productStock);//库存
                 }
             }
         })
     }
-
-    function checkColor(obj) {
-        var arr = document.getElementsByName("color");
-        for (var i = 1; i <= arr.length; i++) {
-            var color = document.getElementById("color" + i);
-            if (arr[i-1].checked) {
-                color.classList.add('istrue');
+    function checkColor1() {
+        var arr = document.getElementsByName("guige");
+        for (var i = 0; i < arr.length; i++) {
+            var obj = document.getElementById("color0" + i);
+            if (arr[i].checked) {
+                obj.classList.add('istrue');
             } else {
-                color.classList.remove('istrue');
+                obj.classList.remove('istrue');
             }
         }
-        $("#productColor").val(obj.value);
-        findStock();
     }
-
-    function checkSize(obj) {
-        var arr = document.getElementsByName("size");
-        for (var i = 1; i <= arr.length; i++) {
-            var size = document.getElementById("size" + i);
-            if (arr[i-1].checked) {
-                size.classList.add('istrue');
-            } else {
-                size.classList.remove('istrue');
-            }
-        }
-        $("#productSpec").val(obj.value);
-        findStock();
-    }
-    
-    
-    $(function () {
-        var size = document.getElementsByName("size");
-        var color = document.getElementsByName("color");
-        for (var i = 1; i <= size.length; i++) {
-            if (size[i-1].value == ${pro.sizeId}) {
-                $("#size"+i).addClass('istrue');
-            }
-        }
-        for (var i = 1; i <= color.length; i++) {
-            if (color[i-1].value == ${pro.colorId}) {
-                $("#color"+i).addClass('istrue')
-
-            }
-        }
-    })
-
 </script>
 
 </body>

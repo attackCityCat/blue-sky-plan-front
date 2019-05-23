@@ -37,6 +37,7 @@ public class ShiroConfig {
         map.put("/page/toFreeCenter","anon");
         map.put("/page/toMain","anon");
         map.put("/page/addShopCar","anon");
+        map.put("/page/findShopByColor","anon");
         map.put("/page/toRetrieve","anon");
         map.put("/js/*","anon");
         map.put("/img/*","anon");

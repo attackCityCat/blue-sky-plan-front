@@ -92,13 +92,13 @@
     //删除购物车的商品
     function delShopCar(id) {
         $.ajax({
-            url: '/car/page/delShopCar',
+            url: '/page/delShopCar',
             data: {
                 id: id
             },
             success: function (data) {
                 if (data) {
-                    location.href = "/car/page/test";
+                    location.href = "/page/test";
                 }
             }
         })
@@ -149,6 +149,7 @@
         var sum = 0;
         $("input[name='ck']:checked").each(function (i) {
             var val = Number($(this).val());
+            alert(val);
             sum = Number(accAdd(sum, val));
         })
         $("#rmbId").html(sum);

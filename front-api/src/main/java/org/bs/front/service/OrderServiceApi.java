@@ -21,8 +21,7 @@ import java.util.List;
 public interface OrderServiceApi {
 
     @RequestMapping(value = "addOrder")
-    void addOrder(@RequestBody OrderBean orderBean
-            ,@RequestParam(value = "price") Double price);
+    void addOrder(@RequestBody OrderBean orderBean);
 
     @RequestMapping(value = "queryOrder")
     List<OrderBean> queryOrder();

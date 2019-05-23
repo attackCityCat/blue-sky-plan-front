@@ -3,6 +3,7 @@ package org.bs.front.controller;
 import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.showproduct.ColorBean;
 import org.bs.front.pojo.showproduct.ProductBean;
+import org.bs.front.pojo.showproduct.TypeBean;
 import org.bs.front.pojo.showproduct.SizeBean;
 import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.UserService;
@@ -27,6 +28,20 @@ public class PageController {
 
     @Resource
     RedisTemplate<String, Object> redisTemplate;
+
+    /**
+     * 根据商品颜色查询对应信息
+     * @param productTitle      商品名
+     * @param colorVal      商品颜色
+     * @return
+     */
+    @RequestMapping("findShopByColor")
+    @ResponseBody
+    public ProductBean findShopByColor(ProductBean productBean){
+        ProductBean pro = userService.findShopByColor(productBean);
+        System.out.println(pro);
+        return  pro;
+    }
 
 
     /**
@@ -63,6 +78,11 @@ public class PageController {
     @RequestMapping("toMain")
     public String toIndex(Model model) {
 
+        //查询男装类型
+       List<TypeBean> typeManList = userService.findShopTypeManList();
+       //查询女装类型
+       List<TypeBean> typeList = userService.findShopTypeList();
+
         //查询女装
         List<ProductBean> list = userService.findShopList();
         //查询男装
@@ -71,6 +91,10 @@ public class PageController {
         model.addAttribute("list", list);
         //返回男装数据
         model.addAttribute("listMan", listMen);
+        //返回女装类型数据
+        model.addAttribute("typeList",typeList);
+        //返回男装类型数据
+        model.addAttribute("typeManList",typeManList);
 
         return "jsp/main";
     }
@@ -94,19 +118,12 @@ public class PageController {
      */
     @RequestMapping("/toUser")
     public String toUser(Model model, HttpSession session) {
-        Integer count = 0;
         UserBean user = (UserBean) session.getAttribute(session.getId());
-        if (user != null) {
-            String key = ConstantClass.FIND_USER_SHOP_CAR + user.getUserId();
-            System.out.println(key);
-            count = userService.queryShopCarCount(key);
-        }
-        model.addAttribute("count",count);
 
         //当进入到这个方法的时候说明用户登陆成功 直接查一下用户的购物车并返回页面
         long hashLength = redisTemplate.opsForHash().size(ConstantClass.FIND_USER_SHOP_CAR + user.getUserId());
-        System.out.println("此用户购物车的商品有---》"+hashLength);
-        model.addAttribute("count",hashLength);
+        System.out.println("此用户购物车的商品有---》" + hashLength);
+        model.addAttribute("count", hashLength);
         model.addAttribute("user", user);
         return "jsp/free";
     }

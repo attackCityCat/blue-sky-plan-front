@@ -129,5 +129,34 @@
 
     </select>
 
+    <select id="findShopByColor" parameterType="org.bs.front.pojo.showproduct.ProductBean" resultType="org.bs.front.pojo.showproduct.ProductBean">
+        select
+            tpt.product_id as id,
+            tpt.product_title as productTitle ,
+            tpt.product_price as productPrice ,
+            tpt.product_stock as productStock ,
+            tpt.product_time as productTime ,
+            tpt.product_sales as productSales ,
+            tpt.product_comments as productComments ,
+            tpt.product_concern as productConcern ,
+            tpt.product_state as productState ,
+            tpt.product_audit as productAudit,
+            tpt.product_selling as productSelling,
+            tpt.shelf_time as shelfTime,
+            tbt.brand_name as brandName,
+            tst.size_name as sizeName,
+            tc.color_name as colorName,
+						cpi.url as img,
+             btype.type_name as typeName
+             from cms_product tpt
+            left join cms_brand tbt on tpt.brand_id = tbt.id
+            left join cms_size tst on tpt.size_id = tst.id
+            left join cms_type stype on tpt.type_id = stype.id
+            left join cms_type btype on stype.pid = btype.id
+            left join cms_product_color tc on tpt.color_id = tc.id
+			left join cms_product_img cpi on cpi.product_id=tpt.product_id
+			where 	tpt.color_id= #{colorId} and tpt.product_title like '%${productTitle}%' and tpt.size_id = #{sizeId}
+    </select>
+
 
 </mapper>
