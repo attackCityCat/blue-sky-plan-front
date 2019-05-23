@@ -34,6 +34,8 @@ public class ShiroConfig {
         map.put("/js/*","anon");
         map.put("/img/*","anon");
         map.put("/*/*","authc");
+
+        map.put("/page/toCommodity","roles[管理员]");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(map);
         return  shiroFilterFactoryBean;
     }

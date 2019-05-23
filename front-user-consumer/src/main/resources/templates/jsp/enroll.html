@@ -53,8 +53,8 @@
         <div class="wrap">
             <!--topLeftNav-->
             <ul class="topLtNav">
-                <li><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/login.html" class="obviousText">亲，请登录</a></li>
-                <li><a href="http://www.17sucai.com/preview/183822/2019-05-11/shopping/register.html">注册</a></li>
+                <li><a href="/page/toLogin" class="obviousText">亲，请登录</a></li>
+                <li><a href="/page/toEnroll">注册</a></li>
                 <li><a href="">移动端</a></li>
             </ul>
             <!--topRightNav-->
@@ -220,12 +220,13 @@
                  type:'post',
                  data:$("#userForm").serialize(),
                  dataType:'json',
-                 success:function(){
-                     /*if(data){
+                 success:function(data){
+                     if(data){
+                         alert("注册成功");
                           window.location.href="/page/toLogin";
                      }else{
                          alert("注册失败");
-                     }*/
+                     }
                  }
              })
          }

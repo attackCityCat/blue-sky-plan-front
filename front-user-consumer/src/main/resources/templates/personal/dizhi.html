@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <link rel="icon" href="http://demo.demohuo.top/modals/57/5750/demo/images/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/js/style.css">
+    <script src="/js/html5.js"></script>
+
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/bootstrap-fileinput/js/fileinput.js"></script>
+    <script src="/js/bootstrap-fileinput/js/locales/zh.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-fileinput/css/fileinput.css">
+
+    <script type="text/javascript" src="/js/bootStrap_util.js"></script>
+
+    <script type="text/javascript" src="/js/bootstrap-select/bootstrap-select.js"></script>
+    <script type="text/javascript" src="/js/bootstrap-select/i18n/defaults-zh_CN.js"></script>
+    <link rel="stylesheet" href="/js/bootstrap-select/bootstrap-select.min.css">
+</head>
+<body>
+<table class="order_table">
+    <tbody><tr>
+        <td width="100" align="right">收件人：</td>
+        <td><input type="text" placeholder="输入收件人姓名" class="textbox" style="height: 20px"></td>
+    </tr>
+    <tr>
+        <td width="100" align="right">联系电话：</td>
+        <td><input type="text" placeholder="收件人手机号码" class="textbox" style="height: 20px"></td>
+    </tr>
+    <tr>
+        <td width="100" align="right">收件地址：</td>
+        <td>
+            <select class="form-control" id="provinceDom" name="shenId" style="height: 20px" onchange="getLinkage('cityDom',this.value,'/city/queryProvince')" >
+            </select>
+            <select class="form-control" id="cityDom" name="cityId" style="height: 20px">
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td width="100" align="right">详细地址：</td>
+        <td><input type="text" placeholder="街道门牌号" class="textbox" style="height: 20px"></td>
+    </tr>
+    <tr>
+        <td width="100" align="right"></td>
+        <td><input type="button" value="更新保存" class="group_btn"></td>
+    </tr>
+    </tbody></table>
+</body>
+<script type="text/javascript">
+    $(function(){
+        getLinkage('provinceDom',0,'/city/queryProvince');
+    })
+</script>
+</html>

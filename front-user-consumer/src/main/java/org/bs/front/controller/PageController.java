@@ -45,4 +45,50 @@ public class PageController {
         public   String   toRetrieve(){
               return  "jsp/retrieve";
         }
+
+        @GetMapping("/toFreeCenter")
+        public   String   toFreeCenter(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+            return  "center/freeCenter";
+        }
+
+        @GetMapping("/toMeans")
+        public   String   toMeans(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+            return "personal/means";
+        }
+
+        @GetMapping("/toModify")
+        public   String   toModify(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+            return "personal/modify";
+        }
+
+        @GetMapping("/toCommodity")
+        public   String   toCommodity(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+              return "personal/commodity";
+        }
+
+        @GetMapping("/to403")
+        public  String  to403(){
+              return   "403";
+        }
+
+        @GetMapping("/toAddress")
+        public   String   toAddress(Model model, HttpSession session){
+            UserBean user = (UserBean)session.getAttribute(session.getId());
+            model.addAttribute("user",user);
+            return "personal/address";
+        }
+
+        @GetMapping("/toDiZhi")
+        public   String   toDiZhi(){
+            return "personal/dizhi";
+        }
+
 }
