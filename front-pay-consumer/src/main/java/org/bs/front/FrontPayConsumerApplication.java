@@ -11,6 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableEurekaClient
 @EnableFeignClients
 @EnableDiscoveryClient
+
 public class FrontPayConsumerApplication {
 
     public static void main(String[] args) {

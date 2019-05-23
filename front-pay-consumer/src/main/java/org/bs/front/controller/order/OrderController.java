@@ -8,6 +8,7 @@ import org.bs.front.conf.AlipayConfig;
 import org.bs.front.constant.ConstantClass;
 import org.bs.front.pojo.order.OrderBean;
 import org.bs.front.pojo.product.ProductBean;
+import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.order.OrderService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -46,16 +47,13 @@ public class OrderController {
      * @throws IOException
      */
     @RequestMapping(value = "cashier")
-    private String queryShopCar(Model model,Double totalPrice,Integer[] ids,HttpSession session) throws IOException {
+    private String queryShopCar(Double totalPrice,Integer[] ids,Integer userId,Model model) throws IOException {
 
 
         //下面Key的userId上线时用 这个从session中获取的id 此时再测试 暂时写死
-        /*UserBean userBean = (UserBean) session.getAttribute(session.getId());
-
-        Integer userId = userBean.getUserId();*/
 
         //根据用户的key去redis中查询对应的值
-        String userKey = ConstantClass.FIND_USER_SHOP_CAR+2;
+        String userKey = ConstantClass.FIND_USER_SHOP_CAR+userId;
 
 
         //上数据库查询这个用户的商品
@@ -70,7 +68,9 @@ public class OrderController {
         model.addAttribute("ids",s);
         System.out.println(s);
 
+
         model.addAttribute("totalPrice",totalPrice);
+        model.addAttribute("productName",totalPrice);
         System.out.println(totalPrice);
 
         model.addAttribute("list", list);

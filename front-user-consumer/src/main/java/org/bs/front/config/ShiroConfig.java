@@ -31,15 +31,17 @@ public class ShiroConfig {
         map.put("/retrieve/userRetrieve","anon");
         map.put("/users/toenroll","anon");
         map.put("/login/login","anon");
+        map.put("/page/queryShopDetails","anon");
         map.put("/page/toEnroll","anon");
         map.put("/page/toUser","anon");
         map.put("/page/toFreeCenter","anon");
         map.put("/page/toMain","anon");
+        map.put("/page/addShopCar","anon");
         map.put("/page/toRetrieve","anon");
         map.put("/js/*","anon");
         map.put("/img/*","anon");
 //        map.put(" /page/test","authc");
-        map.put("/*/*","authc");
+//        map.put("/*/*","authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(map);
         return  shiroFilterFactoryBean;
     }

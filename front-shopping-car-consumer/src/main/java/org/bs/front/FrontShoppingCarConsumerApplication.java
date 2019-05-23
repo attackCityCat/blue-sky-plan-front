@@ -11,7 +11,6 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 @EnableEurekaClient     //都是能够让注册中心能够发现，扫描到改服务
 @EnableDiscoveryClient  //都是能够让注册中心能够发现，扫描到改服务
 @EnableFeignClients //注解开启Feign的功能 Feign本身自带断路器
-@EnableRedisHttpSession
 public class FrontShoppingCarConsumerApplication {
 
     public static void main(String[] args) {

@@ -45,8 +45,8 @@
                 <tr>
                     <td class="center"><input type="checkbox" id="check${i.productId}" data="${i.productId}" name="ck"
                                               value="${i.productPrice*i.productCount}" onclick="radiock()"/></td>
-                    <td class="center"><a href="product.html">
-                            <img src="upload/goods.jpg" style="width:50px;height:50px;"/></a></td>
+                    <td class="center"><a href="javascript:commodityDetails(${i.productId});">
+                            <img src="${i.productImg}" style="width:50px;height:50px;"/></a></td>
                     <td>${i.productName}
                         <input type="hidden" value="${i.productId}">
                     </td>
@@ -129,7 +129,7 @@
             return;
         }
         //发送请求到收银台啊
-        location.href="http://localhost:8088/order/cashier?totalPrice="+totalPrice+"&ids="+ids;
+        location.href="http://localhost:8088/order/cashier?totalPrice="+totalPrice+"&ids="+ids +"&userId=${uId}";
     }
 
     //点击全选时复选框的操作
@@ -226,6 +226,11 @@
                 $("#check" + id).val(accMul(count, price))
             }
         })
+    }
+
+    //点击商品时进入详情页面
+    function commodityDetails(id) {
+        location.href = "http://localhost:8082/page/queryShopDetails?id=" + id;
     }
 
 </script>

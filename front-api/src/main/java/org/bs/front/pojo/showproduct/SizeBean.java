@@ -8,7 +8,7 @@ public class SizeBean implements Serializable {
     //尺寸表
     private Integer id;
 
-    private String size_name;
+    private String sizeName;
 
     public Integer getId() {
         return id;
@@ -18,11 +18,11 @@ public class SizeBean implements Serializable {
         this.id = id;
     }
 
-    public String getSize_name() {
-        return size_name;
+    public String getSizeName() {
+        return sizeName;
     }
 
-    public void setSize_name(String size_name) {
-        this.size_name = size_name;
+    public void setSizeName(String sizeName) {
+        this.sizeName = sizeName;
     }
 }

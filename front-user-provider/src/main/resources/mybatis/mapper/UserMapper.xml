@@ -81,9 +81,12 @@
             tpt.product_selling as productSelling,
             tpt.shelf_time as shelfTime,
             tbt.brand_name as brandName,
+            tpt.size_id as sizeId,
             tst.size_name as sizeName,
+            tpt.color_id as colorId,
             tc.color_name as colorName,
-						cpi.url as img,
+
+			cpi.url as img,
              btype.type_name as typeName
              from cms_product tpt
             left join cms_brand tbt on tpt.brand_id = tbt.id
@@ -125,4 +128,6 @@
 			LIMIT 0,4
 
     </select>
+
+
 </mapper>

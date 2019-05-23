@@ -57,10 +57,14 @@ public class CarController {
         //上数据库查询这个用户的商品
         List<ProductBean> list = shopCarService.queryShopCar(key);
 
+        for (ProductBean productBean : list){
+            System.out.println(productBean.getProductImg());
+        }
 
         model.addAttribute("count",list.size());
 
         model.addAttribute("list", list);
+        model.addAttribute("uId", userBean.getUserId());
         return "view/show";
     }
 
@@ -97,8 +101,10 @@ public class CarController {
      */
     @RequestMapping("pulsCount")
     @ResponseBody
-    public void pulsCount(String id){
-        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+2;
+    public void pulsCount(String id,HttpSession session){
+        UserBean userBean = (UserBean) session.getAttribute(session.getId());
+
+        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+userBean.getUserId();
         String ShopKey = ConstantClass.SHOP_KEY+id;
         shopCarService.pulsCount(UserKey,ShopKey);
     }
@@ -108,8 +114,9 @@ public class CarController {
      */
     @RequestMapping("reduceCount")
     @ResponseBody
-    public void reduceCount(String id){
-        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+2;
+    public void reduceCount(String id,HttpSession session){
+        UserBean userBean = (UserBean) session.getAttribute(session.getId());
+        String UserKey =  ConstantClass.FIND_USER_SHOP_CAR+userBean.getUserId();
         String ShopKey = ConstantClass.SHOP_KEY+id;
         shopCarService.reduceCount(UserKey,ShopKey);
     }

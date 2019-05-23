@@ -1,6 +1,8 @@
 package org.bs.front.service.user;
 
+import org.bs.front.pojo.showproduct.ColorBean;
 import org.bs.front.pojo.showproduct.ProductBean;
+import org.bs.front.pojo.showproduct.SizeBean;
 import org.bs.front.pojo.user.UserBean;
 import org.springframework.web.bind.annotation.*;
 
@@ -48,4 +50,13 @@ public interface UserServiceApi {
     //查出销量最高的4条数据
     @RequestMapping("/topSelling")
     List<ProductBean> topSelling();
+
+    @RequestMapping(value = "/findSizeList")
+    List<SizeBean> findSizeList();
+
+    @RequestMapping(value = "/findColorList")
+    List<ColorBean> findColorList();
+
+    @RequestMapping("/findStore")
+    ProductBean findStore(@RequestParam("title") String title,@RequestParam("colorId") Integer colorId,@RequestParam("sizeId") Integer sizeId);
 }

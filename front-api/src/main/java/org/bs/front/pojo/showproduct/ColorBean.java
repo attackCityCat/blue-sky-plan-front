@@ -8,7 +8,7 @@ public class ColorBean implements Serializable {
     //颜色实体
     private Integer id;
 
-    private String color_name;
+    private String colorName;
 
     public Integer getId() {
         return id;
@@ -18,11 +18,11 @@ public class ColorBean implements Serializable {
         this.id = id;
     }
 
-    public String getColor_name() {
-        return color_name;
+    public String getColorName() {
+        return colorName;
     }
 
-    public void setColor_name(String color_name) {
-        this.color_name = color_name;
+    public void setColorName(String colorName) {
+        this.colorName = colorName;
     }
 }

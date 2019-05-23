@@ -13,37 +13,29 @@
     <script src="/js/jquery.jqzoom.js"></script>
     <script src="/js/base.js"></script>
 
-
+    <style>
+        .product_detail .rt_infor .goods_infor .horizontal_attr dd .istrue {
+            border: 1px #ff0000 solid;
+        }
+    </style>
 </head>
 <body>
 
 <!--导航指向-->
-<aside class="wrap insideLink">
-    <a href="index.html">首页</a>
-    <a href="product_list.html">时尚女装</a>
-</aside>
+
 <section class="wrap product_detail">
     <!--img:left-->
     <div class="gallery">
         <div>
             <div id="preview" class="spec-preview"><span class="jqzoom"><img jqimg="${pro.img}"
-                                                                             src="${pro.img}"/></span></div>
+                                     height="420px"  width="420px"   src="${pro.img}"/></span></div>
             <!--缩图开始-->
             <div class="spec-scroll"><a class="prev">&lt;</a> <a class="next">&gt;</a>
                 <div class="items">
                     <ul>
-                        <li><img bimg="upload/goods.jpg" src="${pro.img}" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods004.jpg" src="${pro.img}" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
-                        <li><img bimg="upload/goods.jpg" src="upload/goodssmall.jpg" onmousemove="preview(this);"></li>
+                        <#list img as img>
+                            <li><img bimg="upload/goods.jpg" src="${img}" onmousemove="preview(this);"></li>
+                        </#list>
                     </ul>
                 </div>
             </div>
@@ -54,8 +46,17 @@
     <div class="rt_infor">
         <!--lt_infor-->
         <div class="goods_infor">
-            <form id="shopFrom">
-                <#--标题，价格-->
+            <#--//商品id // 商品标题 // 商品价格 //商品图  //商品规格 //商品颜色 //商品数量-->
+            <form action="/page/addShopCar" id="addShopCarFrom">
+                <input type="hidden" value="" id="productId" name="productId">
+                <input type="hidden" value="${pro.productTitle}" id="productName" name="productName">
+                <input type="hidden" value="${pro.productPrice}" id="productPrice" name="productPrice">
+                <input type="hidden" value="${pro.img}" id="productImg" name="productImg">
+
+                <input type="hidden" value="1" id="productCount" name="productCount">
+                <input type="hidden" value="${pro.colorId}" id="productColor" name="productColor">
+                <input type="hidden" value="${pro.sizeId}" id="productSpec" name="productSpec">
+            </form>
             <h2>${pro.productTitle}</h2>
             <ul>
                 <li>
@@ -68,39 +69,37 @@
                     <dl class="horizontal">
                         <dt>上架时间：</dt>
                         <dd>
-                            <time>${}</time>
+                            <time>${pro.shelfTime}</time>
                         </dd>
                     </dl>
                 </li>
                 <li>
                     <dl class="horizontal">
                         <dt>品牌：</dt>
-                        <dd><em>品牌名</time></em>
+                        <dd><em>${pro.brandName}</time></em>
                     </dl>
                 </li>
                 <li class="statistics">
                     <dl class="vertical">
                         <dt>月销量</dt>
-                        <dd>20</dd>
+                        <dd>${pro.productSales}</dd>
                     </dl>
                     <dl class="vertical">
                         <dt>累计评论</dt>
-                        <dd>198</dd>
+                        <dd>${pro.productComments}</dd>
                     </dl>
                     <dl class="vertical">
                         <dt>关注</dt>
-                        <dd>230</dd>
+                        <dd>${pro.productConcern}</dd>
                     </dl>
                 </li>
                 <li>
                     <dl class="horizontal horizontal_attr">
                         <dt>规格：</dt>
                         <dd>
-                            <label><input type="radio" name="guige"/>S码</label>
-                            <label><input type="radio" name="guige"/>M码</label>
-                            <label><input type="radio" name="guige"/>L码</label>
-                            <label><input type="radio" name="guige"/>XL码</label>
-                            <label><input type="radio" name="guige"/>XXL码</label>
+                            <#list sizes as i>
+                            <label id="size${i.id}"><input type="radio" name="size" value="${i.id}" onclick="checkSize(this)"/>${i.sizeName}</label>
+                            </#list>
                         </dd>
                     </dl>
                 </li>
@@ -108,9 +107,10 @@
                     <dl class="horizontal horizontal_attr">
                         <dt>颜色：</dt>
                         <dd>
-                            <label><input type="radio" name="yanse"/>黑色</label>
-                            <label><input type="radio" name="yanse"/>蓝色</label>
-                            <label><input type="radio" name="yanse"/>白色</label>
+                            <#list colors as i>
+                                <label id="color${i.id}"><input type="radio" name="color" value="${i.id}"
+                                                          onclick="checkColor(this)"/>${i.colorName}</label>
+                            </#list>
                         </dd>
                     </dl>
                 </li>
@@ -119,34 +119,33 @@
                     <dl class="horizontal horizontal_attr">
                         <dt>数量：</dt>
                         <dd>
-                            <input type="button" value="-" class="jj_btn"/>
-                            <input type="text" value="1" readonly class="num"/>
-                            <input type="button" value="+" class="jj_btn"/>
-                            <span>库存：2580件</span>
+                            <input type="button" value="-" class="jj_btn" onclick="reduce()"/>
+                            <input type="text" value="1" readonly class="num" id="procount"/>
+                            <input type="button" value="+" class="jj_btn" onclick="puls()"/>
+                            <span id="productStock">库存：${pro.productStock}</span>
                         </dd>
                     </dl>
                 </li>
                 <li class="last_li">
                     <input type="button" value="立即询价" class="buy_btn" onClick="alert('询价请求已推送至商家，请耐心等待！');"/>
-                    <input type="button" value="立即购买" class="buy_btn" onClick="javascript:location.href='cart.html'"/>
-                    <input type="button" value="加入购物车" class="add_btn"/>
+                    <input type="button" value="立即购买" class="buy_btn" onclick="purchase(${pro.productPrice})"/>
+                    <input type="button" value="加入购物车" class="add_btn" onclick="addShopCar()"/>
                 </li>
             </ul>
-            </form>
         </div>
         <!--rt_infor-->
         <div class="shop_infor">
             <dl class="business_card">
-                <dt>xx有限公司</dt>
+                <dt>蓝天小组有限公司</dt>
                 <dd>资质：生产商</dd>
-                <dd>联系人：*先生（先生）</dd>
-                <dd>邮件：******@Foxmail.com</dd>
-                <dd>电话：4008-******</dd>
-                <dd>所在地：陕西省西安市</dd>
-                <dd>地址：陕西省西安市**区**街232号</dd>
+                <dd>联系人：梁先生（先生）</dd>
+                <dd>邮件：llpbzgc@163.com</dd>
+                <dd>电话：18903100844</dd>
+                <dd>所在地：北京市海定区</dd>
+                <dd>地址：河北邯郸</dd>
                 <dd class="center">
-                    <a href="shop.html" class="link_btn">进入店铺</a>
-                    <a class="link_btn">收藏店铺</a>
+                    <a href="#" class="link_btn">进入店铺</a>
+                    <a class="#">收藏店铺</a>
                 </dd>
             </dl>
 
@@ -157,17 +156,21 @@
 <section class="wrap product_detail_btm">
     <article>
         <ul class="item_tab">
-            <li><a class="curr_li">商品详情</a></li>
-            <li><a>商品评价（2893）</a></li>
-            <li><a>成交记录（1892）</a></li>
+            <li><a class="curr_li" name="check" onclick="check(this)">商品详情</a></li>
+            <li><a name="check">商品评价（2893）</a></li>
+            <li><a name="check">成交记录（1892）</a></li>
         </ul>
         <!--商品详情-->
+
         <div class="cont_wrap active">
-            该商品参与了公益宝贝计划，卖家承诺每笔成交将为壹乐园计划捐赠0.02元。该商品已累积捐赠24560笔。
+            该店铺参与了公益宝贝计划，卖家承诺每笔成交将为壹乐园计划捐赠0.02元。该商品已累积捐赠24560笔。
             善款用途简介：基于游戏教育在儿童成长中的重要性，壹基金设立了“壹乐园计划”，帮助提供滑梯、攀爬架、跷跷板、秋千、乒乓球桌等，为灾后及贫困地区的孩子们搭建课<br/>
             该商品参与了公益宝贝计划，卖家承诺每笔成交将为壹乐园计划捐赠0.02元。该商品已累积捐赠24560笔。
             善款用途简介：基于游戏教育在儿童成长中的重要性，壹基金设立了“壹乐园计划”，帮助提供滑梯、攀爬架、跷跷板、秋千、乒乓球桌等，为灾
-            <img src="upload/goods005.jpg"/><br/>
+            最终解释权归：蓝天小组所有！
+            <#list img as img>
+                <img src="${img}"/><br/>
+            </#list>
             该商品参与了公益宝贝计划，卖家承诺每笔成交将为壹乐园计划捐赠0.02元。该商品已累积捐赠24560笔。
             善款用途简介：基于游戏教育在儿童成长中的重要性，壹基金设立了“壹乐园计划”，帮助提供滑梯、攀爬架、跷跷板、秋千、乒乓球桌等，为灾后及贫困地区的孩子们搭建课<br/>
             该商品参与了公益宝贝计划，卖家承诺每笔成交将为壹乐园计划捐赠0.02元。该商品已累积捐赠24560笔。
@@ -292,6 +295,164 @@
         </dl>
     </aside>
 </section>
+
+<script>
+
+    function accAdd(arg1, arg2) {
+        var r1, r2, m;
+        try {
+            r1 = arg1.toString().split(".")[1].length
+        } catch (e) {
+            r1 = 0
+        }
+        try {
+            r2 = arg2.toString().split(".")[1].length
+        } catch (e) {
+            r2 = 0
+        }
+        m = Math.pow(10, Math.max(r1, r2))
+        return ((arg1 * m + arg2 * m) / m).toFixed(2);
+    }
+
+
+    //点击商品减少操作
+    function reduce() {
+        var count = $("#procount").val();
+        if (count <= 1) {
+            return;
+        }
+        count = count <= 1 ? 1 : --count;
+        $("#procount").val(count);
+    }
+
+    function puls() {
+        var count = $("#procount").val();
+        $("#procount").val(++count);
+    }
+
+    //精确计算乘法
+    function accMul(arg1, arg2) {
+        var m = 0, s1 = arg1.toString(), s2 = arg2.toString();
+        try {
+            m += s1.split(".")[1].length
+        } catch (e) {
+        }
+        try {
+            m += s2.split(".")[1].length
+        } catch (e) {
+        }
+        return Number(s1.replace(".", "")) * Number(s2.replace(".", "")) / Math.pow(10, m)
+    }
+
+    //立即购买 点击时直接跳转到支付页
+    function purchase(price) {
+        $("#productCount").val($("#procount").val())
+        var count = $("#productCount").val();
+        var ids = $("#productId").val();
+        //计算出商品的总价
+        var totalPrice = (price, count);
+        //跳转到收银台页面  totalPrice总价 ids 商品的id
+        location.href = "http://localhost:8088/order/cashier?totalPrice=" + totalPrice + "&ids?=" + ids +"&userId = ${uId}";
+    }
+
+    //添加商品到购物车
+    function addShopCar() {
+        //商品规格
+        var productSpec = "";
+        var arr = document.getElementsByName("size")
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].checked) {
+                productSpec = arr[i].value;
+            }
+        }
+        //商品颜色
+        var productColor = "";
+        var arr = document.getElementsByName("color")
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i].checked) {
+                productColor = arr[i].value;
+            }
+        }
+        $("#productColor").val(productColor)
+        var a = $("#productColor").val();
+        if (a == null || a == '') {
+            alert("请选则颜色");
+            return;
+        }
+        $("#productCount").val($("#procount").val())
+        $("#productSpec").val(productSpec);
+        var b = $("#productSpec").val();
+        if (b == null || b == '') {
+            alert("请选中规格");
+            return;
+        }
+        $("#addShopCarFrom").submit();
+    }
+
+    function findStock() {
+        $.ajax({
+            url:'/page/findStore',
+            data:{
+                title:$("#productName").val(),
+                colorId:$("#productColor").val(),
+                sizeId:$("#productSpec").val()
+            },
+            dataType:'json',
+            success:function (data) {
+                if (data != null) {
+                    $("#productId").val(data.id);
+                    $("#productStock").val(data.productStock);
+                }
+            }
+        })
+    }
+
+    function checkColor(obj) {
+        var arr = document.getElementsByName("color");
+        for (var i = 1; i <= arr.length; i++) {
+            var color = document.getElementById("color" + i);
+            if (arr[i-1].checked) {
+                color.classList.add('istrue');
+            } else {
+                color.classList.remove('istrue');
+            }
+        }
+        $("#productColor").val(obj.value);
+        findStock();
+    }
+
+    function checkSize(obj) {
+        var arr = document.getElementsByName("size");
+        for (var i = 1; i <= arr.length; i++) {
+            var size = document.getElementById("size" + i);
+            if (arr[i-1].checked) {
+                size.classList.add('istrue');
+            } else {
+                size.classList.remove('istrue');
+            }
+        }
+        $("#productSpec").val(obj.value);
+        findStock();
+    }
+    
+    
+    $(function () {
+        var size = document.getElementsByName("size");
+        var color = document.getElementsByName("color");
+        for (var i = 1; i <= size.length; i++) {
+            if (size[i-1].value == ${pro.sizeId}) {
+                $("#size"+i).addClass('istrue');
+            }
+        }
+        for (var i = 1; i <= color.length; i++) {
+            if (color[i-1].value == ${pro.colorId}) {
+                $("#color"+i).addClass('istrue')
+
+            }
+        }
+    })
+
+</script>
 
 </body>
 </html>

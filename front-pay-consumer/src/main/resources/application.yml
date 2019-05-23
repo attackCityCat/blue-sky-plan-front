@@ -9,7 +9,7 @@ spring:
     name: front-pay-consumer
   data:
     solr:
-      host: http://127.0.0.1:8079/solr
+      host: http://192.168.1.119:8079/solr
   profiles: default
   freemarker:
     template-loader-path: classpath:/templates

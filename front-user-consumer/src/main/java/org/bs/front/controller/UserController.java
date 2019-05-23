@@ -64,8 +64,7 @@ public class UserController {
                result.put("msg","登录成功");
                UserBean user = (UserBean) subject.getPrincipal();
                session.setAttribute(session.getId(),user);
-               CookieSerializer cookieSerializer = new DefaultCookieSerializer();
-               System.out.println(cookieSerializer.readCookieValues(request));
+               session.setAttribute("userId",user.getUserId());
                return  result;
            }catch(UnknownAccountException e){
                result.put("code",1);
