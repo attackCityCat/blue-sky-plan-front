@@ -66,6 +66,7 @@ public class PageController {
             model.addAttribute("user",user);
             return "personal/modify";
         }
+<<<<<<< HEAD
 
         @GetMapping("/toCommodity")
         public   String   toCommodity(Model model, HttpSession session){
@@ -91,4 +92,6 @@ public class PageController {
             return "personal/dizhi";
         }
 
+=======
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 }

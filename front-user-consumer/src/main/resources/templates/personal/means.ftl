@@ -20,10 +20,13 @@
             });
         });
     </script>
+<<<<<<< HEAD
 
     <style>
         span {color: red}
     </style>
+=======
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 </head>
 <body>
 <!--header-->
@@ -183,18 +186,33 @@
             <dt>控制面板</dt>
             <dd><a href="/page/toMeans">个人资料</a></dd>
             <dd><a href="/page/toModify">修改密码</a></dd>
+<<<<<<< HEAD
             <dd><a href="">我的地址</a></dd>
         </dl>
         <dl>
             <dt>商家管理中心</dt>
             <dd><a href="/page/toCommodity">商品列表</a></dd>
             <dd><a href="">订单列表</a></dd>
+=======
+            <dd><a href="">资金管理</a></dd>
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
         </dl>
         <dl>
             <dt>买家中心</dt>
             <dd><a href="">我的订单</a></dd>
             <dd><a href="">我的询价单</a></dd>
             <dd><a href="">我的收藏</a></dd>
+<<<<<<< HEAD
+=======
+            <dd><a href="">我的地址库</a></dd>
+        </dl>
+        <dl>
+            <dt>商家管理中心</dt>
+            <dd><a href="">我要开店</a></dd>
+            <dd><a href="">店铺设置</a></dd>
+            <dd><a href="">商品列表</a></dd>
+            <dd><a href="">订单列表</a></dd>
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
         </dl>
     </aside>
     <!--右侧：内容区域-->
@@ -211,7 +229,11 @@
             </tr>
             <tr>
                 <td width="80" align="right">手机号码：</td>
+<<<<<<< HEAD
                 <td><input type="text" class="textbox" id="phone" value="${user.phone}" readonly></td>
+=======
+                <td><input type="text" class="textbox" id="phone" value="${user.phone}"></td>
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
             </tr>
             <tr>
                 <td width="80" align="right">电子邮箱：</td>
@@ -219,7 +241,11 @@
             </tr>
             <tr>
                 <td width="80" align="right">创建日期：</td>
+<<<<<<< HEAD
                 <td><input type="text" class="textbox textbox_225" id="createTime" value="${user.createTime}" readonly ></td>
+=======
+                <td><input type="text" class="textbox textbox_225" id="createTime" value="${user.createTime}"></td>
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
             </tr>
             <tr>
                 <td width="80" align="right"></td>
@@ -233,12 +259,22 @@
 </section>
 <script type="text/javascript">
     $("#genxin").click(function(){
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
           $.ajax({
               url:"/users/userFrom",
               type:"put",
               data:{
                  name:$("#name").val(),
+<<<<<<< HEAD
                  email:$("#email").val(),
+=======
+                 phone:$("#phone").val(),
+                 email:$("#email").val(),
+                 createTime:$("#createTime").val(),
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
                  userId:$("#userId").val()
               },
               dataType:"json",
@@ -249,7 +285,10 @@
               }
           })
     })
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 </script>
 <!--footer-->
 <footer>

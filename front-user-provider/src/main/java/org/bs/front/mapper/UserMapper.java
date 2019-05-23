@@ -2,6 +2,7 @@ package org.bs.front.mapper;
 
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+<<<<<<< HEAD
 import org.bs.front.pojo.product.ProductBean;
 import org.bs.front.pojo.user.CityBean;
 import org.bs.front.pojo.user.UserBean;
@@ -10,6 +11,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.HashMap;
 import java.util.List;
+=======
+import org.bs.front.pojo.user.UserBean;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 
 
 public interface UserMapper {
@@ -21,7 +27,11 @@ public interface UserMapper {
             " where phone = #{value}")
     UserBean queryUserName(String phone);
 
+<<<<<<< HEAD
     void saveUser(UserBean userBean);
+=======
+    void saveUser(@RequestBody UserBean userBean);
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 
     @Update("update  front_user  set password = #{password} where phone = #{phone} ")
     void editRetrieve(@RequestParam("phone") String phone, @RequestParam("password") String password);
@@ -29,6 +39,7 @@ public interface UserMapper {
     @Update("update  front_user  set password = #{password}, update_time = sysdate() where user_Id = #{id}")
     void editPassword(@RequestParam("id")Integer id, @RequestParam("password") String password);
 
+<<<<<<< HEAD
     void editUserFrom(@RequestBody UserBean userBean);
 
     @Select("select  cp.product_id as id , cp.product_title as productTitle , cp.product_state, cp.product_price as productPrice ,  " +
@@ -40,4 +51,7 @@ public interface UserMapper {
 
     @Select(" select * from front_city where pid = #{value}")
     List<CityBean> queryProvince(Integer id);
+=======
+    void editUserFrom(UserBean userBean);
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 }

@@ -28,6 +28,7 @@ public interface UserServiceApi {
     void editPassword(@RequestParam("id") Integer id, @RequestParam("password") String password);
 
     //跟新保存
+<<<<<<< HEAD
     @RequestMapping("/users/userFrom")
     void editUserFrom(@RequestBody UserBean userBean);
 
@@ -38,4 +39,8 @@ public interface UserServiceApi {
     //三级联动
     @GetMapping("/city/queryProvince")
     List<CityBean> queryProvince(@RequestParam("id") Integer id);
+=======
+    @PutMapping("/users/userFrom")
+    void editUserFrom(@RequestBody UserBean userBean);
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 }

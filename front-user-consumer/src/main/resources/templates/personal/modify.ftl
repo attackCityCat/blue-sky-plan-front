@@ -182,18 +182,33 @@
                 <dt>控制面板</dt>
                 <dd><a href="/page/toMeans">个人资料</a></dd>
                 <dd><a href="/page/toModify">修改密码</a></dd>
+<<<<<<< HEAD
                 <dd><a href="">我的地址</a></dd>
             </dl>
             <dl>
                 <dt>商家管理中心</dt>
                 <dd><a href="/page/toCommodity">商品列表</a></dd>
                 <dd><a href="">订单列表</a></dd>
+=======
+                <dd><a href="">资金管理</a></dd>
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
             </dl>
             <dl>
                 <dt>买家中心</dt>
                 <dd><a href="">我的订单</a></dd>
                 <dd><a href="">我的询价单</a></dd>
                 <dd><a href="">我的收藏</a></dd>
+<<<<<<< HEAD
+=======
+                <dd><a href="">我的地址库</a></dd>
+            </dl>
+            <dl>
+                <dt>商家管理中心</dt>
+                <dd><a href="">我要开店</a></dd>
+                <dd><a href="">店铺设置</a></dd>
+                <dd><a href="">商品列表</a></dd>
+                <dd><a href="">订单列表</a></dd>
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
             </dl>
         </aside>
     <!--右侧：内容区域-->
@@ -225,6 +240,7 @@
 </section>
 <script type="text/javascript">
     $("#uppassword").click(function(){
+<<<<<<< HEAD
         if(txt1()&txt2()&txt3()){
             $.ajax({
                 url:"/users/userPassword",
@@ -242,6 +258,23 @@
                 }
             })
         }
+=======
+           $.ajax({
+               url:"/users/userPassword",
+               type:"put",
+               data:{
+                   password:$("#shezhi").val(),
+                   Id:$("#Id").val()
+               },
+               dataType:"json",
+               success:function (data) {
+                   if(data){
+                       alert("修改密码成功,请重新登录");
+                       window.location.href="/page/toLogin";
+                   }
+               }
+           })
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
     })
 </script>
 <script type="text/javascript">

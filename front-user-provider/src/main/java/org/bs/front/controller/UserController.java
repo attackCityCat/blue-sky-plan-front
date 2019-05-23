@@ -62,7 +62,11 @@ public class UserController {
 
 
        //更新保存
+<<<<<<< HEAD
        @RequestMapping("/users/userFrom")
+=======
+       @PutMapping("/users/userFrom")
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
        public   Boolean   editUserFrom(@RequestBody UserBean userBean){
               try {
                      userMapper.editUserFrom(userBean);
@@ -73,6 +77,7 @@ public class UserController {
               }
        }
 
+<<<<<<< HEAD
        //商品列表
        @GetMapping("/users/queryProduct")
        public List<ProductBean>  queryProduct(){
@@ -88,4 +93,6 @@ public class UserController {
                return   userMapper.queryProvince(id);
        }
 
+=======
+>>>>>>> 9e5f4a6e96bf301efd9a9756f4a3bbaf158bfb94
 }
