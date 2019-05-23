@@ -48,4 +48,7 @@ public interface UserMapper {
     @Select(" SELECT c.type_name FROM cms_type t " +
             "left join cms_type c on c.pid=t.id where c.pid =2 limit 0,15")
     List<TypeBean> findShopTypeList();
+
+    //根据颜色和商品名进行查询
+    ProductBean findShopByColor(ProductBean productBean);
 }

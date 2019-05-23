@@ -88,4 +88,11 @@ public class UserController {
         return userMapper.findShopTypeList();
     }
 
+    //根据商品名 和颜色查询 对应商品
+    @RequestMapping("/findShopByColor")
+    public ProductBean findShopByColor(@RequestBody ProductBean productBean){
+        System.out.println(productBean.getProductTitle());
+        return userMapper.findShopByColor(productBean);
+    }
+
 }

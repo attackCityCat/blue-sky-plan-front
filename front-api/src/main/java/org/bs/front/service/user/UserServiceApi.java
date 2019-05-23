@@ -49,4 +49,8 @@ public interface UserServiceApi {
     //查询女装类型
     @RequestMapping("/findShopTypeList")
     List<TypeBean> findShopTypeList();
+
+    //根据商品名 和颜色查询 对应商品
+    @RequestMapping("/findShopByColor")
+    ProductBean findShopByColor(@RequestBody ProductBean productBean);
 }

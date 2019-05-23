@@ -27,6 +27,20 @@ public class PageController {
     @Resource
     RedisTemplate<String, Object> redisTemplate;
 
+    /**
+     * 根据商品颜色查询对应信息
+     * @param productTitle      商品名
+     * @param colorVal      商品颜色
+     * @return
+     */
+    @RequestMapping("findShopByColor")
+    @ResponseBody
+    public ProductBean findShopByColor(ProductBean productBean){
+        ProductBean pro = userService.findShopByColor(productBean);
+        System.out.println(pro);
+        return  pro;
+    }
+
 
     /**
      * 用户新增商品到购物车
