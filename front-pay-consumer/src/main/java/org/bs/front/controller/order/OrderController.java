@@ -6,12 +6,18 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import org.bs.front.conf.AlipayConfig;
 import org.bs.front.constant.ConstantClass;
+import org.bs.front.pojo.city.CityBean;
 import org.bs.front.pojo.order.OrderBean;
 import org.bs.front.pojo.product.ProductBean;
+import org.bs.front.pojo.shop.ShopBean;
+import org.bs.front.pojo.user.UserBean;
 import org.bs.front.service.order.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
@@ -36,6 +42,9 @@ public class OrderController {
 
     @Resource
     OrderService orderService;
+
+    @Autowired
+    private MongoTemplate mongoTemplate;
 
     /**
      * 进入收银台  进入收银台就先去查 要下单的商品 根据用的key+用户id并且根据传过来的ids 去查
@@ -79,7 +88,7 @@ public class OrderController {
 
     @RequestMapping(value = "/goAlipay", produces = "text/html; charset=UTF-8")
     @ResponseBody
-    public String goAlipay(HttpServletRequest request, HttpServletRequest response, Double price) {
+    public String goAlipay(HttpServletRequest request, HttpServletRequest response, String price) {
         //获得初始化的AlipayClient
         AlipayClient alipayClient = new DefaultAlipayClient(AlipayConfig.gatewayUrl,
                 AlipayConfig.app_id,
@@ -98,7 +107,7 @@ public class OrderController {
         //商户订单号，商户网站订单系统中唯一订单号，必填
         String out_trade_no = UUID.randomUUID().toString();
         //付款金额，必填
-        String total_amount = price.toString();
+        String total_amount = price;
         //订单名称，必填
         String subject = "2016092900625986";
         //商品描述，可空
@@ -135,16 +144,46 @@ public class OrderController {
     //生产订单
     @RequestMapping(value = "/addOrder")
     @ResponseBody
-    public void addOrder(String ids,Double price){
+    public void addOrder(@RequestParam(value = "userId") Integer userId,//userId 查用户表
+                             @RequestParam(value = "cityId") Integer cityId,//城市id 查城市
+                                String price,Integer count,String message,// 价钱  买的数量  买家留言
+                         @RequestParam(value = "shopId") Integer shopId){//商品id 查商品
 
-            //等待把活数据传过来，先用死数据
-            /*SimpleDateFormat sim = new SimpleDateFormat("yyyyMMddHHmmss");
-            String format = sim.format(new Date());
-            OrderBean orderBean = new OrderBean();
-            orderBean.setOrder_no(""+(System.currentTimeMillis() / 1000));//订单号
-            orderBean.setOrder_countPrice(price);//总价
-            orderBean.setOrder_createTime(format);//下单时间
-            orderService.addOrder(orderBean,price);*/
+        //日期转换格式
+        SimpleDateFormat sim = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String format = sim.format(new Date());
+        //查询用户
+        UserBean userBean = orderService.queryUserById(userId);
+
+        //查询地区
+        CityBean cityBean = orderService.queryCity(cityId);
+
+        //查询商品
+        ShopBean shopBean = orderService.queryShopById(shopId);
+
+        OrderBean orderBean = new OrderBean();
+
+        int r1=(int)(Math.random()*(10));//产生2个0-9的随机数
+        int r2=(int)(Math.random()*(10));
+        long now = System.currentTimeMillis();//一个13位的时间戳
+        String paymentID =String.valueOf(r1)+String.valueOf(r2)+String.valueOf(now);// 订单ID
+
+        orderBean.setOrderNo(paymentID);//订单编号
+        orderBean.setOrderMessage(message);//买家留言
+        orderBean.setShopName(shopBean.getProduct_title());//商品名称
+        orderBean.setOrderPhone(userBean.getPhone());//联系电话
+        orderBean.setOrderCity(cityBean.getName());//城市
+        orderBean.setOrderCreateTime(format);//下单时间
+        orderBean.setOrderStatus(1);//付款状态
+        orderBean.setPayManeyTime(format);//付款时间
+        orderBean.setShopCount(count);//买的总数
+        orderBean.setShopCountPrice(price);//总价
+        orderBean.setShopImg(shopBean.getImgUrl());//图片
+        orderBean.setShopOnePrice(shopBean.getProduct_price());//单价
+        orderBean.setShouJianRen(userBean.getName());//收件人
+        //存入mongodb
+        mongoTemplate.save(orderBean);
+        System.out.println(orderBean);
 
     }
 

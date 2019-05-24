@@ -36,7 +36,7 @@ public class OrderBean implements Serializable {
 
     private String shopName;//商品名称
 
-    private String shopOnePrice;//商品单价
+    private Double shopOnePrice;//商品单价
 
     private Integer shopCount;//商品数量
 
@@ -130,11 +130,11 @@ public class OrderBean implements Serializable {
         this.shopName = shopName;
     }
 
-    public String getShopOnePrice() {
+    public Double getShopOnePrice() {
         return shopOnePrice;
     }
 
-    public void setShopOnePrice(String shopOnePrice) {
+    public void setShopOnePrice(Double shopOnePrice) {
         this.shopOnePrice = shopOnePrice;
     }
 
@@ -152,5 +152,25 @@ public class OrderBean implements Serializable {
 
     public void setShopCountPrice(String shopCountPrice) {
         this.shopCountPrice = shopCountPrice;
+    }
+
+    @Override
+    public String toString() {
+        return "OrderBean{" +
+                "orderId='" + orderId + '\'' +
+                ", orderNo='" + orderNo + '\'' +
+                ", orderCreateTime='" + orderCreateTime + '\'' +
+                ", orderStatus=" + orderStatus +
+                ", orderPhone='" + orderPhone + '\'' +
+                ", payManeyTime='" + payManeyTime + '\'' +
+                ", shouJianRen='" + shouJianRen + '\'' +
+                ", orderCity='" + orderCity + '\'' +
+                ", orderMessage='" + orderMessage + '\'' +
+                ", shopImg='" + shopImg + '\'' +
+                ", shopName='" + shopName + '\'' +
+                ", shopOnePrice=" + shopOnePrice +
+                ", shopCount=" + shopCount +
+                ", shopCountPrice='" + shopCountPrice + '\'' +
+                '}';
     }
 }

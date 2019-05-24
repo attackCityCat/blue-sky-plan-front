@@ -6,8 +6,11 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import org.bs.front.constant.ConstantClass;
 import org.bs.front.mapper.OrderMapper;
+import org.bs.front.pojo.city.CityBean;
 import org.bs.front.pojo.order.OrderBean;
 import org.bs.front.pojo.product.ProductBean;
+import org.bs.front.pojo.shop.ShopBean;
+import org.bs.front.pojo.user.UserBean;
 import org.bs.front.utils.RequestUtil;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +50,26 @@ public class OrderController {
     RedisTemplate<String,Object> redisTemplate;
 
 
+    //查询用户
+    @RequestMapping(value = "/queryUserById")
+    @ResponseBody
+    public UserBean queryUserById(@RequestParam(value = "userId") Integer userId){
+        return orderMapper.queryUserById(userId);
+    }
+
+    //查询城市
+    @RequestMapping(value = "/queryCity")
+    @ResponseBody
+    public CityBean queryCity(@RequestParam(value = "cityId") Integer cityId){
+        return orderMapper.queryCity(cityId);
+    }
+
+    //查询商品
+    @RequestMapping(value = "/queryShopById")
+    @ResponseBody
+    public ShopBean queryShopById(@RequestParam(value = "shopId") Integer shopId){
+        return orderMapper.queryShopById(shopId);
+    }
 
     @RequestMapping(value = "/queryOrder")
     @ResponseBody

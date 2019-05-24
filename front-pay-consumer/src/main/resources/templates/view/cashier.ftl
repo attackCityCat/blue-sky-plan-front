@@ -79,17 +79,34 @@
         <a href="javascript:payManey()" class="link_btn_02 add_btn"/>共计金额<strong class="rmb_icon">${totalPrice}</strong>提交订单</a>
     </div>
 </section>
-
+<!-- 用户id -->
+<input type="hidden" value="1" id="userId">
+<!-- 城市id -->
+<input type="hidden" value="8" id="cityId">
+<!-- 商品id -->
+<input type="hidden" value="40" id="shopId">
+<!-- 买的数量 -->
+<input type="hidden" value="6" id="count">
+<!-- 买家留言 -->
+<input type="hidden" value="尽快发货！！！" id="message">
 <script type="text/javascript">
 
-    //结账且删除购物车
+    //结账
     function payManey(){
-
+        var userId = $("#userId").val();
+        var cityId = $("#cityId").val();
+        var shopId = $("#shopId").val();
+        var count = $("#count").val();
+        var message = $("#message").val();
         $.ajax({
             url:'/order/addOrder',
             type:'post',
             data:{
-                ids:$("#ids").val(),
+                userId:userId,
+                cityId:cityId,
+                shopId:shopId,
+                count:count,
+                message:message,
                 price:$("#totalPrice").val()
             },
             success:function(){

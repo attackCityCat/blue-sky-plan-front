@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ffaac1c-7625-4c04-8bbf-e69a504f3a4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/city/CityBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/city/CityBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/order/OrderBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/order/OrderBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/shop/ShopBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/pojo/shop/ShopBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/OrderServiceApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/front-api/target/classes/org/bs/front/service/OrderServiceApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,18 +62,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="e#1908#1924#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/rabbitMQconf/setMsg.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
@@ -74,31 +74,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-pay-consumer/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderNoCreate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+            <state relative-caret-position="-1254">
+              <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -115,69 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="28" column="30" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-                <element signature="e#975#976#0" expanded="true" />
-                <element signature="e#1013#1014#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1077#1078#0" expanded="true" />
-                <element signature="e#1123#1124#0" expanded="true" />
-                <element signature="e#1161#1162#0" expanded="true" />
-                <element signature="e#1203#1204#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1303#1304#0" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-                <element signature="e#1396#1397#0" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
-                <element signature="e#1485#1486#0" expanded="true" />
-                <element signature="e#1531#1532#0" expanded="true" />
-                <element signature="e#1568#1569#0" expanded="true" />
-                <element signature="e#1601#1602#0" expanded="true" />
-                <element signature="e#1653#1654#0" expanded="true" />
-                <element signature="e#1697#1698#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-                <element signature="e#1827#1828#0" expanded="true" />
-                <element signature="e#1875#1876#0" expanded="true" />
-                <element signature="e#1913#1914#0" expanded="true" />
-                <element signature="e#1947#1948#0" expanded="true" />
-                <element signature="e#2001#2002#0" expanded="true" />
-                <element signature="e#2047#2048#0" expanded="true" />
-                <element signature="e#2083#2084#0" expanded="true" />
-                <element signature="e#2115#2116#0" expanded="true" />
-                <element signature="e#2165#2166#0" expanded="true" />
-                <element signature="e#2207#2208#0" expanded="true" />
-                <element signature="e#2246#2247#0" expanded="true" />
-                <element signature="e#2281#2282#0" expanded="true" />
-                <element signature="e#2337#2338#0" expanded="true" />
-                <element signature="e#2385#2386#0" expanded="true" />
-                <element signature="e#2419#2420#0" expanded="true" />
-                <element signature="e#2449#2450#0" expanded="true" />
-                <element signature="e#2495#2496#0" expanded="true" />
-                <element signature="e#2533#2534#0" expanded="true" />
-                <element signature="e#2568#2569#0" expanded="true" />
-                <element signature="e#2599#2600#0" expanded="true" />
-                <element signature="e#2647#2648#0" expanded="true" />
-                <element signature="e#2687#2688#0" expanded="true" />
-                <element signature="e#2726#2727#0" expanded="true" />
-                <element signature="e#2761#2762#0" expanded="true" />
-                <element signature="e#2817#2818#0" expanded="true" />
-                <element signature="e#2865#2866#0" expanded="true" />
-                <element signature="e#2902#2903#0" expanded="true" />
-                <element signature="e#2934#2935#0" expanded="true" />
-                <element signature="e#2985#2986#0" expanded="true" />
-                <element signature="e#3027#3028#0" expanded="true" />
-                <element signature="e#3068#3069#0" expanded="true" />
-                <element signature="e#3105#3106#0" expanded="true" />
-                <element signature="e#3165#3166#0" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -185,11 +105,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-262">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="54">
+              <caret line="180" column="38" selection-start-line="180" selection-start-column="38" selection-end-line="180" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-38">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1653#1654#0" expanded="true" />
+                <element signature="e#1697#1698#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+              <folding>
+                <element signature="e#2050#2051#0" expanded="true" />
+                <element signature="e#2102#2103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -238,12 +209,10 @@
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.html" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/resources/mybatis/OrderMapper.xml" />
-        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/utils/RequestUtil.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/utils/RequestUtil.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/FeignConfiguration.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/OrderService.java" />
-        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/service/shop/ShopService.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/page/PageController.java" />
@@ -251,27 +220,30 @@
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.html" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main.ftl" />
         <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ImgBean.java" />
-        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/ShopMapper.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/shop/ShopController.java" />
         <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopServiceApi.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/resources/mybatis/ShopMapper.xml" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/dataimport.properties" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/pom.xml" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/rabbitMQconf/RabbitMQConf.java" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/rabbitMQconf/setMsg.java" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderNoCreate.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/city/CityBean.java" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java" />
         <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/shop/ShopController.java" />
-        <option value="$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl" />
+        <option value="$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java" />
+        <option value="$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java" />
       </list>
     </option>
   </component>
@@ -307,6 +279,62 @@
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
               <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -338,6 +366,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
@@ -386,7 +424,83 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blue-sky-plan-front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blue-sky-plan-front" type="462c0819:PsiDirectoryNode" />
+              <item name="front-pay-provider" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -541,7 +655,7 @@
       <workItem from="1558353061326" duration="9004000" />
       <workItem from="1558407953793" duration="53587000" />
       <workItem from="1558524911442" duration="1376000" />
-      <workItem from="1558526366469" duration="50749000" />
+      <workItem from="1558526366469" duration="65101000" />
     </task>
     <task id="LOCAL-00001" summary="11点45分 刘佳伟">
       <created>1558237696596</created>
@@ -585,14 +699,22 @@
       <option name="project" value="LOCAL" />
       <updated>1558597799523</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="5.23 23:14  刘佳伟  第九次提交 solr排序">
+      <created>1558624497222</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1558624497223</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164105000" />
+    <option name="totallyTimeSpent" value="178457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -603,7 +725,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.4987593" visible="true" weight="0.22844176" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5015129" side_tool="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5015129" side_tool="true" weight="0.32189542" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="3" weight="0.32843137" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
@@ -613,7 +735,7 @@
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49848714" weight="0.34150326" />
-      <window_info anchor="bottom" id="Debug" order="11" visible="true" weight="0.32189542" />
+      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49848714" visible="true" weight="0.32189542" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" />
@@ -641,17 +763,10 @@
     <MESSAGE value="5.22 21:27  刘佳伟  第六次提交 solr查询" />
     <MESSAGE value="5.23 11:06  刘佳伟  第七次提交 完成solr" />
     <MESSAGE value="5.23 15:49  刘佳伟  第八次提交 solr高级搜索" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.23 15:49  刘佳伟  第八次提交 solr高级搜索" />
+    <MESSAGE value="5.23 23:14  刘佳伟  第九次提交 solr排序" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.23 23:14  刘佳伟  第九次提交 solr排序" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/payManey.html" />
-    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/resources/mybatis/OrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/utils/RequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -664,22 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/conf/AlipayDemoController.java" />
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/FeignConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/order.ftl" />
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/settle.html" />
-    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/ShopCarServiceApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -708,13 +809,6 @@
           <folding>
             <element signature="e#8671#8672#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="115" column="25" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -801,20 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/CorsMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="116" column="18" lean-forward="true" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/shop/ShopController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -823,23 +903,6 @@
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#ShopController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -878,41 +941,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/rabbitMQconf/RabbitMQConf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/rabbitMQconf/setMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -943,93 +975,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="28" column="30" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-            <element signature="e#975#976#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1077#1078#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1161#1162#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1396#1397#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-            <element signature="e#1601#1602#0" expanded="true" />
-            <element signature="e#1653#1654#0" expanded="true" />
-            <element signature="e#1697#1698#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1827#1828#0" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1913#1914#0" expanded="true" />
-            <element signature="e#1947#1948#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-            <element signature="e#2047#2048#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2246#2247#0" expanded="true" />
-            <element signature="e#2281#2282#0" expanded="true" />
-            <element signature="e#2337#2338#0" expanded="true" />
-            <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#2419#2420#0" expanded="true" />
-            <element signature="e#2449#2450#0" expanded="true" />
-            <element signature="e#2495#2496#0" expanded="true" />
-            <element signature="e#2533#2534#0" expanded="true" />
-            <element signature="e#2568#2569#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2647#2648#0" expanded="true" />
-            <element signature="e#2687#2688#0" expanded="true" />
-            <element signature="e#2726#2727#0" expanded="true" />
-            <element signature="e#2761#2762#0" expanded="true" />
-            <element signature="e#2817#2818#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
-            <element signature="e#2902#2903#0" expanded="true" />
-            <element signature="e#2934#2935#0" expanded="true" />
-            <element signature="e#2985#2986#0" expanded="true" />
-            <element signature="e#3027#3028#0" expanded="true" />
-            <element signature="e#3068#3069#0" expanded="true" />
-            <element signature="e#3105#3106#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderNoCreate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1046,10 +995,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/rabbitMQconf/setMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="19" column="78" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/AlipayDemoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/conf/CorsMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/main2.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
+        <state relative-caret-position="-1254">
+          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#td#1;n#tr#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1061,6 +1041,123 @@
             <element signature="n#style#0;n#span#0;n#td#1;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#td#2;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/city/CityBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#467#468#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/shop/ShopBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/user/UserBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-web/5.1.7.RELEASE/spring-web-5.1.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/java/org/bs/front/controller/order/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="180" column="38" selection-start-line="180" selection-start-column="38" selection-end-line="180" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/pojo/order/OrderBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-consumer/src/main/resources/templates/view/cashier.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-api/src/main/java/org/bs/front/service/OrderServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/controller/order/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+          <folding>
+            <element signature="e#2050#2051#0" expanded="true" />
+            <element signature="e#2102#2103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-pay-provider/src/main/java/org/bs/front/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>

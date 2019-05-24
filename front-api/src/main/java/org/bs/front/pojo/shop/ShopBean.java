@@ -46,6 +46,16 @@ public class ShopBean implements Serializable {
     private Integer store_id; //店铺ID
     private String store_name;
 
+    private String imgUrl;
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
     public String getProduct_id() {
         return product_id;
     }

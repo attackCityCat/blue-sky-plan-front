@@ -7,10 +7,16 @@ eureka:
 spring:
   application:
     name: front-pay-consumer
+
   data:
+    mongodb:
+      port: 27017
+      host: localhost
+      database: 1810a
     solr:
       host: http://127.0.0.1:8079/solr
   profiles: default
+
 
   freemarker:
     template-loader-path: classpath:/templates
@@ -27,6 +33,7 @@ spring:
     port: 5672
     host: 192.168.1.145
     username: rbdq
+
 
   main:
     allow-bean-definition-overriding: true #允许相同key情况下beanDefinition实例的覆盖
